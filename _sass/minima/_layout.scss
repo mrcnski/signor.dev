@@ -1,0 +1,267 @@
+/**
+ * Site header
+ */
+
+.site-header {
+    border-bottom: 1px solid $gray-light;
+}
+
+.wrapper-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-top: $spacing-unit / 2;
+    padding-bottom: $spacing-unit / 2;
+}
+.header-left {
+    flex: 1 1 auto;
+
+    padding-right: $spacing-unit;
+
+    .site-title {
+        @include relative-font-size(1.5);
+
+        &,
+        &:visited {
+            color: $text-color;
+        }
+    }
+}
+.header-right {
+    flex: 0 1 auto;
+
+    .page-link:not(:last-child) {
+        margin-right: $spacing-unit;
+    }
+}
+
+/**
+ * Site footer
+ */
+
+.site-footer {
+    border-top: 1px solid $gray-light;
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
+}
+
+.footer-heading {
+    @include relative-font-size(1.125);
+    margin-bottom: $spacing-unit / 2;
+}
+
+.footer-col-wrapper {
+    color: $gray;
+    text-align: center;
+    @extend %clearfix;
+
+    > a {
+        white-space: nowrap;
+    }
+}
+
+/**
+ * Images
+ */
+
+.img-wrapper {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+}
+
+// Center images
+img.center {
+    margin: auto; /* Center image horizontally */
+    margin-top: $spacing-unit * 0.75;
+    margin-bottom: $spacing-unit * 0.125;
+
+    max-width: 100%;
+    display: block;
+    border: 1px solid $gray;
+    border-radius: 5px;
+}
+
+// Add image captions
+.empty-caption {
+    margin-bottom: $spacing-unit * 0.625;
+}
+img + em {
+    margin-bottom: $spacing-unit * 0.5;
+    display: block;
+    text-align: center;
+    font-size: $small-font-size;
+    color: $gray-dark;
+}
+
+/**
+ * Notes
+ */
+.note {
+    border: 1px solid $red;
+    color: $gray-dark;
+    padding: $spacing-unit / 4 $spacing-unit / 2;
+    margin: $spacing-unit * 0.75 $spacing-unit / 2;
+
+    &:before {
+        content: "Note:";
+        display: block;
+        margin-bottom: $spacing-unit / 8;
+        font-weight: $bold-font-weight;
+    }
+}
+
+/**
+ * Footnotes
+ */
+
+.footnote:before {
+    content: "[";
+}
+.footnote:after {
+    content: "]";
+}
+
+.footnotes > ol {
+    list-style-type: none;
+    counter-reset: ol-counter;
+
+    margin: 0;
+    margin-left: $spacing-unit * 0.75;
+    margin-right: $spacing-unit * 0.5;
+    padding: 0;
+    font-size: $small-font-size;
+
+    > li {
+        position: relative;
+        padding-left: $spacing-unit * 0.75;
+    }
+
+    > li:after {
+        content: "[" counter(ol-counter) "]:";
+        counter-increment: ol-counter;
+
+        position: absolute;
+        top: 0;
+        left: -$spacing-unit;
+
+        text-align: right;
+        width: $spacing-unit * 1.5;
+        color: $gray;
+
+        /* For older browsers and Safari */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+/**
+ * Page
+ */
+
+.page-content {
+    padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit / 2;
+
+    flex: 1;
+}
+
+.page-title {
+    @include relative-font-size(2);
+    line-height: 1;
+    padding-bottom: $spacing-unit / 4;
+    border-bottom: 1px solid $gray-light;
+
+    @include media-query($on-palm) {
+        @include relative-font-size(1.5);
+    }
+}
+
+/**
+ * Post
+ */
+
+.post-header {
+    margin-bottom: $spacing-unit / 2;
+}
+
+.post-title {
+    @include relative-font-size(2);
+    line-height: 1;
+    margin-bottom: $spacing-unit / 8;
+
+    @include media-query($on-palm) {
+        @include relative-font-size(1.75);
+    }
+}
+
+.post-meta {
+    color: $gray;
+    font-size: $small-font-size;
+}
+
+.post-content {
+    text-align: justify;
+    @include media-query($on-palm) {
+        text-align: left;
+    }
+}
+
+.post-list {
+    margin-left: $spacing-unit / 2;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit / 2;
+    }
+}
+
+.post-link {
+}
+
+.post-description {
+    color: $gray-dark;
+    font-size: $small-font-size;
+}
+
+.post-nav {
+    font-size: $small-font-size;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    p {
+        flex: 1 1 0;
+        width: 45%;
+
+        &:first-child {
+            padding-right: $spacing-unit / 4;
+        }
+
+        &:last-child {
+            padding-left: $spacing-unit / 4;
+            text-align: right;
+        }
+    }
+}
+
+.post-filed {
+    color: $gray;
+    font-size: $small-font-size;
+
+    display: flex;
+
+    p {
+        flex: 1 1 auto;
+
+        &:last-child {
+            padding-left: $spacing-unit / 2;
+            text-align: right;
+        }
+    }
+}
