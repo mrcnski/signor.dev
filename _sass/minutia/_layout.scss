@@ -3,7 +3,8 @@
  */
 
 .site-header {
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $light-gray;
+    background-color: $lightest-gray;
 }
 
 .wrapper-header {
@@ -17,7 +18,7 @@
 .header-left {
     flex: 1 1 auto;
 
-    padding-right: $spacing-unit;
+    padding-right: $spacing-unit * 2;
 
     .site-title {
         @include relative-font-size(1.5);
@@ -31,8 +32,12 @@
 .header-right {
     flex: 0 1 auto;
 
-    .page-link:not(:last-child) {
-        margin-right: $spacing-unit;
+    .page-link {
+        @include relative-font-size(1.0625);
+
+        &:not(:last-child) {
+            margin-right: $spacing-unit * 0.75;
+        }
     }
 }
 
@@ -41,7 +46,8 @@
  */
 
 .site-footer {
-    border-top: 1px solid $gray-light;
+    border-top: 1px solid $light-gray;
+    background-color: $lightest-gray;
     padding-top: $spacing-unit;
     padding-bottom: $spacing-unit;
 }
@@ -79,7 +85,6 @@ img.center {
     max-width: 100%;
     display: block;
     border: 1px solid $gray;
-    border-radius: 5px;
 }
 
 // Add image captions
@@ -91,7 +96,24 @@ img + em {
     display: block;
     text-align: center;
     font-size: $small-font-size;
-    color: $gray-dark;
+    color: $dark-gray;
+}
+
+/**
+ * Todo
+ */
+.todo {
+    border: 5px dashed $red;
+    // background-color: $light-gray;
+    padding: $spacing-unit / 4 $spacing-unit / 2;
+    margin: $spacing-unit * 0.75 $spacing-unit / 2;
+
+    &:before {
+        content: "TODO:";
+        display: block;
+        margin-bottom: $spacing-unit / 8;
+        font-weight: $bold-font-weight;
+    }
 }
 
 /**
@@ -99,7 +121,7 @@ img + em {
  */
 .note {
     border: 1px solid $red;
-    color: $gray-dark;
+    background-color: $lightest-red;
     padding: $spacing-unit / 4 $spacing-unit / 2;
     margin: $spacing-unit * 0.75 $spacing-unit / 2;
 
@@ -174,7 +196,7 @@ img + em {
     @include relative-font-size(2);
     line-height: 1;
     padding-bottom: $spacing-unit / 4;
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $light-gray;
 
     @include media-query($on-palm) {
         @include relative-font-size(1.5);
@@ -224,7 +246,7 @@ img + em {
 }
 
 .post-description {
-    color: $gray-dark;
+    color: $dark-gray;
     font-size: $small-font-size;
 }
 
@@ -264,4 +286,10 @@ img + em {
             text-align: right;
         }
     }
+}
+
+.post-footer {
+    padding-bottom: $spacing-unit / 4;
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: $spacing-unit / 2;
 }

@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     @include relative-font-size(1.625);
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $light-gray;
 
     @include media-query($on-palm) {
         @include relative-font-size(1.5);
@@ -130,11 +130,11 @@ h3 {
  */
 
 a {
-    color: $brand-color;
+    color: $blue;
     text-decoration: none;
 
     &:visited {
-        color: lighten($brand-color, 20%);
+        color: $light-blue;
     }
 
     &:hover {
@@ -150,10 +150,9 @@ a {
  * Blockquotes
  */
 blockquote {
-    border-left: 2px solid $gray-light;
+    border-left: 4px solid $light-gray;
     color: $gray;
-    font-style: italic;
-    // border-left: 4px;
+    // font-style: italic;
     margin-left: $spacing-unit / 2;
     margin-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
