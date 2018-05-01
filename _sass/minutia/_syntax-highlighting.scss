@@ -37,7 +37,7 @@ blockquote code {
 /* Inline code, no highlight */
 code {
     padding: 2px 4px;
-    border-radius: 2px;
+    border-radius: 3px;
 
     overflow: hidden;
     white-space: nowrap;
@@ -45,7 +45,7 @@ code {
 
 /* Inline code, highlight */
 code.highlight {
-    border-radius: 2px;
+    border-radius: 3px;
 
     color: $nimbus-fg;
     background-color: $nimbus-bg;
@@ -70,6 +70,8 @@ pre  {
 
 /* Block code, highlight */
 figure.highlight {
+    position: relative;
+
     pre {
         background-color: $nimbus-bg;
 
@@ -79,11 +81,33 @@ figure.highlight {
 
             counter-reset: code;
 
+            /* Display language name */
+            &:before {
+                content: attr(data-lang);
+                position: absolute;
+                right: 34px; // 15 + 19
+
+                font-size: 11px;
+                top: -19px;
+                padding-left:  4px;
+                padding-right: 4px;
+                padding-top: 2px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                min-width: 50px;
+                text-align: center;
+
+                color: $nimbus-lightest-green;
+                background-color: $nimbus-bg;
+            }
+
             div {
                 counter-increment: code;
 
+                /* Line numbers */
                 &:before {
                     color: $nimbus-blue-gray;
+                    background-color: $nimbus-bg;
                     content: counter(code);
                     visibility: visible;
 
@@ -107,6 +131,11 @@ figure.highlight {
             }
         }
     }
+}
+
+/* Hide language */
+.hide-lang + figure code:before {
+    visibility: hidden;
 }
 
 /**
@@ -160,4 +189,8 @@ figure.highlight {
     .na, .s {
         color: $nimbus-purple;
     }
+}
+
+.hl-1 + figure .line-1 {
+    background-color: $nimbus-blue-bg;
 }

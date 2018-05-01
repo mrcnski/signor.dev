@@ -22,10 +22,16 @@
 
     .site-title {
         @include relative-font-size(1.5);
+        font-weight: 400;
 
         &,
         &:visited {
-            color: $text-color;
+            background-color: $text-color;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
         }
     }
 }
@@ -60,7 +66,6 @@
 .footer-col-wrapper {
     color: $gray;
     text-align: center;
-    @extend %clearfix;
 
     > a {
         white-space: nowrap;
@@ -199,7 +204,7 @@ img + em {
     border-bottom: 1px solid $light-gray;
 
     @include media-query($on-palm) {
-        @include relative-font-size(1.5);
+        @include relative-font-size(1.75);
     }
 }
 
