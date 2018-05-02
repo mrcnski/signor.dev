@@ -22,16 +22,10 @@
 
     .site-title {
         @include relative-font-size(1.5);
-        font-weight: 400;
 
         &,
         &:visited {
-            background-color: $text-color;
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+            color: $text-color;
         }
     }
 }
@@ -247,11 +241,14 @@ img + em {
     }
 }
 
+.post-info {
+    margin-bottom: $spacing-unit / 2;
+}
+
 .post-link {
 }
 
 .post-description {
-    color: $dark-gray;
     font-size: $small-font-size;
 }
 

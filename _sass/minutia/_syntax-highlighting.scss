@@ -89,12 +89,12 @@ figure.highlight {
 
                 font-size: 11px;
                 top: -19px;
-                padding-left:  4px;
-                padding-right: 4px;
+                padding-left:  $spacing-unit / 4;
+                padding-right: $spacing-unit / 4;
                 padding-top: 2px;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
-                min-width: 50px;
+                min-width: 40px;
                 text-align: center;
 
                 color: $nimbus-lightest-green;

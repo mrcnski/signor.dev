@@ -1,4 +1,4 @@
-<li>
+<div class="post-info">
   <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 
   {% if post.description %}
@@ -20,4 +20,6 @@
     <a href="/{{ site.category_dir }}/{{ category }}/" rel="category">{{ category }}</a>{% unless forloop.last %},{% endunless %}
     {% endfor %}
   </span>
-</li>
+
+  <br>
+</div>

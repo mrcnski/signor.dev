@@ -11,10 +11,8 @@ layout: default
   {{ site.category_descriptions[page.category] }}
   {% endcomment %}
 
-  <ul class="post-list">
-    {% for post in site.categories[page.category] %}
-    {% include post-info.html %}
-    {% endfor %}
-  </ul>
+  {% for post in site.categories[page.category] %}
+  {% include post-info.html %}
+  {% endfor %}
   
 </article>
