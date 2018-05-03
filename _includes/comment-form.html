@@ -1,0 +1,30 @@
+<center>
+  <p class="comment-leave">Leave a comment</p>
+  <p class="comment-info">Markdown is accepted</p>
+</center>
+
+<div class="comment-form">
+  <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}">
+    <!-- <input name="options[redirect]" type="hidden" value="https://my-site.com"> -->
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <!-- e.g. "2016-01-02-this-is-a-post" -->
+
+    <textarea class="comment-form-message" name="fields[message]" rows="3"></textarea>
+    
+    <div class="comment-form-bottom">
+      <div class="comment-form-optional">
+        <input name="fields[name]" type="text" placeholder="name (optional)">
+      </div>
+      <div class="comment-form-optional">
+        <input name="fields[email]" type="email" placeholder="e-mail (optional)">
+      </div>
+      <div class="comment-form-optional">
+        <input name="fields[url]" type="url" placeholder="website (optional)">
+      </div>
+
+      <div class="comment-form-submit">
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

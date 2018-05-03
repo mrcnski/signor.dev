@@ -22,6 +22,10 @@ twitter_username:
 github_username: "m-cat"
 category_dir: category
 
+repository: "m-cat/bytedude.com"
+staticman:
+  branch: "master"
+
 # Outputting
 permalink: /:title/
 timezone: Europe/Rome
@@ -50,13 +54,11 @@ compress_html:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-    - sync.sh
-    - README.md
-    - Makefile
     - Gemfile
     - Gemfile.lock
-    - vendor
-    - ditaa
+    - Makefile
+    - README.md
+    - staticman.yml
 
 defaults:
   -

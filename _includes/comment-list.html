@@ -1,0 +1,43 @@
+<center>
+  <p id="comments" class="comment-counter">{% include comment-count.html %}</p>
+</center>
+
+{% assign i = 0 %}
+{% for comment in comments %}
+<div class="comment">
+  {% assign i = i | plus: 1 %}
+
+  <div class="comment-header">
+    <div class="comment-header-left">
+      <span id="comment-{{ i }}" class="comment-name">
+        {% if comment.name %}
+        {{ comment.name }}
+        {% else %}
+        Anonymous
+        {% endif %}
+      </span>
+      
+      {% if comment.url %}
+      <span>[<a href="//{{ comment.url | remove_first:"http://" | remove_first:"https://" }}">site</a>]
+      </span>
+      {% endif %}
+
+      <br>
+      {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" %}
+      <p class="comment-meta">
+        {{ comment.date | date: date_format }}
+      </p>
+    </div>
+
+    <div class="comment-header-right">
+      <span class="comment-anchor">[<a href="#comment-{{ i }}">#</a>]</span>
+    </div>
+  </div>
+
+  <div class="comment-content">
+    {% if comment.message %}
+    {{ comment.message | strip_html | replace:"{:","{" | markdownify }}
+    {% endif %}
+  </div>
+</div>
+{% endfor %}

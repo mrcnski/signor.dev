@@ -13,8 +13,10 @@ layout: default
       {% if page.author %}
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}
-      -
+      •
       {% include filed.html %}
+      •
+      <a href="#comments">{% include comment-count.html %}</a>
     </p>
   </header>
 
@@ -24,6 +26,11 @@ layout: default
 
   <div class="post-footer">
     {% include post-footer.html %}
+  </div>
+
+  <!-- <h2 class="comment-header">Comments</h2> -->
+  <div class="comments">
+    {% include comments.html slug=page.slug %}
   </div>
 
 </article>

@@ -1,18 +1,17 @@
 <div class="post-info">
+  
   <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 
   {% if post.description %}
   <br>
   <span class="post-description">{{ post.description }}</span>
   {% endif %}
+  
   <br>
-  {% comment %}
-  {% endcomment %}
-
   {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" %}
   <span class="post-meta">
     {{ post.date | date: date_format }}
-    -
+    •
   </span>
   
   <span class="post-meta">

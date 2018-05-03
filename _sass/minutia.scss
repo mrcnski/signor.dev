@@ -6,9 +6,11 @@ $base-font-family: 'IBM Plex Sans', Helvetica, sans-serif !default;
 $code-font-family: 'Hack', monospace !default;
 $base-font-size:   16px !default;
 $code-font-size:   12px !default;
+$small-font-size:  $base-font-size * 0.925 !default;
+$smaller-font-size: $base-font-size * 0.85 !default;
+$large-font-size:  $base-font-size * 1.0625 !default;
 $base-font-weight: 300  !default;
 $bold-font-weight: 500  !default;
-$small-font-size:  $base-font-size * 0.925 !default;
 $base-line-height: 1.5  !default;
 
 $spacing-unit:     30px !default;
@@ -18,13 +20,14 @@ $background-color: #fdfdfd !default;
 
 $gray:             #828282 !default;
 $light-gray:       lighten($gray, 40%) !default;
-$lightest-gray:    #fafafa !default;
+$lightest-gray:    #f9f9f9 !default;
 $dark-gray:        darken($gray, 15%) !default;
 
 $blue:             #2a7ae2 !default;
 $light-blue:       lighten($blue, 20%) !default;
+$dark-blue:        darken($blue, 15%) !default;
 $red:              #d65946 !default;
-$lightest-red:     #fffcfc !default;
+$lightest-red:     #fffafa !default;
 $green:            #6aaf50 !default;
 $light-purple:     #eeeeff !default;
 $lightest-purple:  #f1f1ff !default;
@@ -43,21 +46,25 @@ $on-laptop:        880px !default;
 //   }
 // }
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
+    @media screen and (max-width: $device) {
+        @content;
+    }
 }
 
 @mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+    font-size: $base-font-size * $ratio;
+
+    code {
+        font-size: $code-font-size * $ratio;
+    }
 }
 
 // Import partials.
 @import
-  "minutia/fonts",
-  "minutia/base",
-  "minutia/layout",
-  "minutia/syntax-highlighting",
+"minutia/fonts",
+"minutia/base",
+"minutia/layout",
+"minutia/syntax-highlighting",
 
-  "minutia/final"
+"minutia/final"
 ;

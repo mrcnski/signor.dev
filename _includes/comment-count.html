@@ -1,0 +1,4 @@
+{% assign comments = site.data.comments | where:'slug',page.slug | sort: 'date' %}
+{% assign commentCount = comments | size %}
+
+{{ commentCount}} comment{% if commentCount != 1 %}s{% endif %}

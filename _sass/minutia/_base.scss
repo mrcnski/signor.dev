@@ -1,6 +1,4 @@
-/**
- * Reset some basic elements
- */
+/* Reset some basic elements */
 
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
@@ -9,14 +7,16 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-/**
- * Basic styling
- */
+/* Basic styling */
 
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
+
+    code {
+        font-size: $code-font-size;
+    }
 
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -34,9 +34,39 @@ b, strong {
     font-weight: $bold-font-weight;
 }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
+/* Inputs */
+
+input, textarea, button {
+    font: $base-font-weight #{$small-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-color: $background-color;
+
+    padding-left: $spacing-unit / 8;
+    padding-right: $spacing-unit / 8;
+    border: 1px solid $gray;
+    border-radius: 3px;
+
+    outline: none;
+
+    &:hover {
+        box-shadow: 2px 2px 2px 0px $light-gray;
+    }
+    &:focus {
+        box-shadow: 2px 2px 2px 0px $light-gray;
+        border: 1px solid $text-color;
+    }
+}
+textarea {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+*::placeholder {
+    opacity: 1;
+    color: $gray;
+}
+
+/* Set `margin-bottom` to maintain vertical rhythm */
 
 h1, h2, h3, h4, h5, h6,
 p, blockquote, hr,
@@ -45,17 +75,20 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-/**
- * Images
- */
+/* Horizontal rule */
+
+hr {
+    color: $light-gray;
+    border-style: solid;
+}
+
+/* Images */
 
 img {
     vertical-align: middle;
 }
 
-/**
- * Figures
- */
+/* Figures */
 
 figure > img {
     display: block;
@@ -65,9 +98,7 @@ figcaption {
     font-size: $small-font-size;
 }
 
-/**
- * Lists
- */
+/* Lists */
 
 ul, ol {
     margin-left: $spacing-unit;
@@ -96,12 +127,21 @@ ul li:before {
     left: -$spacing-unit / 2;
 }
 
-/**
- * Headings
- */
+/* Headings */
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
+}
+
+h1 {
+    @include relative-font-size(2);
+    line-height: 1;
+    padding-bottom: $spacing-unit / 4;
+    border-bottom: 1px solid $light-gray;
+
+    @include media-query($on-palm) {
+        @include relative-font-size(1.75);
+    }
 }
 
 h2 {
@@ -125,9 +165,7 @@ h3 {
     text-align: left;
 }
 
-/**
- * Links
- */
+/* Links */
 
 a {
     color: $blue;
@@ -146,9 +184,7 @@ a {
     }
 }
 
-/**
- * Blockquotes
- */
+/* Blockquotes */
 blockquote {
     border-left: 4px solid $light-gray;
     color: $gray;
@@ -162,9 +198,7 @@ blockquote {
     }
 }
 
-/**
- * Wrappers
- */
+/* Wrappers */
 
 .wrapper-header,
 .wrapper-content,
@@ -183,9 +217,7 @@ blockquote {
     }
 }
 
-/**
- * Icons
- */
+/* Icons */
 
 .icon > svg {
     display: inline-block;

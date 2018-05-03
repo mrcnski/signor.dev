@@ -6,7 +6,7 @@
 
 /* Applies to all code */
 pre, code {
-    font-size: $code-font-size;
+    // font-size: $code-font-size;
     font-family: $code-font-family;
     font-style: normal;
 
@@ -69,7 +69,7 @@ pre  {
 }
 
 /* Block code, highlight */
-figure.highlight {
+figure.highlight, div.highlight {
     position: relative;
 
     pre {
@@ -82,7 +82,7 @@ figure.highlight {
             counter-reset: code;
 
             /* Display language name */
-            &:before {
+            &[data-lang]:before {
                 content: attr(data-lang);
                 position: absolute;
                 right: 34px; // 15 + 19
