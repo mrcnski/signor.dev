@@ -5,7 +5,7 @@
 
 <div class="comment-form">
   <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}">
-    <!-- <input name="options[redirect]" type="hidden" value="https://my-site.com"> -->
+    <input name="options[redirect]" type="hidden" value="{{ site.url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     <!-- e.g. "2016-01-02-this-is-a-post" -->
 

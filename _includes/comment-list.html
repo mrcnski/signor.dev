@@ -23,7 +23,7 @@
         {% endif %}
       </span>
       
-      {% if url %}
+      {% if url != '' %}
       <span>[<a href="//{{ url | remove_first:"http://" | remove_first:"https://" }}">site</a>]
       </span>
       {% endif %}
