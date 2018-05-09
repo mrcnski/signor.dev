@@ -39,7 +39,7 @@ notifications:
   apiKey: ""
   domain: ""
 
-path: "_data/{options.slug}"
+path: "_data/comments/{options.slug}"
 
 reCaptcha:
   enabled: false

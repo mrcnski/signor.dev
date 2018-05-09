@@ -3,29 +3,35 @@
 </center>
 
 {% assign i = 0 %}
+
 {% for comment in comments %}
+{% assign message = comment[1].message %}
+{% assign name = comment[1].name %}
+{% assign url = comment[1].url %}
+{% assign date = comment[1].date %}
+
 <div class="comment">
   {% assign i = i | plus: 1 %}
 
   <div class="comment-header">
     <div class="comment-header-left">
       <span id="comment-{{ i }}" class="comment-name">
-        {% if comment.name %}
-        {{ comment.name }}
+        {% if name %}
+        {{ name }}
         {% else %}
         Anonymous
         {% endif %}
       </span>
       
-      {% if comment.url %}
-      <span>[<a href="//{{ comment.url | remove_first:"http://" | remove_first:"https://" }}">site</a>]
+      {% if url %}
+      <span>[<a href="//{{ url | remove_first:"http://" | remove_first:"https://" }}">site</a>]
       </span>
       {% endif %}
 
       <br>
       {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" %}
       <p class="comment-meta">
-        {{ comment.date | date: date_format }}
+        {{ date | date: date_format }}
       </p>
     </div>
 
@@ -35,8 +41,8 @@
   </div>
 
   <div class="comment-content">
-    {% if comment.message %}
-    {{ comment.message | strip_html | replace:"{:","{" | markdownify }}
+    {% if message %}
+    {{ message | strip_html | replace:"{:","{" | markdownify }}
     {% endif %}
   </div>
 </div>
