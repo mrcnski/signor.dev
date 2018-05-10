@@ -11,7 +11,7 @@ This post is about the very first thing I implemented for this blog: links to th
 
 ## The Goal
 
-At the bottom of each of my posts you'll find links to the previous and next posts. This is what they look like:
+At the bottom of each of my posts you'll find links to the previous and next posts. This is what they look like:[^change]
 
 {% include image.html name="next-and-prev.png" alt="Next and previous posts." width="521" %}
 
@@ -71,7 +71,7 @@ Let me start by demonstrating why David Elbe's solution is subpar. I don't mean 
 
 You may notice the following:
 
-* The links are set to `display: block;` with a `width` of 50%. This ostensibly aligns the links and stops either one from taking up more than half the page, but it's a bad move: all the whitespace between the two snippets of text acts as part of the links:[^change]
+* The links are set to `display: block;` with a `width` of 50%. This ostensibly aligns the links and stops either one from taking up more than half the page, but it's a bad move: all the whitespace between the two snippets of text acts as part of the links:
 
 [^change]: Note that the appearance of this site may have changed since the screenshots in this post were taken.
 

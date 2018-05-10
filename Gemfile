@@ -11,7 +11,6 @@ source "https://rubygems.org"
 gem "jekyll", "3.7.3"
 gem "rb-fsevent", "~> 0.10.2"
 gem "html-proofer"
-gem "pygments.rb"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

@@ -61,8 +61,7 @@ pre  {
 
     code {
         border: 0;
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0;
 
         white-space: pre;
     }
@@ -80,6 +79,8 @@ figure.highlight, div.highlight {
             color: $nimbus-fg;
 
             counter-reset: code;
+            display: block;
+            line-height: 1.5;
 
             /* Display language name */
             &[data-lang]:before {
