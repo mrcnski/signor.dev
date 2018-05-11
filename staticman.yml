@@ -11,7 +11,7 @@ akismet:
 
 branch: master
 
-commitMessage: "[staticman] add comment"
+commitMessage: "[staticman] add a new comment"
 
 extension: ""
 

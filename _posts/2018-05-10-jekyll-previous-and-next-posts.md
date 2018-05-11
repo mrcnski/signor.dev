@@ -2,7 +2,6 @@
 title: "Jekyll: Previous and Next Posts"
 date: 2018-05-10
 categories: blogging face-offs web-dev
-description: "Essential reading for Jekyll bloggers."
 ---
 
 What's up? Welcome to a series of articles I'm writing about [Jekyll](https://jekyllrb.com), the static blog generator. I had trouble customizing this blog due to the lack of good Jekyll resources online, so I had no choice but to go into super-genius mode and figure it all out myself. Now I want to share my methods with you.
