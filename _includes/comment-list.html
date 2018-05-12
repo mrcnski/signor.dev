@@ -29,7 +29,7 @@
       {% endif %}
 
       <br>
-      {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" %}
+      {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" | append: " at %k:%M UTC" %}
       <p class="comment-meta">
         {{ date | date: date_format }}
       </p>
