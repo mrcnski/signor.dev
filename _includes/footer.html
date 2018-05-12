@@ -4,13 +4,17 @@
     <div class="footer-col-wrapper">
       
       <a href="{{ '/' | relative_url }}">home</a>
-      -
-      {% include icon-github.html username=site.github_username display='github' %} 
-      -
+      •
+      {% include icon-github.html username=site.repository display='github' %} 
+      •
       {% include icon-email.html email=site.email display='contact' %}
-      <a href="/secret">-</a>
+      <a href="/secret">•</a>
       <a href="{{ '/feed.xml' | relative_url }}">rss</a>
       
+    </div>
+
+    <div class="copyright">
+      © {{ site.copyright_year }} {{ site.author }} ("bytedude")
     </div>
   </div>
 

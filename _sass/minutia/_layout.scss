@@ -56,7 +56,8 @@
 .footer-col-wrapper {
     color: $gray;
     text-align: center;
-    line-height: 1;
+
+    margin-bottom: $spacing-unit / 8;
 
     > a {
         white-space: nowrap;
@@ -425,16 +426,21 @@ $line-height: 1.3;
 }
 
 .comment-leave {
-    line-height: 1;
     font-size: $large-font-size;
-    margin-bottom: $spacing-unit / 4;
+    margin-bottom: $spacing-unit / 8;
 }
 .comment-info {
     color: $gray;
     font-size: $small-font-size;
-    line-height: 1;
 }
 .comment-counter {
-    line-height: 1;
     font-size: $large-font-size;
+}
+
+/* Copyright */
+
+.copyright {
+    font-size: $smaller-font-size;
+    color: $gray;
+    text-align: center;
 }

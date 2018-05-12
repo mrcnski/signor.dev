@@ -21,6 +21,7 @@ short_url: "bytedude.com"
 twitter_username: 
 github_username: "m-cat"
 category_dir: category
+copyright_year: 2018
 
 repository: "m-cat/bytedude.com"
 staticman:
@@ -28,7 +29,7 @@ staticman:
 
 # Outputting
 permalink: /:title/
-timezone: Europe/Rome
+timezone: Etc/UTC
 
 # Serving
 detach: false
