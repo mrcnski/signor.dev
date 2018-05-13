@@ -442,5 +442,73 @@ $line-height: 1.3;
 .copyright {
     font-size: $smaller-font-size;
     color: $gray;
+    text-align: CENTER;
+}
+
+/* Spoilers */
+
+.spoiler {
+    cursor: pointer;
+    display: inline-block;
+
+    border: 1px solid $gray;
+    color: $blue;
+    margin-bottom: $spacing-unit / 2;
+    // margin-left: $spacing-unit / 2;
+    padding: 2px 8px;
+
+    // width: 170px;
     text-align: center;
+    font-size: $small-font-size;
+
+    /* Prevent text selection */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input#spoiler-check {
+    display: none; /* hide the checkboxes */
+}
+
+/* Show */
+input ~ .spoiler {
+    background-color: $lightest-gray;
+
+    &:before {
+        content: '\2039  ';
+    }
+    &:after {
+        content: '  \203A';
+    }
+    ~ ul#markdown-toc {
+        display: none;
+    }
+}
+
+/* Hide */
+input:checked ~ .spoiler {
+    background-color: $background-color;
+
+    &:before {
+        content: '\203A  ';
+    }
+    &:after {
+        content: '  \2039';
+    }
+    ~ ul#markdown-toc {
+        display: block;
+    }
+}
+
+input:hover ~ .spoiler {
+    box-shadow: 2px 2px 2px 0px $light-gray;
+}
+
+/* TOC */
+
+#markdown-toc {
 }

@@ -21,6 +21,12 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    {% if page.toc %}
+    <!-- <h2 id="table-of-contents">Table of Contents</h2> -->
+    {% include spoiler.html display="Table of Contents" %}
+
+    {% endif %}
+    
     {{ content }}
   </div>
 
@@ -28,7 +34,6 @@ layout: default
     {% include post-footer.html %}
   </div>
 
-  <!-- <h2 class="comment-header">Comments</h2> -->
   <div class="comments">
     {% include comments.html slug=page.slug %}
   </div>

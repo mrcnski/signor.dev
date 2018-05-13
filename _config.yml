@@ -43,8 +43,8 @@ highlighter: rouge
 strict_front_matter: true
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 compress_html:
   blanklines: true
