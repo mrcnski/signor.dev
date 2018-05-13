@@ -39,7 +39,6 @@ code {
     padding: 2px 4px;
     border-radius: 3px;
 
-    overflow: hidden;
     white-space: nowrap;
 }
 
@@ -100,6 +99,10 @@ figure.highlight, div.highlight {
 
                 color: $nimbus-lightest-green;
                 background-color: $nimbus-bg;
+
+                @include media-query(300px) {
+                    visibility: hidden;
+                }
             }
 
             div {

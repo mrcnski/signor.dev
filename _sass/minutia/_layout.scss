@@ -98,9 +98,9 @@ img + em {
 
 .todo {
     border: 2px dashed $red;
-    // background-color: $light-gray;
     padding: $spacing-unit / 4 $spacing-unit / 2;
     margin: $spacing-unit * 0.75 $spacing-unit / 2;
+    overflow: auto;
 
     &:before {
         content: "TODO:";
@@ -114,9 +114,9 @@ img + em {
 
 .note {
     border: 1px solid $red;
-    // background-color: $lightest-red;
     padding: $spacing-unit / 4 $spacing-unit / 2;
     margin: $spacing-unit * 0.75 $spacing-unit / 2;
+    overflow: auto;
 
     &:before {
         content: "Note:";
