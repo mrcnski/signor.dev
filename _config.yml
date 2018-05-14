@@ -71,9 +71,11 @@ defaults:
 
 category_descriptions:
   - {name: "blogging", description: ""}
+  - {name: "css", description: ""}
   - {name: "emacs", description: ""}
   - {name: "face-offs", description: ""}
   - {name: "health", description: ""}
+  - {name: "jekyll", description: ""}
   - {name: "productivity", description: ""}
   - {name: "self-improvement", description: ""}
   - {name: "site", description: ""}

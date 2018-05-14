@@ -1,7 +1,7 @@
 ---
 title: "Jekyll: Previous and Next Posts"
 date: 2018-05-10
-categories: blogging face-offs web-dev
+categories: blogging css face-offs jekyll
 toc: true
 ---
 

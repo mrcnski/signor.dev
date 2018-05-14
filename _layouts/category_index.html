@@ -11,7 +11,7 @@ layout: default
   {{ site.category_descriptions[page.category] }}
   {% endcomment %}
 
-  {% for post in site.categories[page.category] %}
+  {% for page in site.categories[page.category] %}
   {% include post-info.html %}
   {% endfor %}
   

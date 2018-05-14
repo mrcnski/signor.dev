@@ -19,12 +19,13 @@ $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 
 $gray:             #828282 !default;
+$mild-gray:        lighten($gray, 25%) !default;
 $light-gray:       lighten($gray, 40%) !default;
 $lightest-gray:    #f9f9f9 !default;
 $dark-gray:        darken($gray, 15%) !default;
 
 $blue:             #2a7ae2 !default;
-$light-blue:       lighten($blue, 20%) !default;
+$light-blue:       lighten($blue, 17%) !default;
 $dark-blue:        darken($blue, 15%) !default;
 $red:              #d65946 !default;
 $lightest-red:     #fffafa !default;

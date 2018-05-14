@@ -111,9 +111,7 @@ figure.highlight, div.highlight {
                 /* Line numbers */
                 &:before {
                     color: $nimbus-blue-gray;
-                    background-color: $nimbus-bg;
                     content: counter(code);
-                    visibility: visible;
 
                     width: 14px;
                     text-align: right;
