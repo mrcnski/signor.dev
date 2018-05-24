@@ -87,12 +87,16 @@ figure.highlight, div.highlight {
                 right: 34px; // 15 + 19
 
                 font-size: 11px;
-                top: -19px;
+                top: -10px;
                 padding-left:  $spacing-unit / 4;
                 padding-right: $spacing-unit / 4;
-                padding-top: 2px;
+
+                border: 1px solid $gray;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
                 min-width: 40px;
                 text-align: center;
 
