@@ -17,17 +17,15 @@
     <div class="comment-header-left">
       <span id="comment-{{ i }}" class="comment-name">
         {% if name %}
+        {% if url != '' %}
+        <a href="//{{ url | remove_first:"http://" | remove_first:"https://" }}">{{ name }}</a>
+        {% else %}
         {{ name }}
+        {% endif %}
         {% else %}
         Anonymous
         {% endif %}
       </span>
-      
-      {% if url != '' %}
-      <span class="comment-site">
-        [<a href="//{{ url | remove_first:"http://" | remove_first:"https://" }}">site</a>]
-      </span>
-      {% endif %}
 
       <br>
       {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" | append: " at %k:%M UTC" %}
@@ -38,7 +36,7 @@
 
     <div class="comment-header-right">
       <span class="comment-anchor">
-        [<a href="#comment-{{ i }}">#</a>]
+        <a href="#comment-{{ i }}">#</a>
       </span>
     </div>
   </div>

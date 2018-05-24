@@ -2,8 +2,6 @@
 title: "Jekyll: Syntax Highlighting and Line Numbers"
 date: 2018-05-14
 categories: blogging css jekyll
-post-no: 2
-related: [1, 3]
 toc: true
 ---
 

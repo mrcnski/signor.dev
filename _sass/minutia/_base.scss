@@ -136,18 +136,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
     text-align: left;
     display: flex;
-}
 
-.header-anchor-container {
-    display: inline-block;
-    flex: 1 1 auto;
-    align-self: center;
+    a {
+        color: $text-color;
 
-    margin-left: $spacing-unit / 4;
-    text-align: right;
-    font-size: $base-font-size;
-}
-.header-anchor {
+        &:visited {
+            color: $text-color;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 h1 {
