@@ -194,7 +194,7 @@ For example, with my default highlighting settings, a Liquid code block would lo
 {% raw %}{% include post.html %}{% endraw %}
 {% endhighlight %}
 
-I didn't like the tag openers (`{% raw %}{%{% endraw %}` and `{% raw %}%}{% endraw %}`). Examining the element for `{% raw %}{%{% endraw %}`,[^devtools] I saw it has the class `.p`, which Pygments assigns to punctuation. Usually I don't want to highlight this class, but I made an exception for Liquid:
+I didn't like the tag openers (`{% raw %}{%{% endraw %}` and `{% raw %}%}{% endraw %}`). Examining the element for `{% raw %}{%{% endraw %}`,[^devtools] I saw it has the class `.p`, which Rouge assigns to punctuation. Usually I don't want to highlight this class, but I made an exception for Liquid:
 
 [^devtools]: Your browser's dev tools can save a lot of time when examining elements.
 
