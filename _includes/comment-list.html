@@ -24,7 +24,8 @@
       </span>
       
       {% if url != '' %}
-      <span>[<a href="//{{ url | remove_first:"http://" | remove_first:"https://" }}">site</a>]
+      <span class="comment-site">
+        [<a href="//{{ url | remove_first:"http://" | remove_first:"https://" }}">site</a>]
       </span>
       {% endif %}
 
@@ -36,7 +37,9 @@
     </div>
 
     <div class="comment-header-right">
-      <span class="comment-anchor">[<a href="#comment-{{ i }}">#</a>]</span>
+      <span class="comment-anchor">
+        [<a href="#comment-{{ i }}">#</a>]
+      </span>
     </div>
   </div>
 
