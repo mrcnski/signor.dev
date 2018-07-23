@@ -230,7 +230,7 @@ The naïve way to turn on line numbers with Rouge is to add the `linenos` parame
 {% endhighlight %}{% endraw %}
 {% endhighlight %}
 
-However, as pointed out [on this page](https://qwtel.com/hydejack/docs/7.5.1/writing/#adding-code-blocks), this is not a good idea for various reasons. To quote the page:
+However, as pointed out [on this page](https://hydejack.com/docs/8.0.0/writing/#adding-code-blocks), this is not a good idea for various reasons. To quote the page:
 
 > DO NOT use Jekyll’s `{ % highlight % }` ... `{ % endhighlight % }` syntax, especially together with the `linenos` option. The generated `table` to render the line numbers does not have a CSS class or any other way of differentiating it from regular tables, so that the styles above apply, resulting in a broken page. What’s more, the output from `highlight` tags [with the linenos option] isn’t even valid HTML, nesting `pre` tags inside `pre` tags, which will in break the site during minification.
 
