@@ -1,5 +1,5 @@
 ---
-title: "Jekyll: Syntax Highlighting and Line Numbers"
+title: "Jekyll: Syntax Highlighting And Line Numbers"
 date: 2018-05-14
 categories: blogging css jekyll
 toc: true

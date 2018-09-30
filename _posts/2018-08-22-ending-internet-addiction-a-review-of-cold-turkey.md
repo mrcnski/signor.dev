@@ -1,5 +1,5 @@
 ---
-title: "Ending Internet Addiction: A Review of Cold Turkey"
+title: "Ending Internet Addiction: A Review Of Cold Turkey"
 date: 2018-08-22
 categories: productivity self-improvement
 ---

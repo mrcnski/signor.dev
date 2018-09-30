@@ -70,6 +70,7 @@ defaults:
       layout: "post"
 
 category_descriptions:
+  - {name: "anki", description: ""}
   - {name: "blogging", description: ""}
   - {name: "c", description: ""}
   - {name: "css", description: ""}
@@ -77,6 +78,7 @@ category_descriptions:
   - {name: "face-offs", description: ""}
   - {name: "health", description: ""}
   - {name: "jekyll", description: ""}
+  - {name: "language-learning", description: ""}
   - {name: "org-mode", description: ""}
   - {name: "presentations", description: ""}
   - {name: "productivity", description: ""}

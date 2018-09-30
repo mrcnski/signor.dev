@@ -1,5 +1,5 @@
 ---
-title: "Memory Management in Unsafe Rust"
+title: "Memory Management In Unsafe Rust"
 date: 2018-08-18
 categories: c emacs org-mode presentations rust
 ---

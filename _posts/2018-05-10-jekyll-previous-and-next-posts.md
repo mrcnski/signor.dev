@@ -1,5 +1,5 @@
 ---
-title: "Jekyll: Previous and Next Posts"
+title: "Jekyll: Previous And Next Posts"
 date: 2018-05-10
 categories: blogging css face-offs jekyll
 toc: true
