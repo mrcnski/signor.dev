@@ -13,9 +13,14 @@
     {{ page.date | date: date_format }}
     •
   </span>
-  
+
   <span class="post-meta">
     {% include filed.html %}
+  </span>
+
+  <span class="post-meta">
+    •
+    {% include comment-count.html %}
   </span>
 
   <br>

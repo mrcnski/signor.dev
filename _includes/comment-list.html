@@ -16,14 +16,20 @@
   <div class="comment-header">
     <div class="comment-header-left">
       <span id="comment-{{ i }}" class="comment-name">
-        {% if name %}
+        {% assign anon = "anon" %}
+
+        {% if name != '' %}
         {% if url != '' %}
         <a href="//{{ url | remove_first:"http://" | remove_first:"https://" }}">{{ name }}</a>
         {% else %}
         {{ name }}
         {% endif %}
         {% else %}
-        Anonymous
+        {% if url != '' %}
+        <a href="//{{ url | remove_first:"http://" | remove_first:"https://" }}">{{ anon }}</a>
+        {% else %}
+        {{ anon }}
+        {% endif %}
         {% endif %}
       </span>
 
