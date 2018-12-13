@@ -10,7 +10,7 @@ This is a presentation I gave to my coworkers at [MaidSafe](https://maidsafe.net
 
 You can view the source file for the presentation [here](https://github.com/m-cat/unsafe-rust). It's a plaintext org-mode file.
 
-It was my first time creating a presentation within Emacs itself. My original intention was to create the outline for the presentation in org-mode and then make the slides in Google Slides, images and formatting and all, but that turned out to be a very tedious process for the amount of content in this presentation. It was much easier to do it all in org-mode.
+It was my first time creating a presentation within Emacs itself. My original intention was to create the outline for the presentation in org-mode and then make the slides in Google Slides, images and formatting and all, but that turned out to be a tedious process for the amount of content in this presentation. It was much easier to do it all in org-mode.
 
 The benefits of this approach are:
 

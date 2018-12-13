@@ -116,7 +116,7 @@ I chose `s-j` for [`helm-mini`](https://github.com/emacs-helm/helm)/`switch-to-b
 
 For this section, you'll need [ag](https://github.com/ggreer/the_silver_searcher) installed and the [helm-ag](https://github.com/syohex/emacs-helm-ag), [projectile](https://github.com/bbatsov/projectile) and [helm-projectile](https://github.com/bbatsov/helm-projectile) packages.
 
-The commands in this section make use of the [helm](https://github.com/emacs-helm/helm) interface. If you're not a helm guy (e.g. you use ivy), then you're on your own.
+The commands in this section make use of the [helm](https://github.com/emacs-helm/helm) interface. If you're not a helm guy (e.g. you use [ivy](https://github.com/abo-abo/swiper)), then you're on your own.
 {: .note }
 
 ag is a grep-like tool, but faster, while projectile allows you to run ag on your project to search for text. You'll need to be inside a "project" for this to work, and the easiest way to do that is to make the current directory version-controlled. It's a good habit to get into!
