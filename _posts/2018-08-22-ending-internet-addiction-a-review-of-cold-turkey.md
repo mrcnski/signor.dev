@@ -54,6 +54,6 @@ There are several free (and even open-source) alternatives to Cold Turkey such a
 
 ## Conclusion
 
-In utter conclusion of my remarkable Cold Turkey review, it behooves me to add that being productive is *awesome* when working on the right thing. How do you find something worthwhile to work on, so that you're not just wasting your efforts? That's a subject for another day. 
+In utter conclusion of my remarkable Cold Turkey review, it behooves me to add that being productive is *awesome* when working on the right thing. How do you find something worthwhile to work on, so that you're not just wasting your efforts? That's a subject for another day.
 
 I plan on writing more posts about my ideas on improving personal productivity, so stay tuned. I'm not affiliated with Cold Turkey btw.

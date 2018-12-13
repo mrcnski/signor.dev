@@ -13,11 +13,13 @@ You can view the source file for the presentation [here](https://github.com/m-ca
 It was my first time creating a presentation within Emacs itself. My original intention was to create the outline for the presentation in org-mode and then make the slides in Google Slides, images and formatting and all, but that turned out to be a very tedious process for the amount of content in this presentation. It was much easier to do it all in org-mode.
 
 The benefits of this approach are:
+
 - It's easy to write up the entire presentation quickly using Emacs keybindings and org-mode features. Moving around headings is a breeze. You can change the whole structure of the presentation in a few seconds.
 - You don't need to fiddle about with WYSIWYG formatting. You can just use the formatting markup available in org-mode.
 - You have the entire presentation available as plaintext instead of a proprietary format. That makes it easy to read/edit on any machine, sync/backup, export to other formats, etc.
 
 The downsides are:
+
 - It's hard to tell whether the amount of content under one heading will fit on a single slide until you actually preview it. It's especially hard if you have images or diagrams.
 - It's tedious to do manual formatting if you wanted to.
 - The presentation doesn't look as aesthetically nice as a typical Google Slides presentation (but it's not impossible to beautify it if you had the time).

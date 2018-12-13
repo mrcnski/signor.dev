@@ -214,7 +214,7 @@ So it looks like this:
 {% raw %}{% include post.html %}{% endraw %}
 {% endhighlight %}
 
-## Line Numbers 
+## Line Numbers
 
 Line numbers. What should have been easy turned out to be a royal pain in the bupkis.[^line] I'll take you along an abbreviated version of the journey I went through so that you understand how I arrived at my current method. If you want to skip the explanation, head over to the [Code](.#the-final-code) section.
 

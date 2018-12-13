@@ -12,7 +12,7 @@ In case you haven't heard, [spaced repetition](https://en.wikipedia.org/wiki/Spa
 
 [^manual]: Please read the excellent manual for more information about Anki and Spaced Repetition than I can fit in a quick introduction.
 
-> This was a revolution in learning, as it meant material could be learnt and retained with the absolute minimum amount of effort necessary. 
+> This was a revolution in learning, as it meant material could be learnt and retained with the absolute minimum amount of effort necessary.
 
 So spaced repetition (or SR) is a highly effective method of remembering information, and [Anki](https://apps.ankiweb.net/) is the most popular spaced repetition software (or SRS). At its heart, Anki is just a program for making and displaying flashcards, but the flashcards are shown to you on a schedule -- ideally, close to the same day as you would have forgotten the card, and no sooner. This means you can remember more information in less time than with traditional study methods.
 
@@ -30,7 +30,7 @@ Stupid! Cards should be as simple as you can make them, containing only some cor
 There are two main reasons you don't want to complicate your cards:
 
 1. Anki is meant to be efficient. That is the *entire* reason you are using an SRS system as opposed to traditional study methods. If your studying isn't efficient, you are wasting your time and missing the point. You should only spend a few seconds per card before moving on to the next card.
-2. Getting one small part of a complicated note wrong means you have to mark the whole thing wrong. There's no alternative. When you get the card wrong, however slightly, you can't just mark it "Okay" -- you will be learning and reinforcing wrong information. That would be a misuse of Spaced Repetition, and you'd only be cheating yourself. To avoid this situation entirely, simply avoid cards with a lot of info. Short phrases and idioms are okay.
+1. Getting one small part of a complicated note wrong means you have to mark the whole thing wrong. There's no alternative. When you get the card wrong, however slightly, you can't just mark it "Okay" -- you will be learning and reinforcing wrong information. That would be a misuse of Spaced Repetition, and you'd only be cheating yourself. To avoid this situation entirely, simply avoid cards with a lot of info. Short phrases and idioms are okay.
 
 Have a sentence you'd like to learn? Break it up into [clozes](https://apps.ankiweb.net/docs/manual.html#cloze-deletion). Again, the problem with things like full sentences is the risk of getting a single word out of the whole thing wrong. Clozes work by *occluding*,[^new] or hiding, only the parts of a sentence that you need to memorize -- and each occlusion will have its own separate card. Now you have an atomic bit of information to answer each time! You also get to see the information in its proper context as you study. It's simple and it's effective.
 
@@ -45,8 +45,8 @@ A lot of shared decks in particular get this simplicity thing wrong, which is pa
 Shared decks are pre-made sets of cards that are available to download on [Anki's website](https://ankiweb.net/shared/decks/). They are evil. Pure evil.
 
 1. You will be learning things out of context. It is crucial to study information only after encountering it out in the wild. For example, I tried learning that the Polish word for *magpie* is *sroka*. Trouble is, I had no idea what a magpie looked like, and could never memorize the word *sroka*. After seeing one in the wild, I was able to memorize the word instantly.[^course]
-2. The card quality is generally quite low. A lot of shared decks I've seen pack a lot of information into each card, in the mistaken notion that this *improves* the quality of the cards -- it does not. These are *low-quality cards*. We've already talked about how cards should be simple, so you should know that you do *not* want this extraneous information when studying.
-3. Another way in which shared decks tend to be low quality is that many cards are simply, well, wrong. I've noticed this in a lot of separate shared decks. Now, if you make your own cards you're also liable to end up with some inaccurate cards, which is dangerous because you will very efficiently learn... the wrong thing. Still, if you make your own cards based on something you've already learned (i.e. with the proper context), you'll be easier able to spot if what you're learning isn't right. If you learn from a shared deck without this context, you'd have no idea. As a result of blindly learning from shared decks I still have some wrong bits of information stuck in my brain, like candy wrappers under the sofa. Learn from my mistakes.
+1. The card quality is generally quite low. A lot of shared decks I've seen pack a lot of information into each card, in the mistaken notion that this *improves* the quality of the cards -- it does not. These are *low-quality cards*. We've already talked about how cards should be simple, so you should know that you do *not* want this extraneous information when studying.
+1. Another way in which shared decks tend to be low quality is that many cards are simply, well, wrong. I've noticed this in a lot of separate shared decks. Now, if you make your own cards you're also liable to end up with some inaccurate cards, which is dangerous because you will very efficiently learn... the wrong thing. Still, if you make your own cards based on something you've already learned (i.e. with the proper context), you'll be easier able to spot if what you're learning isn't right. If you learn from a shared deck without this context, you'd have no idea. As a result of blindly learning from shared decks I still have some wrong bits of information stuck in my brain, like candy wrappers under the sofa. Learn from my mistakes.
 
 [^course]: Now, if you are, say, taking a course and someone provided a shared deck as supplemental content, there's generally no problem in saving some time and using that deck, provided it is high quality. You will have the context necessary from the course itself.
 
@@ -73,8 +73,8 @@ One thing you *do* miss, though, is that making cards separately results in them
 I already mentioned clozes when talking about why you should [keep your cards simple](./#keep-it-simple). One great use for them is definitely to minimize the amount of information per note. Here are a few more reasons you should use them:
 
 1. Clozes give context. It's more effective to learn a word in the context of how it'd be used in real life. `Pasame [...](the apple)` is a better way of learning *la manzana* than `the apple -> la manzana`.
-2. Clozes can help distinguish between subtle differences, e.g. for learning when to use different synonyms.
-3. Clozes are also great for learning words that don't make sense on their own, such as prepositions. These pretty much require a context to learn them in.
+1. Clozes can help distinguish between subtle differences, e.g. for learning when to use different synonyms.
+1. Clozes are also great for learning words that don't make sense on their own, such as prepositions. These pretty much require a context to learn them in.
 
 ## Use The Speed Focus Mode Add-On
 

@@ -2,7 +2,6 @@
 title: "Useful Emacs Keybindings"
 date: 2018-07-22
 categories: emacs productivity
-description: 
 toc: true
 ---
 
@@ -95,7 +94,7 @@ You can get to this menu by going to **System Preferences > Keyboard > Modifier 
 
 Emacs has some default bindings using Super which are consistent with common actions. On OSX, for example, `Command + C` copies text in practically every application, and Emacs is no different.
 
-The default bindings which I left alone are `s-a`, `s-s`, `s-x`, `s-c`, and `s-v`, which correspond to `mark-whole-buffer`, `save-buffer`, `kill-region`, `kill-ring-save`, and `yank`. 
+The default bindings which I left alone are `s-a`, `s-s`, `s-x`, `s-c`, and `s-v`, which correspond to `mark-whole-buffer`, `save-buffer`, `kill-region`, `kill-ring-save`, and `yank`.
 
 All of these commands already have canoninal keybindings in Emacs, like `C-w` for `kill-region`, but the super-bindings are still convenient to have. For example, copy/pasting some text from a different application into Emacs requires no mental context switch and can be done with one hand. Besides, since pressing `Command + C` followed by `Command + V` is so universal and ingrained into muscle memory, making an exception for Emacs would be weird. So, I avoid overwriting these keybindings in the following sections.
 
@@ -198,7 +197,7 @@ Here are a few more keybindings I have for you.
 (global-set-key (kbd "s-h") 'helm-mark-ring)
 {% endhighlight %}
 
-`magit-status` I call all the time -- it opens the main [Magit](https://github.com/magit/magit) buffer for the current project. 
+`magit-status` I call all the time -- it opens the main [Magit](https://github.com/magit/magit) buffer for the current project.
 
 `helm-show-kill-ring` is very handy for finding something you killed a while ago or for searching for some specific killed text. I even sometimes open the dialog just to see what I last killed, without having to yank and undo. `helm-mark-ring` shows you last-visited locations in the buffers, with the option of being able to jump to them.
 
@@ -218,7 +217,7 @@ It's kind of like a refresh, so I bound it to f5.
 
 I have `cycle-spacing` as an alternative to `just-one-space`. From the help page:
 
-> The first call in a sequence acts like ‘just-one-space’. It deletes all spaces and tabs around point, leaving one space. 
+> The first call in a sequence acts like ‘just-one-space’. It deletes all spaces and tabs around point, leaving one space.
 > The second call in a sequence deletes all spaces.
 > The third call in a sequence restores the original whitespace (and point).
 
@@ -266,13 +265,13 @@ If you use a code formatter like gofmt or rustfmt, you can also bind this key to
 
 ## Don't You Use evil-mode?
 
-No. Sure, modal editing Vim-style is popular and all, and it's helped many people with RSI issues, but that's just because no one knows how to set up modifier keys properly for Emacs. For example, I'm pretty sure that using [Caps Lock as Control](#fn:caps) has a high chance of *causing* RSI. 
+No. Sure, modal editing Vim-style is popular and all, and it's helped many people with RSI issues, but that's just because no one knows how to set up modifier keys properly for Emacs. For example, I'm pretty sure that using [Caps Lock as Control](#fn:caps) has a high chance of *causing* RSI.
 
 If you can find a suitable keyboard/OS and configure the Alt and Control keys to be next to the spacebar, Emacs bindings are even better than Vi modal editing, in my opinion. Pressing/lifting a thumb is easier than changing editing modes. To be fair, I am a world-class editor in the Emacs style and not in the Vim style.
 
 ## Conclusion
 
-Well, now you know pretty much all of my secrets. Although, I guess I never had secrets, since my `init.el` file has been [on GitHub](https://github.com/m-cat/init.el) for over a year now. Hmm... 
+Well, now you know pretty much all of my secrets. Although, I guess I never had secrets, since my `init.el` file has been [on GitHub](https://github.com/m-cat/init.el) for over a year now. Hmm...
 
 What are *your* favorite keybindings? Leave them in the comments below!
 

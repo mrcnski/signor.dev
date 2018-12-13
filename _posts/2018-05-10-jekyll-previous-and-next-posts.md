@@ -50,11 +50,11 @@ And the **CSS:**
 
 {% highlight css linedivs %}
 .post-nav {
-    /* Insert your custom styling here. Example: 
+    /* Insert your custom styling here. Example:
       
        font-size: 14px;
        margin-bottom: 1em;
-    */    
+    */
     display: flex;
 }
 .post-nav div {
@@ -70,7 +70,7 @@ Simple, no? But how does this work?
 
 ## Explanation
 
-Let me start by demonstrating why David Elbe's solution is subpar. I don't mean to pick on him, but his page was one of the first hits on Google and it's important that people know why they shouldn't use his method. Feel free to visit his article (linking it again [here](http://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html)) and try out the code. 
+Let me start by demonstrating why David Elbe's solution is subpar. I don't mean to pick on him, but his page was one of the first hits on Google and it's important that people know why they shouldn't use his method. Feel free to visit his article (linking it again [here](http://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html)) and try out the code.
 
 You may notice the following:
 
