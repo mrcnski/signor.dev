@@ -20,7 +20,7 @@
 
   <span class="post-meta">
     •
-    {% include comment-count.html %}
+    <a href="{{ page.url | relative_url }}#comments">{% include comment-count.html %}</a>
   </span>
 
   <br>
