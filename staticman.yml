@@ -26,7 +26,7 @@ generatedFields:
       format: "iso8601"
 
 # Should comments be PRs first?
-moderation: false
+moderation: true
 # Text to be used as body in PR
 pullRequestBody: "" 
 

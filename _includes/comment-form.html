@@ -5,9 +5,9 @@
 
 <div class="comment-form">
   <form method="POST" action="https://api.staticman.net/v2/entry/{{ site.repository }}/{{ site.staticman.branch }}">
-    <input name="options[redirect]" type="hidden" value="{{ site.url }}/{{ page.slug }}">
-    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <input name="options[redirect]" type="hidden" value="{{ site.url }}/thanks?back={{ page.slug }}">
     <!-- e.g. "2016-01-02-this-is-a-post" -->
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
 
     <textarea class="comment-form-message" name="fields[message]" rows="3"></textarea>
     
