@@ -10,7 +10,7 @@ toc: true
 
 What's up? Welcome to a series of articles I'm writing about [Jekyll](https://jekyllrb.com), the static blog generator. I had trouble customizing this blog due to the lack of good Jekyll resources online, so I had no choice but to go into super-genius mode and figure it all out myself. Now I want to share my methods with you.
 
-This post is about the very first thing I implemented for this blog: links to the previous and next posts. I had initially used [David Elbe's method](http://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html), which for some people might be *good enough*, but has some glaring problems, and I wasn't satisfied with it. Since this and other solutions I found on Google were suboptimal, I came up with my own method and I wanted to share it.
+This post is about the very first thing I implemented for this blog: links to the previous and next posts. I had initially used [David Elbe's method](https://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html), which for some people might be *good enough*, but has some glaring problems, and I wasn't satisfied with it. Since this and other solutions I found on Google were suboptimal, I came up with my own method and I wanted to share it.
 
 ## The Goal
 
@@ -70,7 +70,7 @@ Simple, no? But how does this work?
 
 ## Explanation
 
-Let me start by demonstrating why David Elbe's solution is subpar. I don't mean to pick on him, but his page was one of the first hits on Google and it's important that people know why they shouldn't use his method. Feel free to visit his article (linking it again [here](http://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html)) and try out the code.
+Let me start by demonstrating why David Elbe's solution is subpar. I don't mean to pick on him, but his page was one of the first hits on Google and it's important that people know why they shouldn't use his method. Feel free to visit his article (linking it again [here](https://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html)) and try out the code.
 
 You may notice the following:
 
