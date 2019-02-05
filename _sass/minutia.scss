@@ -9,9 +9,9 @@ $code-font-size:   12px !default;
 $small-font-size:  $base-font-size * 0.925 !default;
 $smaller-font-size: $base-font-size * 0.85 !default;
 $large-font-size:  $base-font-size * 1.0625 !default;
-$base-font-weight: 300  !default;
-$bold-font-weight: 500  !default;
-$base-line-height: 1.5  !default;
+$base-font-weight: 300 !default;
+$bold-font-weight: 500 !default;
+$base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
@@ -30,7 +30,7 @@ $dark-blue:        darken($blue, 20%) !default;
 $red:              #d65946 !default;
 $lightest-red:     #fffafa !default;
 $green:            #6aaf50 !default;
-$light-purple:     #eeeeff !default;
+$light-purple:     #eef !default;
 $lightest-purple:  #f1f1ff !default;
 
 // Width of the content area
@@ -62,8 +62,8 @@ $on-laptop:        880px !default;
 
 // Import partials.
 @import
-"minutia/fonts",
-"minutia/base",
-"minutia/layout",
-"minutia/syntax-highlighting"
+    "minutia/fonts",
+    "minutia/base",
+    "minutia/layout",
+    "minutia/syntax-highlighting"
 ;

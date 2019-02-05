@@ -20,17 +20,16 @@ pre, code {
         color: $nimbus-bg;
         background: $nimbus-fg;
     }
+
     ::-moz-selection {
         color: $nimbus-bg;
         background: $nimbus-fg;
     }
+
     ::-webkit-selection {
         color: $nimbus-bg;
         background: $nimbus-fg;
     }
-}
-blockquote code {
-    color: $dark-gray;
 }
 
 /* Inline code, no highlight */
@@ -39,6 +38,10 @@ code {
     border-radius: 3px;
 
     white-space: nowrap;
+}
+
+blockquote code {
+    color: $dark-gray;
 }
 
 /* Inline code, highlight */
@@ -50,7 +53,7 @@ code.highlight {
 }
 
 /* Block code, no highlight */
-pre  {
+pre {
     border-radius: 5px;
     margin: $spacing-unit * 0.75 $spacing-unit / 2;
     padding: 8px 12px;
@@ -81,14 +84,14 @@ figure.highlight, div.highlight {
             line-height: 1.5;
 
             /* Display language name */
-            &[data-lang]:before {
+            &[data-lang]::before {
                 content: attr(data-lang);
                 position: absolute;
                 right: 34px; // 15 + 19
 
                 font-size: 11px;
                 top: -10px;
-                padding-left:  $spacing-unit / 4;
+                padding-left: $spacing-unit / 4;
                 padding-right: $spacing-unit / 4;
 
                 border: 1px solid $gray;
@@ -112,7 +115,7 @@ figure.highlight, div.highlight {
                 counter-increment: code;
 
                 /* Line numbers */
-                &:before {
+                &::before {
                     color: $nimbus-blue-gray;
                     content: counter(code);
 
@@ -122,7 +125,7 @@ figure.highlight, div.highlight {
                     /* Add a nice border */
                     display: inline-block;
                     padding-right: $spacing-unit / 4;
-                    margin-right: $spacing-unit * 0.40;
+                    margin-right: $spacing-unit * 0.4;
                     border-right: 1px solid $nimbus-dark-gray;
 
                     /* For older browsers and Safari */
@@ -139,7 +142,7 @@ figure.highlight, div.highlight {
 }
 
 /* Hide language */
-.hide-lang + figure code:before {
+.hide-lang + figure code::before {
     visibility: hidden;
 }
 
@@ -171,16 +174,18 @@ figure.highlight, div.highlight {
 
 #borders-example + figure {
     div {
-        &:before {
+        &::before {
             padding-left: 0.625em;
             border-left: 1px solid $nimbus-dark-gray;
         }
+
         &:first-of-type::before {
             padding-top: 0.25em;
             border-top: 1px solid $nimbus-dark-gray;
             border-top-left-radius: 4px;
             border-top-right-radius: 4px;
         }
+
         &:last-of-type::before {
             padding-bottom: 0.25em;
             border-bottom: 1px solid $nimbus-dark-gray;

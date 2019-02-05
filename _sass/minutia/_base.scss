@@ -36,6 +36,11 @@ b, strong {
 
 /* Inputs */
 
+textarea {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
 input, textarea, button {
     font: $base-font-weight #{$small-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
@@ -51,17 +56,15 @@ input, textarea, button {
     &:hover {
         box-shadow: 2px 2px 2px 0px $light-gray;
     }
+
     &:focus {
         box-shadow: 2px 2px 2px 0px $light-gray;
         border: 1px solid $text-color;
     }
+
     &:not(:focus):invalid {
         box-shadow: 0px 0px 1px 1px $red;
     }
-}
-textarea {
-    padding-top: 2px;
-    padding-bottom: 2px;
 }
 
 *::placeholder {
@@ -103,8 +106,14 @@ figcaption {
 
 /* Lists */
 
-ul, ol {
+ul,
+ol {
     margin-left: $spacing-unit;
+}
+
+ul {
+    list-style: none;
+    // padding: 0px;
 }
 
 li {
@@ -114,20 +123,35 @@ li {
     }
 }
 
-ul {
-    list-style: none;
-    // padding: 0px;
-}
 ul li {
     /* handle multiline */
     position: relative;
     overflow: visible;
-
 }
-ul li:before {
+
+ul li::before {
     position: absolute;
     content: '\203A';
     left: -$spacing-unit / 2;
+}
+
+/* Links */
+
+a {
+    color: $blue;
+    text-decoration: none;
+
+    &:visited {
+        color: $dark-blue;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+        background-color: $light-purple;
+    }
 }
 
 /* Headings */
@@ -178,25 +202,6 @@ h3 {
     }
 }
 
-/* Links */
-
-a {
-    color: $blue;
-    text-decoration: none;
-
-    &:visited {
-        color: $dark-blue;
-    }
-
-    &:hover {
-        text-decoration: underline;
-    }
-
-    &:active {
-        background-color: $light-purple;
-    }
-}
-
 /* Blockquotes */
 blockquote {
     border-left: 4px solid $light-gray;
@@ -217,16 +222,16 @@ blockquote {
 .wrapper-content,
 .wrapper-footer {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
     padding-right: $spacing-unit;
-    padding-left:  $spacing-unit;
+    padding-left: $spacing-unit;
     margin: 0 auto;
 
     @include media-query($on-palm) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
-        padding-left:  $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
     }
 }
 
