@@ -58,7 +58,7 @@ Wait, `split-window-right-focus`? Yeah, I forgot to tell you: I made my own func
   (split-window-below)
   (balance-windows)
   (other-window 1))
-  
+
 (defun split-window-right-focus ()
   "Split window vertically and move focus to other window."
   (interactive)
@@ -131,7 +131,7 @@ I have two commands here: `helm-projectile-ag-inexact`, which searches the curre
   (setq helm-ag-insert-at-point nil)
   (helm-projectile-ag)
   )
-  
+
 (defun helm-projectile-ag-exact ()
   "Run helm-projectile-ag case-sensitive and with word boundaries."
   (interactive)
@@ -140,7 +140,7 @@ I have two commands here: `helm-projectile-ag-inexact`, which searches the curre
   (setq helm-ag-insert-at-point 'symbol)
   (helm-projectile-ag)
   )
-  
+
 (global-set-key (kbd "s-i") 'helm-projectile-ag-inexact)
 (global-set-key (kbd "s-u") 'helm-projectile-ag-exact)
 (global-set-key (kbd "s-o") 'helm-ag-pop-stack)
@@ -265,9 +265,9 @@ If you use a code formatter like gofmt or rustfmt, you can also bind this key to
 
 ## Don't You Use evil-mode?
 
-No. Sure, modal editing Vim-style is popular and all, and it's helped many people with RSI issues, but that's just because no one knows how to set up modifier keys properly for Emacs. For example, I'm pretty sure that using [Caps Lock as Control](#fn:caps) has a high chance of *causing* RSI.
+No. Modal editing Vim-style may be popular, and it's supposedly helped people with RSI issues, but that's just because no one knows how to properly set up modifier keys for Emacs. For example, I'm pretty sure that using [Caps Lock as Control](#fn:caps) has a high chance of *causing* RSI.
 
-If you can find a suitable keyboard/OS and configure the Alt and Control keys to be next to the spacebar, Emacs bindings are even better than Vi modal editing, in my opinion. Pressing/lifting a thumb is easier than changing editing modes. To be fair, I am a world-class editor in the Emacs style and not in the Vim style.
+If you can find a suitable keyboard/OS and configure the Alt and Control keys to be next to the spacebar, Emacs bindings are even better than Vi modal editing, in my opinion. Pressing/lifting a thumb is easier than changing editing modes. To be fair, I am a world-class user of the Emacs style and not of the Vim style.
 
 ## Conclusion
 

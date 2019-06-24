@@ -18,10 +18,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bytedude.com" # the base hostname & protocol for your site, e.g. https://example.com
 short_url: "bytedude.com"
-twitter_username: 
 github_username: "m-cat"
 category_dir: category
-copyright_year: 2018
+copyright_year: 2019
 
 repository: "m-cat/bytedude.com"
 staticman:
@@ -70,20 +69,20 @@ defaults:
       layout: "post"
 
 category_descriptions:
-  - {name: "anki", description: ""}
-  - {name: "blogging", description: ""}
-  - {name: "c", description: ""}
-  - {name: "css", description: ""}
-  - {name: "emacs", description: ""}
-  - {name: "face-offs", description: ""}
-  - {name: "health", description: ""}
-  - {name: "jekyll", description: ""}
-  - {name: "language-learning", description: ""}
-  - {name: "org-mode", description: ""}
-  - {name: "presentations", description: ""}
-  - {name: "productivity", description: ""}
-  - {name: "rust", description: ""}
-  - {name: "self-improvement", description: ""}
-  - {name: "site", description: ""}
-  - {name: "web-dev", description: ""}
-  - {name: "writing", description: ""}
+  - { name: "anki", description: "" }
+  - { name: "blogging", description: "" }
+  - { name: "c", description: "" }
+  - { name: "css", description: "" }
+  - { name: "emacs", description: "" }
+  - { name: "face-offs", description: "" }
+  - { name: "health", description: "" }
+  - { name: "jekyll", description: "" }
+  - { name: "language-learning", description: "" }
+  - { name: "org-mode", description: "" }
+  - { name: "presentations", description: "" }
+  - { name: "productivity", description: "" }
+  - { name: "rust", description: "" }
+  - { name: "self-improvement", description: "" }
+  - { name: "site", description: "" }
+  - { name: "web-dev", description: "" }
+  - { name: "writing", description: "" }
