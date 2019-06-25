@@ -70,6 +70,7 @@ input, textarea, button {
 *::placeholder {
     opacity: 1;
     color: $gray;
+    font-size: $smaller-font-size;
 }
 
 /* Set `margin-bottom` to maintain vertical rhythm */
