@@ -365,7 +365,6 @@ $line-height: 1.3;
 
         input {
             width: 100%;
-            font-size: $small-font-size;
 
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -382,7 +381,7 @@ $line-height: 1.3;
         }
 
         button {
-            font-size: $small-font-size;
+            background-color: $lightest-gray;
         }
     }
 }
