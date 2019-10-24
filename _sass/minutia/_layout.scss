@@ -117,13 +117,29 @@ img + em {
 /* Notes */
 
 .note {
-    border: 1px solid $red;
+    border: 1px solid $green;
     padding: $spacing-unit / 4 $spacing-unit / 2;
     margin: $spacing-unit * 0.75 $spacing-unit / 2;
     overflow: auto;
 
     &::before {
         content: "Note:";
+        display: block;
+        margin-bottom: $spacing-unit / 8;
+        font-weight: $bold-font-weight;
+    }
+}
+
+/* Update */
+
+.update {
+    border: 1px solid $blue;
+    padding: $spacing-unit / 4 $spacing-unit / 2;
+    margin: $spacing-unit * 0.75 $spacing-unit / 2;
+    overflow: auto;
+
+    &::before {
+        content: "Update:";
         display: block;
         margin-bottom: $spacing-unit / 8;
         font-weight: $bold-font-weight;
