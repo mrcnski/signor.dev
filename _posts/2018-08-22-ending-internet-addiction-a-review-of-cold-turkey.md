@@ -15,11 +15,14 @@ Curbing internet usage should be a high priority for us digital humanoids. The c
 
 ## How I Use Cold Turkey
 
-Cold Turkey lets you set **block lists** to specify apps and websites which are problematic for you. Then you initiate a **timer** for some amount of time, which can be done from either the main window or from the menu bar (in OSX). Once a block is in effect, any apps and websites on the block list will be utterly inaccessible for the duration of the block.
+Cold Turkey lets you set **block lists** to specify apps and websites which are problematic for you. Then you initiate a **timer** for some amount of time, which can be done from either the main window or from the menu bar (on OSX). Once a block is in effect, any apps and websites on the block list will be utterly inaccessible for the duration of the block.
 
 Alternatively, with the paid version you can set up a **schedule**, which is more foolproof as it kicks in automatically without your involvement. This is the only way I initiate Cold Turkey sessions. Unfortunately, setting up a schedule can take a while, and there isn't any way to copy days. I suspect this may be intentional, as it's hard to modify your schedule right before a block takes effect and "cheat" that way.
 
 My advice is to populate your block list with all your big time-wasting distractions, then to set a schedule that enacts this block every day for most of the day. I only allow myself an hour of pointless Redditing a day, but I found that I use it less than that now that my compulsion to visit pointless sites is gone.
+
+{% include image.html name="cold-turkey-schedule.png" alt="My Cold Turkey schedule." caption="My Cold Turkey schedule. Distractions are blocked during work hours; work is blocked after work hours." width="741" noborder=1
+%}
 
 What if you have some legitimate need to visit a time-wasting site? For example, as a Rust programmer, I tend to end up on [the Rust subreddit](https://reddit.com/r/rust), but Reddit is on my block list! What to do? Well, in these scenarios you can specify an **exception** in the block list.
 {: .note}

@@ -51,7 +51,7 @@ And the **CSS:**
 {% highlight css linedivs %}
 .post-nav {
     /* Insert your custom styling here. Example:
-      
+
        font-size: 14px;
        margin-bottom: 1em;
     */
