@@ -1,18 +1,11 @@
 ---
-layout: default
+layout: page
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="page-title">{{ page.title | escape }}</h1>
-  </header>
-  
-  {% comment %}
-  {{ site.category_descriptions[page.category] }}
-  {% endcomment %}
+{% comment %}
+{{ site.category_descriptions[page.category] }}
+{% endcomment %}
 
-  {% for page in site.categories[page.category] %}
-  {% include post-info.html %}
-  {% endfor %}
-  
-</article>
+{% for page in site.categories[page.category] %}
+{% include post-info.html %}
+{% endfor %}

@@ -4,16 +4,18 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <div class="header-left">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        <span class="B">B</span><span class="yte">yte</span><span class="dude">dude</span>
+      </a>
     </div>
     
     {% if page_paths %}
     <div class="header-right">
-        <a class="page-link" href="{{ '/' | relative_url }}">all&nbsp;posts</a>
-        <a class="page-link" href="{{ '/categories/' | relative_url }}">categories</a>
-        <a class="page-link" href="{{ '/about/' | relative_url }}">about</a>
-        {% comment %}
-        {% endcomment %}
+      <a class="page-link" href="{{ '/' | relative_url }}">All&nbsp;Posts</a>
+      •
+      <a class="page-link" href="{{ '/categories/' | relative_url }}">Categories</a>
+      •
+      <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
     </div>
     {% endif %}
   </div>

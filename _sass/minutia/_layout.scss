@@ -1,8 +1,32 @@
+/* Logo */
+
+.site-title {
+    @include relative-font-size(13/8);
+    font-family: $logo-font-family;
+
+    color: $logo-text !important;
+}
+
+.B {
+    padding: 0px 7px 1px 7px;
+    // border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 7px;
+
+    color: $background-color;
+    background-color: $logo-background;
+
+    font-weight: $strong-font-weight;
+}
+
+.dude {
+}
+
 /* Site header */
 
 .site-header {
     border-bottom: 1px solid $light-gray;
-    // background-color: $lightest-gray;
+    background-color: $header-background;
 }
 
 .wrapper-header {
@@ -18,26 +42,16 @@
     flex: 1 1 auto;
 
     padding-right: $spacing-unit * 2;
-
-    .site-title {
-        @include relative-font-size(1.5);
-
-        &,
-        &:visited {
-            color: $darkerer-blue;
-        }
-    }
 }
 
 .header-right {
     flex: 0 1 auto;
 
     .page-link {
-        font-size: $large-font-size;
+        font-size: $larger-font-size;
+        padding: 0px 4px 1px 4px;
 
-        &:not(:last-child) {
-            margin-right: $spacing-unit * 0.75;
-        }
+        color: $link;
     }
 }
 
@@ -45,13 +59,13 @@
 
 .site-footer {
     border-top: 1px solid $light-gray;
-    // background-color: $lightest-gray;
-    padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit;
+    background-color: $header-background;
+    padding-top: $spacing-unit / 2;
+    padding-bottom: $spacing-unit / 2;
 }
 
 .footer-heading {
-    @include relative-font-size(1.125);
+    @include relative-font-size(9/8);
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -59,11 +73,17 @@
     color: $gray;
     text-align: center;
 
-    margin-bottom: $spacing-unit / 4;
+    margin-bottom: $spacing-unit / 8;
 
     > a {
         white-space: nowrap;
+
+        color: $link;
     }
+}
+
+.footer-link {
+    padding: 0px 4px 1px 4px;
 }
 
 /* Images */
@@ -202,13 +222,19 @@ img + em {
     }
 }
 
-/* Page */
+/* Default */
 
-.page-content {
+.default-content {
     padding-top: $spacing-unit;
     padding-bottom: $spacing-unit / 2;
 
     flex: 1;
+}
+
+/* Page */
+
+.page-content {
+    font-size: $large-font-size;
 }
 
 .page-title {
@@ -259,7 +285,7 @@ img + em {
 }
 
 .post-link {
-    font-size: $large-font-size;
+    font-size: $larger-font-size;
 }
 
 .post-description {

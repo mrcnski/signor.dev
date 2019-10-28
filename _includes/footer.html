@@ -3,13 +3,21 @@
   <div class="wrapper-footer">
     <div class="footer-col-wrapper">
 
-      <a href="{{ '/' | relative_url }}">home</a>
+      <span class="footer-link">
+        <a href="{{ '/' | relative_url }}">home</a>
+      </span>
       •
-      {% include icon-github.html username=site.github_username display='github' %}
+      <span class="footer-link">
+        {% include icon-github.html username=site.github_username display='github' %}
+      </span>
       •
-      {% include icon-email.html email=site.email display='contact' %}
+      <span class="footer-link">
+        {% include icon-email.html email=site.email display='contact' %}
+      </span>
       <a href="/secret">•</a>
-      <a href="{{ '/feed.xml' | relative_url }}">rss</a>
+      <span class="footer-link">
+        <a href="{{ '/feed.xml' | relative_url }}">rss</a>
+      </span>
 
     </div>
 

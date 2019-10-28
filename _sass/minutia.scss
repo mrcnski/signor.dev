@@ -3,12 +3,14 @@
 // Define defaults for each variable.
 
 $base-font-family: 'IBM Plex Sans', Helvetica, sans-serif !default;
+$logo-font-family: 'Ubuntu', Helvetica, sans-serif !default;
 $code-font-family: 'Hack', monospace !default;
 $base-font-size:   16px !default;
 $code-font-size:   12px !default;
-$small-font-size:  $base-font-size * 0.925 !default;
-$smaller-font-size: $base-font-size * 0.85 !default;
-$large-font-size:  $base-font-size * 1.0625 !default;
+$small-font-size:  $base-font-size * 15/16 !default;
+$smaller-font-size: $base-font-size * 7/8 !default;
+$large-font-size:  $base-font-size * 9/8 !default;
+$larger-font-size:  $base-font-size * 19/16 !default;
 $base-font-weight: 300 !default;
 $strong-font-weight: 400 !default;
 $bold-font-weight: 500 !default;
@@ -16,16 +18,19 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
+/* Define color palette */
+
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 
 $gray:             #828282 !default;
-$mild-gray:        lighten($gray, 25%) !default;
+$mild-gray:        lighten($gray, 20%) !default;
 $light-gray:       lighten($gray, 40%) !default;
 $lightest-gray:    #f9f9f9 !default;
 $dark-gray:        darken($gray, 15%) !default;
 
 $blue:             #2a7ae2 !default;
+$light-blue:       lighten($blue, 10%) !default;
 $dark-blue:        darken($blue, 10%) !default;
 $darker-blue:      darken($blue, 20%) !default;
 $darkerer-blue:    darken($blue, 30%) !default;
@@ -35,8 +40,17 @@ $green:            #6aaf50 !default;
 $light-purple:     #eef !default;
 $lightest-purple:  #f1f1ff !default;
 
-$link:             $blue !default;
-$link-visited:     $darker-blue !default;
+/* Define some common color variables */
+
+$link:             $dark-blue !default;
+$link-visited:     $light-blue !default;
+
+$logo-text:        $darkerer-blue;
+$logo-background:  $blue;
+
+$header-background: $lightest-gray !default;
+
+/* Define some widths */
 
 // Width of the content area
 $content-width:    880px !default;
