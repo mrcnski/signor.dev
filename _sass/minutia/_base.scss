@@ -54,11 +54,11 @@ input, textarea, button {
     outline: none;
 
     &:hover {
-        box-shadow: 2px 2px 2px 0px $light-gray;
+        box-shadow: 2px 2px 2px 0px $lighter-gray;
     }
 
     &:focus {
-        box-shadow: 2px 2px 2px 0px $light-gray;
+        box-shadow: 2px 2px 2px 0px $lighter-gray;
         border: 1px solid $text-color;
     }
 
@@ -85,7 +85,7 @@ ul, ol, dl, figure,
 /* Horizontal rule */
 
 hr {
-    color: $light-gray;
+    color: $lighter-gray;
     border-style: solid;
 }
 
@@ -173,12 +173,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: $logo-font-family;
+    // font-family: $logo-font-family;
 
     @include relative-font-size(2);
     line-height: 1;
     padding-bottom: $spacing-unit / 4;
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $mild-gray;
 
     &,
     a,
@@ -216,7 +216,7 @@ h3 {
 
 /* Blockquotes */
 blockquote {
-    border-left: 4px solid $light-gray;
+    border-left: 4px solid $lighter-gray;
     color: $gray;
     // font-style: italic;
     margin-left: $spacing-unit / 2;

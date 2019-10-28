@@ -25,7 +25,8 @@ $background-color: #fdfdfd !default;
 
 $gray:             #828282 !default;
 $mild-gray:        lighten($gray, 20%) !default;
-$light-gray:       lighten($gray, 40%) !default;
+$light-gray:       lighten($gray, 30%) !default;
+$lighter-gray:     lighten($gray, 40%) !default;
 $lightest-gray:    #f9f9f9 !default;
 $dark-gray:        darken($gray, 15%) !default;
 
@@ -45,10 +46,11 @@ $lightest-purple:  #f1f1ff !default;
 $link:             $dark-blue !default;
 $link-visited:     $light-blue !default;
 
-$logo-text:        $darkerer-blue;
-$logo-background:  $blue;
+$logo-text:        $darkerer-blue !default;
+$logo-background:  $blue !default;
 
 $header-background: $lightest-gray !default;
+$header-border:    $light-gray !default;
 
 /* Define some widths */
 

@@ -3,40 +3,44 @@ layout: page
 title: Categories
 ---
 
-{{ content }}
+<div class="categories">
 
-{% assign first = 1 %}
+  {{ content }}
 
-{% for category in site.category_descriptions %}
-{% assign category_posts = 0 %}
+  {% assign first = 1 %}
 
-{% for site_category in site.categories %}
-{% assign site_category_name = site_category[0] %}
-{% assign site_category_posts = site_category[1] %}
+  {% for category in site.category_descriptions %}
+  {% assign category_posts = 0 %}
 
-{% if site_category_name == category["name"] %}
-{% assign category_posts = site_category_posts | size %}
-{% endif %}
+  {% for site_category in site.categories %}
+  {% assign site_category_name = site_category[0] %}
+  {% assign site_category_posts = site_category[1] %}
 
-{% endfor %}
+  {% if site_category_name == category["name"] %}
+  {% assign category_posts = site_category_posts | size %}
+  {% endif %}
 
-{% if category_posts > 0 %}
-{% assign category_name = category["name"] %}
+  {% endfor %}
 
-{% if first == 0 %}
--
-{% else %}
-{% assign first = 0 %}
-{% endif %}
+  {% if category_posts > 0 %}
+  {% assign category_name = category["name"] %}
 
-<a class="post-link" href="{{ site.category_dir | append: '/' | append: category_name | append: '/' | relative_url }}">{{ category_name | escape }}</a>&nbsp;<span class="post-meta">({{ category_posts }})</span>
+  {% if first == 0 %}
+  •
+  {% else %}
+  {% assign first = 0 %}
+  {% endif %}
 
-{% comment %}
-{% if category["description"] %}
-<br>
-<span class="post-description">{{ category["description"] }}</span>
-{% endif %}
-{% endcomment %}
+  <a class="category-link" href="{{ site.category_dir | append: '/' | append: category_name | append: '/' | relative_url }}">{{ category_name | escape }}</a>&nbsp;<span class="category-count">({{ category_posts }})</span>
 
-{% endif %}
-{% endfor %}
+  {% comment %}
+  {% if category["description"] %}
+  <br>
+  <span class="post-description">{{ category["description"] }}</span>
+  {% endif %}
+  {% endcomment %}
+
+  {% endif %}
+  {% endfor %}
+
+</div>

@@ -1,27 +1,21 @@
 <div class="post-info">
-  
+
   <a class="post-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
 
   {% if page.description %}
   <br>
   <span class="post-description">{{ page.description }}</span>
   {% endif %}
-  
-  <br>
-  {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" %}
-  <span class="post-meta">
+
+  <div class="post-meta">
+    {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" %}
     {{ page.date | date: date_format }}
     •
-  </span>
 
-  <span class="post-meta">
     {% include filed.html %}
-  </span>
 
-  <span class="post-meta">
     •
     <a href="{{ page.url | relative_url }}#comments">{% include comment-count.html %}</a>
-  </span>
+  </div>
 
-  <br>
 </div>
