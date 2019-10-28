@@ -20,6 +20,7 @@
 }
 
 .dude {
+    font-weight: $strong-font-weight;
 }
 
 /* Site header */
@@ -48,6 +49,8 @@
     flex: 0 1 auto;
 
     .page-link {
+        font-family: $logo-font-family;
+
         font-size: $larger-font-size;
         padding: 0px 4px 1px 4px;
 
@@ -83,6 +86,8 @@
 }
 
 .footer-link {
+    font-family: $logo-font-family;
+
     padding: 0px 4px 1px 4px;
 }
 
@@ -285,6 +290,8 @@ img + em {
 }
 
 .post-link {
+    font-family: $logo-font-family;
+
     font-size: $larger-font-size;
 }
 
