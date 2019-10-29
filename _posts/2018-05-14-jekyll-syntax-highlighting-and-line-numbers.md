@@ -3,6 +3,8 @@ title: "Jekyll: Syntax Highlighting And Line Numbers"
 date: 2018-05-14
 categories: blogging css jekyll
 toc: true
+post-no: 2
+related: [1]
 ---
 
 * Table of contents.
@@ -420,7 +422,7 @@ Last tip before I let you go: it's a nice thing to include the name of the progr
 code {
     /* ... */
     
-    &:before {
+    &[data-lang]::before {
         content: attr(data-lang);
         
         /* Do styling and positioning */
@@ -444,7 +446,7 @@ figure.highlight {
             /* ... */
             
             /* Display language name */
-            &[data-lang]:before {
+            &[data-lang]::before {
                 /* ... */
                 
                 position: absolute;

@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img class="face-pic" src="/assets/img/face-pic.jpg" alt="That's me." width="230">
+<img id="face-pic" src="/assets/img/face-pic.jpg" alt="That's me." width="230">
 
 {{ site.description }}
 

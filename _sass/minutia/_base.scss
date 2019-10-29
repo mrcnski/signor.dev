@@ -207,7 +207,7 @@ h2 {
 }
 
 h3 {
-    @include relative-font-size(1.25);
+    @include relative-font-size(1.375);
 
     @include media-query($on-palm) {
         @include relative-font-size(1.25);

@@ -96,8 +96,6 @@ MSG
 
       private
 
-      OPTIONS_REGEX = %r!(?:\w="[^"]*"|\w=\w|\w)+!
-
       def parse_options(input)
         options = {}
         return options if input.empty?

@@ -5,12 +5,15 @@
 $base-font-family: 'IBM Plex Sans', Helvetica, sans-serif !default;
 $logo-font-family: 'Ubuntu', Helvetica, sans-serif !default;
 $code-font-family: 'Hack', monospace !default;
+
 $base-font-size:   16px !default;
-$code-font-size:   12px !default;
-$small-font-size:  $base-font-size * 15/16 !default;
-$smaller-font-size: $base-font-size * 7/8 !default;
-$large-font-size:  $base-font-size * 9/8 !default;
-$larger-font-size:  $base-font-size * 19/16 !default;
+$code-font-size:   13px !default;
+$small-font-size:  15px !default;
+$smaller-font-size: 14px !default;
+$large-font-size:  18px !default;
+$larger-font-size: 19px !default;
+$content-font-size: 17px !default;
+
 $base-font-weight: 300 !default;
 $strong-font-weight: 400 !default;
 $bold-font-weight: 500 !default;
