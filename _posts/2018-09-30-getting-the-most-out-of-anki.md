@@ -3,6 +3,7 @@ title: "Getting The Most Out Of Anki"
 date: 2018-09-30
 categories: anki language-learning
 toc: true
+description: "Anki is the most popular spaced repetition software (or SRS). At its heart, Anki is just a program for making and displaying flashcards, but the flashcards are shown to you on a schedule -- ideally, close to the same day as you would have forgotten the card, and no sooner. This means you can remember more information in less time than with traditional study methods."
 ---
 
 * Table of contents.

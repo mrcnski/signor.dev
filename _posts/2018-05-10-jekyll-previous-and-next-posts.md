@@ -3,6 +3,7 @@ title: "Jekyll: Previous And Next Posts"
 date: 2018-05-10
 categories: blogging css face-offs jekyll
 toc: true
+description: "This post is about the very first thing I implemented for this blog: links to the previous and next posts. I had initially used David Elbe's method, which for some people might be *good enough*, but has some glaring problems, and I wasn't satisfied with it. Since this and other solutions I found on Google were suboptimal, I came up with my own method and I wanted to share it."
 post-no: 1
 related: [2]
 ---

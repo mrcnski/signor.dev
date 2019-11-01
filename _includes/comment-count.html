@@ -2,7 +2,5 @@
 {% if comments %}
 {% assign comments = comments | sort %}
 {% endif %}
-
 {% assign commentCount = comments | size %}
-
-{{ commentCount}} comment{% if commentCount != 1 %}s{% endif %}
+[&nbsp;{{ commentCount }} comment{% if commentCount != 1 %}s{% endif %}&nbsp;]

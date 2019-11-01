@@ -23,14 +23,11 @@ $spacing-unit:     30px !default;
 
 /* Define color palette */
 
-$text-color:       #111 !default;
-$background-color: #fdfdfd !default;
-
 $gray:             #828282 !default;
 $mild-gray:        lighten($gray, 20%) !default;
 $light-gray:       lighten($gray, 30%) !default;
 $lighter-gray:     lighten($gray, 40%) !default;
-$lightest-gray:    #f9f9f9 !default;
+$lightest-gray:    #f7f7f7 !default;
 $dark-gray:        darken($gray, 15%) !default;
 
 $blue:             #2a7ae2 !default;
@@ -44,6 +41,9 @@ $green:            #6aaf50 !default;
 $light-purple:     #eef !default;
 $lightest-purple:  #f1f1ff !default;
 
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+
 /* Define some common color variables */
 
 $link:             $dark-blue !default;
@@ -53,7 +53,7 @@ $logo-text:        $darkerer-blue !default;
 $logo-background:  $blue !default;
 
 $header-background: $lightest-gray !default;
-$header-border:    $light-gray !default;
+$header-border:    $gray !default;
 
 /* Define some widths */
 

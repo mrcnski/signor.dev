@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="archive">
+
+    <header class="page-header">
+      <h1 class="page-title">Archive</h1>
+    </header>
+
+    {{ content }}
+
+    {% assign year = "" %}
+    {% for page in site.posts %}
+
+    {% assign new_year = page.date | date: "%Y" %}
+    {% if new_year != year %}
+    {% assign year = new_year %}
+    <h2 class="home-year">{{ year }}</h2>
+    {% endif %}
+
+    {% include post-info.html %}
+    {% endfor %}
+
+  </div>
+</article>

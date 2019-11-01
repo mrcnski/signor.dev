@@ -3,6 +3,7 @@ title: "Useful Emacs Keybindings"
 date: 2018-07-22
 categories: emacs productivity
 toc: true
+description: "I don't mean to brag, but I'm one of the best Emacs users on the planet. What's my secret? Well, apart from having a genius-level IQ, there is no secret, really. However, it helps that I customized Emacs to make me as productive as possible, and part of doing that has been setting up custom keybindings. In fact, many of my keybindings are so brilliant that you may at first sight not understand them. I do implore you to persevere. This article may just change your life. At the least, you'll have a few more keybindings in your arsenal."
 ---
 
 * Table of contents.
@@ -271,7 +272,7 @@ If you can find a suitable keyboard/OS and configure the Alt and Control keys to
 
 ## Conclusion
 
-Well, now you know pretty much all of my secrets. Although, I guess I never had secrets, since my `init.el` file has been [on GitHub](https://github.com/m-cat/init.el) for over a year now. Hmm...
+Well, now you know pretty much all of my secrets. Although, I guess I never had secrets, since my `init.el` file has been [on GitHub](https://github.com/m-cat/init.el) for over a year now.
 
 What are *your* favorite keybindings? Leave them in the comments below!
 

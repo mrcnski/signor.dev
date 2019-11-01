@@ -1,17 +1,14 @@
 ---
 layout: default
 ---
+
 <article class="post">
   <div class="home">
     
-    <header class="post-header">
-      <h1 class="page-title">Posts</h1>
-    </header>
-
     {{ content }}
 
     {% for page in site.posts %}
-    {% include post-info.html %}
+    {% include post-info.html description=1 %}
     {% endfor %}
 
   </div>

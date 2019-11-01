@@ -5,11 +5,15 @@
     font-family: $logo-font-family;
 
     color: $logo-text !important;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .B {
     padding: 0px 7px 1px 7px;
-    // border: 1px solid black;
+    border: 1px solid $text-color;
     border-radius: 5px;
     margin-right: 5px;
 
@@ -50,16 +54,19 @@
 
     .page-link {
         font-family: $logo-font-family;
-        font-size: $larger-font-size;
+        font-size: $large-font-size;
 
-        color: $link;
+        color: $background-color;
+        background-color: $blue;
 
-        &:not(:first-child) {
-            padding-left: 4px;
-        }
+        padding: 0px 7px 1px 7px;
+        border: 1px solid $text-color;
+        border-radius: 5px;
+        margin-right: 5px;
 
-        &:not(:last-child) {
-            padding-right: 4px;
+        &:hover {
+            text-decoration: none;
+            background-color: $light-blue;
         }
     }
 }
@@ -259,11 +266,11 @@ img + em {
 .page-title {
 }
 
-/* Posts */
-
-.post-header {
+.page-header {
     margin-bottom: $spacing-unit / 2;
 }
+
+/* Posts */
 
 .post-title {
     @include relative-font-size(2);
@@ -276,15 +283,14 @@ img + em {
 }
 
 .post-meta {
-    color: $gray;
+    color: $dark-gray;
     font-size: $small-font-size;
 
     padding-left: $spacing-unit / 4;
+}
 
-    &::before {
-        content: "|";
-        padding-right: $spacing-unit / 16;
-    }
+.post-meta-home {
+    margin-bottom: $spacing-unit / 4;
 }
 
 .post-content {
@@ -309,11 +315,14 @@ img + em {
 }
 
 .post-link {
-    font-size: $larger-font-size;
+}
+
+.post-header {
+    margin-bottom: 0;
 }
 
 .post-description {
-    font-size: $small-font-size;
+    font-size: $base-font-size;
 }
 
 .related-posts {
@@ -364,12 +373,28 @@ img + em {
     margin-bottom: $spacing-unit;
 }
 
+.read-more {
+    font-size: $small-font-size;
+}
+
 /* Categories */
 
 .categories {
+    text-align: left;
 }
 
 .category-link {
+    font-size: $smaller-font-size;
+    color: $dark-gray !important;
+    background-color: $light-purple;
+
+    padding: 0px 7px 1px 7px;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .category-count {
