@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Managing Your Life With org-mode and Other Tools</title>
+<meta name="author" content="(Marcin Swieczkowski)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+<section id="slide-org3681db6">
+<h2 id="org3681db6">Managing Your Life With org-mode and Other Tools</h2>
+<p>
+Marcin Swieczkowski
+</p>
+
+
+<div class="figure">
+<p><img src="./img/workshop-unsplash.jpg" alt="workshop-unsplash.jpg" width="50%" height="50%" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdb98adc">
+<h2 id="orgdb98adc">Introduction</h2>
+<p>
+This will be a short talk about how I've been managing my time with org-mode.
+</p>
+
+<p>
+I hope you find it useful for your personal and professional life.
+</p>
+</section>
+<section id="slide-orgec45319">
+<h3 id="orgec45319">org-mode is complicated</h3>
+
+<div class="figure">
+<p><img src="./img/ben-white-unsplash.jpg" alt="ben-white-unsplash.jpg" width="50%" height="50%" />
+</p>
+</div>
+</section>
+<section id="slide-org84f5e69">
+<h3 id="org84f5e69">Features</h3>
+<ul>
+<li>outline</li>
+<li>tables</li>
+<li>hyperlinks</li>
+<li>todo items</li>
+<li>tags and properties</li>
+<li>scheduling and deadlines</li>
+<li>capture, refile, archive</li>
+<li>agenda</li>
+<li>exporting</li>
+<li>literate programming</li>
+<li>&#x2026; much more</li>
+
+</ul>
+</section>
+<section id="slide-orgbf79291">
+<h3 id="orgbf79291">org-mode is complicated</h3>
+<p>
+Philosophy common in Emacs and its ecosystem:
+</p>
+
+<p>
+Steep learning curve with the hope of a big productivity payoff in the long term.
+</p>
+
+<p>
+But, org-mode at its core can actually be pretty simple.
+</p>
+</section>
+<section id="slide-org8baed05">
+<h3 id="org8baed05">Advantages of simplicity</h3>
+<p>
+Spend less time getting up to speed.
+</p>
+
+<p>
+Can use brainpower towards other ends.
+</p>
+
+<p>
+Can be more flexible.
+</p>
+
+<p>
+Minimize effort spent on bookkeeping.
+</p>
+
+<p>
+(You can always add more bookkeeping if you find it necessary)
+</p>
+</section>
+<section id="slide-org50b76f7">
+<h3 id="org50b76f7">org-mode can be simple</h3>
+<p>
+Most people do not actually use all of org-mode's features.
+</p>
+
+<p>
+But, how do you decide which features to use?
+</p>
+
+<p>
+In this talk I go over the subset of org-mode that I use, and why I chose it.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org62c9148">
+<h2 id="org62c9148">My personal strategy</h2>
+
+<div class="figure">
+<p><img src="./img/maksym-unsplash.jpg" alt="maksym-unsplash.jpg" width="50%" height="50%" />
+</p>
+</div>
+</section>
+<section id="slide-org794e41f">
+<h3 id="org794e41f">Organizing todo items</h3>
+<p>
+I keep my todo list entirely in a single todo.org file.
+</p>
+
+<p>
+I don't use TODO items. If something is in my todo file, it's implicitly todo.
+</p>
+
+<p>
+Subtrees in todo.org provide structure to your tasks.
+</p>
+
+</section>
+<section id="slide-org794e41f-split">
+
+<h3>Organizing todo items</h3>
+
+
+<div class="figure">
+<p><img src="./img/org-todo.png" alt="org-todo.png" width="25%" height="25%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org794e41f-split">
+
+<h3>Organizing todo items</h3>
+
+<p>
+I've converged on this strategy after some trial and error:
+</p>
+<ul>
+<li>I was forgetting to mark tasks TODO.</li>
+<li>I would have TODO items scattered around my various org files.</li>
+
+</ul>
+</section>
+<section id="slide-org4fe485e">
+<h3 id="org4fe485e">Scheduling and org-agenda</h3>
+<p>
+When I want to work on something, I schedule it so it shows up in my org-agenda.
+</p>
+
+<p>
+I treat scheduled dates as "soft". For hard deadlines, I use&#x2026; deadlines.
+</p>
+
+<p>
+I always view the agenda for the current day or week, showing scheduled items and not TODO items.
+</p>
+</section>
+<section id="slide-orgbcab302">
+<h3 id="orgbcab302">Recurring tasks</h3>
+<p>
+I've been using this basic strategy to handle my tasks in a flexible manner, even tasks that recur.
+</p>
+
+<p>
+When I finish recurring tasks, I just reschedule them.
+</p>
+
+<p>
+I noticed that some tasks would always be rescheduled in the same manner, e.g. <code>C-c C-s +1 &lt;RET&gt;</code>. More on this later.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgf3fef27">
+<h2 id="orgf3fef27">Some packages&#x2026;</h2>
+</section>
+</section>
+<section>
+<section id="slide-org6ef4a76">
+<h2 id="org6ef4a76">org-super-agenda</h2>
+
+<div class="figure">
+<p><img src="./img/org-super-agenda.png" alt="org-super-agenda.png" width="50%" height="50%" />
+</p>
+</div>
+
+<p>
+<a href="https://github.com/alphapapa/org-super-agenda">https://github.com/alphapapa/org-super-agenda</a>
+</p>
+</section>
+<section id="slide-org397d019">
+<h3 id="org397d019">org-super-agenda</h3>
+<p>
+For simplicity's sake I try to avoid having too many packages.
+</p>
+
+<p>
+But this one is really useful.
+</p>
+
+<p>
+It allows you to categorize all of your tasks.
+</p>
+
+<p>
+Similar tasks can be visually grouped together.
+</p>
+</section>
+<section id="slide-org48057ee">
+<h3 id="org48057ee">Categorizing</h3>
+<p>
+You can categorize by:
+</p>
+
+<ul>
+<li class="fragment">urgency/priority</li>
+<li class="fragment">type of task (e.g. chore/shopping/exercise/etc)</li>
+<li class="fragment">school/work/personal</li>
+<li class="fragment">time of day (e.g. morning/afternoon/evening)</li>
+<li class="fragment">and more!</li>
+
+</ul>
+</section>
+<section id="slide-org09c6f02">
+<h3 id="org09c6f02">Setting up org-super-agenda</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elisp"><code trim>(<span style="color: #598bc1;">use-package</span> <span style="color: #ab75c3;">org-super-agenda</span>
+  <span style="color: #598bc1;">:after</span> org-agenda
+  <span style="color: #598bc1;">:config</span>
+  (org-super-agenda-mode)
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org09c6f02-split">
+
+<h3>Setting up org-super-agenda</h3>
+
+<div class="org-src-container">
+
+<pre  class="src src-elisp"><code trim>(<span style="color: #598bc1;">setq</span>
+ org-super-agenda-groups
+ <span style="color: #598bc1;">'</span>((<span style="color: #598bc1;">:name</span> <span style="color: #6aaf50;">"Today"</span>
+          <span style="color: #598bc1;">:time-grid</span> t
+          <span style="color: #598bc1;">:todo</span> <span style="color: #6aaf50;">"TODAY"</span>)
+   (<span style="color: #598bc1;">:name</span> <span style="color: #6aaf50;">"High Priority"</span>
+          <span style="color: #598bc1;">:priority</span> <span style="color: #6aaf50;">"A"</span>
+          <span style="color: #598bc1;">:order</span> <span style="color: #df9522;">1</span>)
+   (<span style="color: #598bc1;">:name</span> <span style="color: #6aaf50;">"Work"</span>
+          <span style="color: #598bc1;">:category</span> <span style="color: #6aaf50;">"work"</span>
+          <span style="color: #598bc1;">:tag</span> <span style="color: #6aaf50;">"work"</span>
+          <span style="color: #598bc1;">:order</span> <span style="color: #df9522;">2</span>)
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org09c6f02-split">
+
+<h3>Setting up org-super-agenda</h3>
+
+
+<div class="figure">
+<p><img src="./img/org-super-agenda.png" alt="org-super-agenda.png" width="50%" height="50%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org09c6f02-split">
+
+<h3>Setting up org-super-agenda</h3>
+
+<div class="org-src-container">
+
+<pre  class="src src-elisp"><code trim>(<span style="color: #598bc1;">:name</span> <span style="color: #6aaf50;">"Shopping List"</span>
+       <span style="color: #598bc1;">:category</span> <span style="color: #6aaf50;">"shopping"</span>
+       <span style="color: #598bc1;">:tag</span> <span style="color: #6aaf50;">"shopping"</span>
+       <span style="color: #598bc1;">:order</span> <span style="color: #df9522;">3</span>)
+(<span style="color: #598bc1;">:name</span> <span style="color: #6aaf50;">"Cleaning"</span>
+       <span style="color: #598bc1;">:category</span> <span style="color: #6aaf50;">"cleaning"</span>
+       <span style="color: #598bc1;">:tag</span> <span style="color: #6aaf50;">"cleaning"</span>
+       <span style="color: #598bc1;">:order</span> <span style="color: #df9522;">4</span>)
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org09c6f02-split">
+
+<h3>Setting up org-super-agenda</h3>
+
+<div class="org-src-container">
+
+<pre  class="src src-elisp"><code trim>...
+(<span style="color: #598bc1;">:name</span> <span style="color: #6aaf50;">"Tech"</span>
+       <span style="color: #598bc1;">:category</span> <span style="color: #6aaf50;">"tech"</span>
+       <span style="color: #598bc1;">:tag</span> <span style="color: #6aaf50;">"tech"</span>
+       <span style="color: #598bc1;">:order</span> <span style="color: #df9522;">180</span>)
+(<span style="color: #598bc1;">:name</span> <span style="color: #6aaf50;">"Waiting"</span> <span style="color: #598bc1;">:todo</span> <span style="color: #6aaf50;">"WAITING"</span> <span style="color: #598bc1;">:order</span> <span style="color: #df9522;">190</span>)
+(<span style="color: #598bc1;">:name</span> <span style="color: #6aaf50;">"Low priority"</span>
+       <span style="color: #598bc1;">:priority</span> <span style="color: #6aaf50;">"C"</span>
+       <span style="color: #598bc1;">:order</span> <span style="color: #df9522;">200</span>))))
+</code></pre>
+</div>
+</section>
+<section id="slide-org675892c">
+<h3 id="org675892c">Categorizing in org-mode</h3>
+<p>
+<b>Tags:</b> Quickest way to categorize a task.
+</p>
+
+<p>
+<b>Categories:</b> Keep your todo list structured.
+</p>
+
+</section>
+<section id="slide-org675892c-split">
+
+<h3>Categorizing in org-mode</h3>
+
+
+<div class="figure">
+<p><img src="./img/org-mode-tech.png" alt="org-mode-tech.png" width="50%" height="50%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org675892c-split">
+
+<h3>Categorizing in org-mode</h3>
+
+
+<div class="figure">
+<p><img src="./img/org-super-agenda-tech.png" alt="org-super-agenda-tech.png" width="50%" height="50%" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org348382a">
+<h2 id="org348382a">org-recur</h2>
+
+<div class="figure">
+<p><img src="./img/org-recur.png" alt="org-recur.png" width="50%" height="50%" />
+</p>
+</div>
+
+<p>
+<a href="https://github.com/m-cat/org-recur">https://github.com/m-cat/org-recur</a>
+</p>
+</section>
+<section id="slide-orge1cf1c6">
+<h3 id="orge1cf1c6">org-recur</h3>
+<p>
+Emacs package I authored.
+</p>
+
+<p>
+For a long time I found it hard to deal with recurring tasks, and was manually rescheduling them every day.
+</p>
+
+<p>
+<code>org-recur</code> helps me:
+</p>
+<ol>
+<li>specify how often I want to do a task, and</li>
+<li>reschedule it automatically when I complete it</li>
+
+</ol>
+</section>
+<section id="slide-org2586f93">
+<h3 id="org2586f93">How it works</h3>
+<ol>
+<li class="fragment">I was previously calling <code>org-schedule</code> on an entry with the same date delta, like <code>+2</code>, every time to reschedule it.</li>
+<li class="fragment">Now, I put the recurrence delta in the task's heading instead, like: <code>|+2|</code>.</li>
+<li class="fragment">Next time I'm done with the task, I call <code>org-recur-finish</code> to reschedule it.</li>
+
+</ol>
+
+</section>
+<section id="slide-org2586f93-split">
+
+<h3>How it works</h3>
+
+
+<div class="figure">
+<p><img src="./img/org-recur-before.png" alt="org-recur-before.png" width="50%" height="50%" />
+</p>
+</div>
+
+<p class="fragment">
+Pressing <code>C-c d</code>&#x2026;
+</p>
+
+
+<div class="figure">
+<p><img src="./img/org-recur-after.png" alt="org-recur-after.png" class="fragment" width="50%" height="50%" />
+</p>
+</div>
+
+</section>
+<section id="slide-org2586f93-split">
+
+<h3>How it works</h3>
+
+<ol>
+<li class="fragment"><code>org-recur</code> provides a face for the recurrence delta, visually separating it from the heading content.</li>
+<li class="fragment"><code>org-recur</code> also provides some additional syntax not supported by <code>org-schedule</code> such as <code>wkdy</code>.</li>
+<li class="fragment">You can also configure <code>org-recur-finish</code> to mark non-recurring entries as <code>DONE</code> and archive them.</li>
+
+</ol>
+</section>
+<section id="slide-orgfb1fa6a">
+<h3 id="orgfb1fa6a">Some ideas&#x2026;</h3>
+<ul>
+<li class="fragment"><code>|+1| Go through goals</code> (Daily)</li>
+<li class="fragment"><code>|+1| Work on org-mode presentation</code></li>
+<li class="fragment"><code>|+1w| Backup files to external hard drive :tech:</code> (Weekly)</li>
+<li class="fragment"><code>|+1m| Review financials :chore:</code> (Monthly)</li>
+
+</ul>
+
+</section>
+<section id="slide-orgfb1fa6a-split">
+
+<h3>Some ideas&#x2026;</h3>
+
+<ul>
+<li class="fragment"><code>|wkdy| Fill in timesheet :work:</code> (Every weekday)</li>
+<li class="fragment"><code>|sat,sun| 30 minutes on personal project</code> (Every Sat and Sun)</li>
+<li class="fragment"><code>|wkdy,sat| Do ab exercises</code></li>
+<li class="fragment"><code>|5| Pay bills :chore:</code> (5th of every month)</li>
+
+</ul>
+</section>
+<section id="slide-org63e092c">
+<h3 id="org63e092c">Recommended settings</h3>
+<p>
+org-recur configuration:
+</p>
+
+<p>
+<a href="https://github.com/m-cat/org-recur#recommended-configuration">https://github.com/m-cat/org-recur#recommended-configuration</a>
+</p>
+
+<p>
+org-agenda configuration:
+</p>
+
+<p>
+<a href="https://github.com/m-cat/org-recur#recommended-org-mode-settings">https://github.com/m-cat/org-recur#recommended-org-mode-settings</a>
+</p>
+</section>
+<section id="slide-orgdf87f1f">
+<h3 id="orgdf87f1f">Recommended keybindings</h3>
+<ul>
+<li>Complete a task: <code>"C-c d"</code> in org-mode / <code>"d"</code> in org-agenda</li>
+<li>Schedule to today: <code>"C-c 0"</code> / <code>"0"</code></li>
+<li>Schedule to tomorrow: <code>"C-c 1"</code> / <code>"1"</code></li>
+
+</ul>
+
+<p>
+If you're a mouse user, you can complete tasks with e.g. <code>"&lt;mouse-3&gt;"</code>!
+</p>
+</section>
+<section id="slide-org1f6ea34">
+<h3 id="org1f6ea34">Alternatives</h3>
+<p>
+Already included in org-mode are:
+</p>
+
+<ul>
+<li>Repeated tasks</li>
+<li>org-habit</li>
+<li>sexp diary entries</li>
+
+</ul>
+
+<p>
+I find these to be too complex, but they may be more suitable for you.
+</p>
+
+<p>
+<a href="https://github.com/m-cat/org-recur#alternatives">https://github.com/m-cat/org-recur#alternatives</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orge3cb54f">
+<h2 id="orge3cb54f">Using git</h2>
+
+<div class="figure">
+<p><img src="./img/org-git.png" alt="org-git.png" width="40%" height="40%" />
+</p>
+</div>
+
+</section>
+<section id="slide-orge3cb54f-split">
+
+<h2>Using git</h2>
+
+<p>
+I track almost everything in git (using magit, of course).
+</p>
+
+<p>
+I don't necessarily push everything I track, just keep a local history of changes.
+</p>
+</section>
+<section id="slide-org9b215fc">
+<h3 id="org9b215fc">git and org-mode</h3>
+<p>
+git can help you catch unintentional deletions and modifications.
+</p>
+
+<p>
+It helps you keep track of recently-made changes and review them periodically.
+</p>
+
+<p>
+E.g. I stored this presentation in a git repo, staging changes periodically.
+</p>
+</section>
+<section id="slide-org89615fe">
+<h3 id="org89615fe">git and org-mode</h3>
+<p>
+I review and commit my org files at least once a week.
+</p>
+
+
+<div class="figure">
+<p><img src="./img/org-changes.png" alt="org-changes.png" width="50%" height="50%" />
+</p>
+</div>
+
+<p>
+This recurring task in my org-agenda makes sure I don't forget.
+</p>
+
+<p>
+Sometimes I find a change I made by accident, and revert it. Phew! Thanks, git.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org5e26d54">
+<h2 id="org5e26d54">Is that it?</h2>
+<p>
+My usage of org-mode is so simple that I was wondering why I even signed up to talk about it.
+</p>
+
+<p>
+It works really well for me because I don't have to think about it at all. It fits into my life seamlessly.
+</p>
+
+<p>
+The way you use org-mode will no doubt be different than mine. You'll converge on a best practice for yourself over time, as I have done.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org636f869">
+<h2 id="org636f869">Bonus: Misc tools</h2>
+</section>
+<section id="slide-org636f869-split">
+
+<h2>Bonus: Misc tools</h2>
+
+<p>
+For most people, technology enables procrastination.
+</p>
+
+<p>
+Let's use technology to fight it, instead.
+</p>
+
+<p>
+These projects that help me do that.
+</p>
+
+<p>
+(Won't go into these in detail.)
+</p>
+
+</section>
+<section id="slide-orgd8c3e78">
+<h3 id="orgd8c3e78">Warning</h3>
+<p>
+These are non-free software projects.
+</p>
+
+<p>
+I realized this after writing the slides, so these were not presented.
+</p>
+</section>
+<section id="slide-org303b608">
+<h3 id="org303b608">Beorg</h3>
+<p>
+For editing my org-mode files on mobile when I'm out and about. Highly recommended.
+</p>
+
+<p>
+<a href="https://beorgapp.com/">https://beorgapp.com/</a>
+</p>
+
+<p>
+There is also the open source project "organice". Haven't used it.
+</p>
+
+<p>
+<a href="https://github.com/200ok-ch/organice">https://github.com/200ok-ch/organice</a>
+</p>
+</section>
+<section id="slide-org527d318">
+<h3 id="org527d318">Beeminder</h3>
+<p>
+Stake money on meeting your goals.
+</p>
+
+<p>
+A "self-binding device" that increases your chances of obtaining a goal by a factor of 3.
+</p>
+
+<p>
+They have a great blog on goal-forming, psychology, and success stories.
+</p>
+
+</section>
+<section id="slide-orgaad8300">
+<h4 id="orgaad8300">Examples</h4>
+<p>
+BM is currently motivating me to:
+</p>
+
+<ul>
+<li>Read more books</li>
+<li>Reduce my amount of org-agenda tasks</li>
+<li>Reduce my amount of open browser tabs</li>
+<li>Work on this presentation every day</li>
+
+</ul>
+
+<p>
+Post by mbork, an Emacs user:
+</p>
+
+<p>
+<a href="https://blog.beeminder.com/mbork/">https://blog.beeminder.com/mbork/</a>
+</p>
+</section>
+<section id="slide-org6fedded">
+<h3 id="org6fedded">Streaks</h3>
+<p>
+Let's say you have a goal: do X for Y days.
+</p>
+
+<p>
+Streaks lets you keep track of&#x2026; streaks.
+</p>
+
+<p>
+<a href="https://streaksapp.com/">https://streaksapp.com/</a>
+</p>
+</section>
+<section id="slide-orgb7773dc">
+<h4 id="orgb7773dc">Streaks</h4>
+<p>
+You can do the same with <b>org-habit</b>:
+</p>
+
+<p>
+<a href="https://orgmode.org/manual/Tracking-your-habits.html">https://orgmode.org/manual/Tracking-your-habits.html</a>
+</p>
+
+<p>
+However, I don't use TODO items.
+</p>
+
+<p>
+DONE history can get very long.
+</p>
+
+<p>
+Also, Streaks is nice and simple to use.
+</p>
+</section>
+<section id="slide-orgb887362">
+<h3 id="orgb887362">Cold Turkey</h3>
+<p>
+Block specific apps/sites on a schedule.
+</p>
+
+<p>
+Can keep distractions blocked during work hours, or always.
+</p>
+
+<p>
+Intentionally difficult to disable.
+</p>
+
+<p>
+<a href="https://getcoldturkey.com/">https://getcoldturkey.com/</a>
+</p>
+
+<p>
+My review:
+</p>
+
+<p>
+<a href="https://www.bytedude.com/ending-internet-addiction-a-review-of-cold-turkey/">https://www.bytedude.com/ending-internet-addiction-a-review-of-cold-turkey/</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgcf01809">
+<h2 id="orgcf01809">Questions? Comments?</h2>
+<p>
+My details:
+</p>
+
+<p>
+scatman@bu.edu / github.com/m-cat / bytedude.com
+</p>
+
+<p>
+My init file:
+</p>
+
+<p>
+<a href="https://github.com/m-cat/init.el">https://github.com/m-cat/init.el</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org2549052">
+<h2 id="org2549052">Photo credits</h2>
+<p>
+In order:
+</p>
+
+<p>
+Workshop&amp; on Unsplash
+</p>
+
+<p>
+Ben White on Unsplash
+</p>
+
+<p>
+Maksym Kaharlytskyi on Unsplash
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
