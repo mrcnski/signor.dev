@@ -392,6 +392,9 @@ img + em {
     border: 1px solid $text-color;
     border-radius: 5px;
 
+    // Prevent line breaks at hyphens.
+    white-space: nowrap;
+
     &:hover {
         text-decoration: none;
     }
