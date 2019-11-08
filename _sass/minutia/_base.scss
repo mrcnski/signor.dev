@@ -169,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 
     a:hover {
         text-decoration: none;
+        opacity: $hover-opacity;
     }
 }
 
@@ -256,4 +257,14 @@ blockquote {
     path {
         fill: $gray;
     }
+}
+
+/* Misc */
+
+// Prevent superscripts from affecting line height.
+
+sup {
+    vertical-align: top;
+    position: relative;
+    top: -0.3em;
 }

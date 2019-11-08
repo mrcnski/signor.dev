@@ -8,6 +8,7 @@
 
     &:hover {
         text-decoration: none;
+        opacity: $hover-opacity;
     }
 }
 
@@ -66,7 +67,7 @@
 
         &:hover {
             text-decoration: none;
-            background-color: $light-blue;
+            opacity: $hover-opacity;
         }
     }
 }
@@ -397,6 +398,7 @@ img + em {
 
     &:hover {
         text-decoration: none;
+        opacity: $hover-opacity;
     }
 }
 
