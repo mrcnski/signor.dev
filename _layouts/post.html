@@ -17,7 +17,7 @@ layout: default
       •
       {% include filed.html %}
       •
-      <a href="#comments">{% include comment-count.html %}</a>
+      <a href="#commento"></a>
     </p>
   </header>
 
@@ -27,7 +27,7 @@ layout: default
     {% include spoiler.html display="Table of Contents" %}
 
     {% endif %}
-    
+
     {{ content }}
   </div>
 
@@ -36,7 +36,7 @@ layout: default
   </div>
 
   <div class="comments">
-    {% include comments.html slug=page.slug %}
+    {% include comments.html %}
   </div>
 
 </article>
