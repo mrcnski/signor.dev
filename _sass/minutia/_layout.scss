@@ -378,6 +378,17 @@ img + em {
     font-size: $small-font-size;
 }
 
+/* Comments */
+
+.comment-info {
+    color: $dark-gray;
+    font-size: $smaller-font-size;
+
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+    text-align: center;
+}
+
 /* Categories */
 
 .categories {
