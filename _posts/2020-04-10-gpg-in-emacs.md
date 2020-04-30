@@ -1,5 +1,5 @@
 ---
-title: "GPG in Emacs"
+title: "GPG In Emacs"
 date: 2020-04-10
 categories: emacs cryptography
 toc: true

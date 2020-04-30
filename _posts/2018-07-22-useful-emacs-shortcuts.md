@@ -86,8 +86,7 @@ I recommend binding your machine's Caps Lock key to Super. Caps Lock is not the 
 
 On OSX, these are the key mappings I recommend. Basically, I just set the Caps Lock key to Command and the Command keys to Control.
 
-{% include image.html name="osx-modifier-keys.png" alt="OSX modifier keys." width="408"
-%}
+{% include image.html name="osx-modifier-keys.png" alt="OSX modifier keys." width="408" %}
 
 You can get to this menu by going to **System Preferences > Keyboard > Modifier Keys**.
 

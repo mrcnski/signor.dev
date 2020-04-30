@@ -68,17 +68,20 @@ defaults:
 category_descriptions:
   - { name: "anki", description: "" }
   - { name: "blogging", description: "" }
+  - { name: "books", description: "" }
   - { name: "c", description: "" }
   - { name: "cryptography", description: "" }
   - { name: "css", description: "" }
   - { name: "emacs", description: "" }
   - { name: "face-offs", description: "" }
+  - { name: "go", description: "" }
   - { name: "health", description: "" }
   - { name: "jekyll", description: "" }
   - { name: "language-learning", description: "" }
   - { name: "org-mode", description: "" }
   - { name: "presentations", description: "" }
   - { name: "productivity", description: "" }
+  - { name: "reviews", description: "" }
   - { name: "rust", description: "" }
   - { name: "self-improvement", description: "" }
   - { name: "site", description: "" }
