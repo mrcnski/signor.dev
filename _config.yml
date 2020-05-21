@@ -78,6 +78,7 @@ category_descriptions:
   - { name: "health", description: "" }
   - { name: "jekyll", description: "" }
   - { name: "language-learning", description: "" }
+  - { name: "nutrition", description: "" }
   - { name: "org-mode", description: "" }
   - { name: "presentations", description: "" }
   - { name: "productivity", description: "" }
