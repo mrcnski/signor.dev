@@ -1,20 +1,22 @@
 ---
 title: "Upgrading The OSX Dock"
-date: 2020-08-17
-categories: osx
+date: 2020-08-19
+categories: osx productivity
 description: "Today we'll be revamping the dock on OSX. I bet you didn't think it needs upgrading, huh? Well it does. Trust me, it does."
 ---
 
 Today we'll be revamping the dock on OSX. I bet you didn't think it needs upgrading, huh? Well it does. Trust me, it does.
 
-## Hiding The Dock
+{% include image.html name="osx-dock/dock-photo.jpeg" alt="Ah, da infamous OSX dock." caption="Ah, da infamous OSX dock." %}
 
-Maybe you think you want the dock to be always visible, but you don't actually know what you want. Stick with me here.
-{: .note}
+## Hiding The Dock
 
 Step one is to make the dock hidden by default. Make sure you have the following option ticked in your dock settings:
 
 {% include image.html name="osx-dock/dock-settings.png" alt="Whatever" width="780" noborder=1 %}
+
+Maybe you think you want the dock to be always visible, but you don't actually know what you want. Stick with me here.
+{: .note}
 
 Now the dock will not take up space on your display unless you mouse over it. It will not distract you with unnecessary visual information, so you can focus on your work. There's a wrong way and a right way to configure your dock -- choose the right way.
 
