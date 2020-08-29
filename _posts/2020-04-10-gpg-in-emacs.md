@@ -4,6 +4,8 @@ date: 2020-04-10
 categories: emacs cryptography
 toc: true
 description: "As Emacs users, our best choice for editing encrypted files is EasyPG. It's not the greatest or the most intuitive tool, and it's based on GnuPG which is itself a nightmare of UX design. However, after some annoying initial setup, it is convenient. This is a guide to that annoying initial setup."
+post-no: 3
+related: [4]
 ---
 
 * Table of contents.
@@ -91,9 +93,12 @@ Optionally, you may wish to increase the password expiry time to something longe
 (setq password-cache-expiry (* 60 15))
 ```
 
-I'm not actually sure if this does anything, since half of the epa settings seem to be deprecated. Whatever.
+I'm not actually sure if this does anything, since half of these settings seem to be deprecated. Whatever.
 
-This next part might not be needed for you. I think it depends on your Emacs version. If you get an error like `inappropriate ioctl for device`, please include this fix (from [here](https://colinxy.github.io/software-installation/2016/09/24/emacs25-easypg-issue.html)).
+This variable has no effect if you use GPG2, which automatically runs `gpg-agent` to cache the password. You'll have to set [one of the options](https://www.gnupg.org/documentation/manuals/gnupg/Agent-Options.html) like `default-cache-ttl` in `~/.gnupg/gpg-agent.conf`.
+{: .update}
+
+This next part might not be needed for you. I think it depends on your Emacs version. If you get an error like `inappropriate ioctl for device`, please include this fix (from [here](https://colinxy.github.io/software-installation/2016/09/24/emacs25-easypg-issue.html)):
 
 ```elisp
 ;; Fix EasyPG error.
