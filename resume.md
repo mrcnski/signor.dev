@@ -24,9 +24,9 @@ Professional software developer with over four years of experience in backend pr
 **Jul 2017 - Present** -- Rust Software Developer
 
 - Worked in a team setting on a complex, open source decentralized network to design and develop backend APIs.
-- Designed and developed C FFIs for our Rust projects, including a testing system designed to detect memory leaks. [[Link](https://github.com/maidsafe/safe_client_libs/wiki/FFI-overview)]
-- Wrote an integrated testing suite for one of our largest projects, including CI-specific tests to ensure binary compatibility of data in the network. [[Link](https://github.com/maidsafe/safe_client_libs/wiki/Binary-compatibility-tests)]
-- Led my team in writing thorough documentation for the same project. [[Link](https://github.com/maidsafe/safe_client_libs/wiki)]
+- Designed and developed C FFIs for our Rust projects, including a testing system designed to detect memory leaks. [[Link](https://github.com/m-cat/safe_client_libs-wiki/blob/master/FFI-overview.md)]
+- Wrote an integrated testing suite for one of our largest projects, including CI-specific tests to ensure binary compatibility of data in the network. [[Link](https://github.com/m-cat/safe_client_libs-wiki/blob/master/Binary-compatibility-tests.md)]
+- Led my team in writing thorough documentation for the same project. [[Link](https://github.com/m-cat/safe_client_libs-wiki)]
 - Proactively communicated with users, determining user needs and troubleshooting. [[Link](https://safenetforum.org/u/marcin/summary), [Link](https://forum.safedev.org/u/marcin/summary)]
 
 ### Epic Systems Corporation
