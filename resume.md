@@ -1,15 +1,18 @@
 ---
 layout: resume
 title: Resume
+update: "Oct 2019"
 ---
 
 # Marcin Swieczkowski
 
-Glasgow, Scotland / +48 576 256 056 / [scatman@bu.edu](mailto:scatman@bu.edu) / [github.com/m-cat](https://github.com/m-cat) / [bytedude.com](https://bytedude.com)
+- Glasgow, Scotland \| +48 576 256 056 \| [scatman@bu.edu](mailto:scatman@bu.edu) |
+
+- [github.com/m-cat](https://github.com/m-cat) \| [gitlab.com/m-cat](https://gitlab.com/m-cat) \| [bytedude.com](https://bytedude.com)
 
 ## Summary
 
-Professional software developer with over four years of experience in backend programming, API design and implementation who provides robust, well-tested and maintainable solutions.
+Professional software developer with over four years of experience in backend programming, API design and implementation. Provides robust, well-tested and maintainable solutions.
 
 ## Experience
 
@@ -77,15 +80,15 @@ Professional software developer with over four years of experience in backend pr
 
 ### Languages
 
-- Rust & ecosystem / C / Python / Java / CSS
+- Rust & ecosystem \| C \| Python \| Java \| CSS
 
 ### Tools
 
-- Emacs / git / Markdown / shell / TravisCI
+- Emacs \| git \| Markdown \| shell \| TravisCI
 
 ### Other
 
-- GitHub / Slack / JIRA
+- GitHub \| Slack \| JIRA
 
 ## Education
 
@@ -95,3 +98,8 @@ Professional software developer with over four years of experience in backend pr
 *Boston, USA*
 
 **May 2014** -- MA in Computer Science
+
+---
+
+Resume Last Updated: {{ page.update }}
+{: .post-meta}
