@@ -7,13 +7,13 @@ description: "A diet has been growing in popularity that seems to reflect the bi
 
 A particular diet has appeared that seems to reflect the extreme nature of our times. It is the carnivore diet -- eating only unprocessed animal products, mostly meat.
 
+{% include image.html name="the-carnivore-diet/steak-1.jpeg" alt="Restaurant steak" width="504" %}
+
 I've long wondered why modern humans are so sick, beset as we are by unnatural conditions like tooth decay, heart disease, joint pain, myopia, and infertility, conditions that would have resulted in the extinction of our species before we ever got to develop medicine. Are these unavoidable facts of life? Or could it be that our diets, which happen to be carbohydrate-rich and low in fat, are unnatural and problematic, and contribute to these conditions?
 
 I had been fascinated by the idea of carnivore for a couple of years. It totally flouts the prevailing, but misguided, idea that plant food is somehow healthier than animal food. I had digestive issues for a long time and meat was the only food that never seemed to upset my stomach. I also knew from my bodybuilding days that meat is an excellent source of nutrition and a highly effective testosterone booster in men, red meat in particular. What would happen if I ate only meat? Could carnivore heal my digestion (when nothing else could)?
 
 About three months ago I started to look into this diet more closely.
-
-{% include image.html name="the-carnivore-diet/steak-1.jpeg" alt="Restaurant steak" width="504" %}
 
 ## The Evidence
 
@@ -27,9 +27,9 @@ Empirical evidence suggests that humans thrive on the carnivore diet. The Inuits
 
 Eating meat alone seems even better than eating meat with vegetables. Folks like Mikhaila Peterson and Joe Rogan have experienced surprising benefits after switching from mixed meat-and-vegetable diets to only-meat diets. Oddly enough, no one encounters vitamin or mineral deficiencies on this diet, despite most carnivores not supplementing and despite the prevailing wisdom that we need to eat "balanced diets" (and take multivitamins).
 
-I myself have noticed numerous benefits over the past few months, enough to convince me that this might be our natural way of eating and to continue the experiment. It's too early for me to share my results, but they are quite promising (and I'm not dead).
-
 {% include image.html name="the-carnivore-diet/haul.jpeg" alt="Haul" width="504" %}
+
+I myself have noticed numerous benefits over the past few months, enough to convince me that this might be our natural way of eating and to continue the experiment. It's too early for me to share my results, but they are quite promising (and I'm not dead).
 
 The growing list of anecdotal successes is compelling in itself, but as mere anecdotes are not convincing to everybody, let's examine further lines of evidence.
 

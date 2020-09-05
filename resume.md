@@ -6,7 +6,7 @@ update: "Oct 2019"
 
 # Marcin Swieczkowski
 
-- Glasgow, Scotland \| +48 576 256 056 \| [scatman@bu.edu](mailto:scatman@bu.edu) |
+- Glasgow, Scotland \| +48 576 256 056 \| [marcin@bytedude.com](mailto:marcin@bytedude.com) |
 
 - [github.com/m-cat](https://github.com/m-cat) \| [gitlab.com/m-cat](https://gitlab.com/m-cat) \| [bytedude.com](https://bytedude.com)
 
