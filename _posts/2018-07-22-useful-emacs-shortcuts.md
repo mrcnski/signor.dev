@@ -110,16 +110,16 @@ These are my buffer navigation keybindings.
 (global-set-key (kbd "s-k") 'kill-this-buffer)
 {% endhighlight %}
 
-I chose `s-j` for [`helm-mini`](https://github.com/emacs-helm/helm)/`switch-to-buffer` since I perform this action very frequently and J is the dominant homerow key for the right hand (my left hand presses Super, which I bound to the Caps Lock key).
+I chose `s-j` for [`helm-mini`](https://github.com/emacs-helm/helm)/`switch-to-buffer` since I perform this action very frequently and `J` is the dominant homerow key for the right hand (my left hand presses Super, which I bound to the Caps Lock key).
 
 ## Finding Text
 
 For this section, you'll need [ag](https://github.com/ggreer/the_silver_searcher) installed and the [helm-ag](https://github.com/syohex/emacs-helm-ag), [projectile](https://github.com/bbatsov/projectile) and [helm-projectile](https://github.com/bbatsov/helm-projectile) packages.
 
-The commands in this section make use of the [helm](https://github.com/emacs-helm/helm) interface. If you're not a helm guy (e.g. you use [ivy](https://github.com/abo-abo/swiper)), then you're on your own.
+The commands in this section make use of the [helm](https://github.com/emacs-helm/helm) interface. If you're not a `helm` guy (e.g. you use [ivy](https://github.com/abo-abo/swiper)), then you're on your own.
 {: .note }
 
-ag is a grep-like tool, but faster, while projectile allows you to run ag on your project to search for text. You'll need to be inside a "project" for this to work, and the easiest way to do that is to make the current directory version-controlled. It's a good habit to get into!
+`ag` is a grep-like tool, but faster, while `projectile` allows you to run ag on your project to search for text. You'll need to be inside a "project" for this to work, and the easiest way to do that is to make the current directory version-controlled. It's a good habit to get into!
 
 I have two commands here: `helm-projectile-ag-inexact`, which searches the current project for some case-insensitive text (and ignores word boundaries), and `helm-projectile-ag-exact`, which is case-sensitive and only returns matches along word boundaries. I employ the first one when I want a fuzzier search and the second when I know exactly what I'm looking for. `helm-projectile-ag-exact` will fill in the search term from the symbol at the point (cursor), so it can be called by putting the point over a function call and searching for its definition, or the other way around.
 
@@ -148,12 +148,12 @@ I have two commands here: `helm-projectile-ag-inexact`, which searches the curre
 
 The mnemonic I use to remember these is that `s-i` is **i**nexact while `s-o` p**o**ps the stack.
 
-There are also packages that integrate helm with [rg](https://github.com/BurntSushi/ripgrep), such as [helm-rg](https://github.com/cosmicexplorer/helm-rg), but I haven't used them myself.
+There are also packages that integrate helm with [rg](https://github.com/BurntSushi/ripgrep), such as [helm-rg](https://github.com/cosmicexplorer/helm-rg), but I haven't used them myself. **Update:** I've tried to replace `ag` with `rg` but wasn't able to get the same "exact" and "inexact" behavior I specified above.
 {: .note }
 
 ### dumb-jump
 
-For immediately jumping to a function definition in an intelligent way, there's [dumb-jump](https://github.com/jacktasia/dumb-jump). It works well for most languages and it runs ag (or rg) behind the scenes, so you need one of those installed.
+For immediately jumping to a function definition in an intelligent way, there's [dumb-jump](https://github.com/jacktasia/dumb-jump). It works well for most languages and it runs `ag` (or `rg`) behind the scenes, so you need one of those installed.
 
 {% highlight elisp linedivs %}
 ;; Jump to definitions using ag
@@ -168,6 +168,9 @@ For immediately jumping to a function definition in an intelligent way, there's 
   (setq dumb-jump-prefer-searcher 'ag)
   )
 {% endhighlight %}
+
+I've since replaced this with [smart-jump](https://github.com/jojojames/smart-jump), which uses `dumb-jump` as a fallback.
+{: .update}
 
 ## goto-line-show
 
@@ -185,7 +188,7 @@ I got this tip from [Reddit](https://www.reddit.com/r/emacs/comments/88nq1v/do_y
 (global-set-key (kbd "s-l") 'goto-line-show)
 {% endhighlight %}
 
-You can also use this to temporarily view line numbers and cancel with `C-g`. Is it *that* useful? Probably not. But it's cool, so who cares?
+You can also use this to temporarily view line numbers and cancel with `C-g`. Is it *that* useful? Probably not. But it's cool.
 
 ## A Few More
 

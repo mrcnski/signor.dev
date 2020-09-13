@@ -3,6 +3,8 @@ title: "Getting The Most Out Of Anki"
 date: 2018-09-30
 categories: anki language-learning
 toc: true
+post-no: 5
+related: [6]
 description: "Anki is the most popular spaced repetition software (or SRS). At its heart, Anki is just a program for making and displaying flashcards, but the flashcards are shown to you on a schedule -- ideally, close to the same day as you would have forgotten the card, and no sooner. This means you can remember more information in less time than with traditional study methods."
 ---
 
@@ -80,7 +82,7 @@ I already mentioned [clozes](./#keep-it-simple) in the context of minimizing the
 
 ## Use The Speed Focus Mode Add-On
 
-As mentioned above, you should be going through cards *quick*. That's the point of an efficient study system. To ensure you don't spend too much time on a single card, use the [Speed Focus Mode](https://ankiweb.net/shared/info/1046608507) add-on. I set it up so that I get an alert after five seconds on one card, and it auto-reveals the answer after eight seconds. If I couldn't get the answer by the time it's revealed, then I simply didn't know it well enough and I mark it Wrong. The reason I set such high times is that many of my cards are, unfortunately, not very optimized for simplicity (see above). I'm slowly optimizing my cards, but I have thousands of them. Ideally I wouldn't ever spend more than three or four seconds on one card.
+As mentioned above, you should be going through cards *quick*. That's the point of an efficient study system. To ensure you don't spend too much time on a single card, use the [Speed Focus Mode](https://ankiweb.net/shared/info/1046608507) add-on. I set it up so that I get an alert after five seconds on one card, and it auto-reveals the answer after eight seconds. If I couldn't get the answer by the time it's revealed, then I simply didn't know it well enough and I mark it Wrong. The reason I set such high times is that many of my cards are, unfortunately, not very optimized for simplicity (see above). I'm slowly simplifying my cards, but I have thousands of them. Ideally I wouldn't ever spend more than three or four seconds on one card.
 
 ## Get Comfortable With The Hotkeys
 
