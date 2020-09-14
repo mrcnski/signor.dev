@@ -19,7 +19,7 @@ I mentioned a couple add-ons in my [previous post about Anki](/getting-the-most-
 
 ## Speed Focus Mode
 
-[[Download]](https://ankiweb.net/shared/info/1046608507)
+[[ Download ]](https://ankiweb.net/shared/info/1046608507)
 {: .post-meta}
 
 This one's a game-changer. It prevents you from spending too much time on a single card -- if you do, it will show the answer, or automatically mark the card wrong, depending on how you configure the add-on.
@@ -30,7 +30,7 @@ By forcing you to do cards more quickly this add-on helps you learn more in less
 
 ## Right Hand Reviews
 
-[[Download]](https://ankiweb.net/shared/info/1212877655)
+[[ Download ]](https://ankiweb.net/shared/info/1212877655)
 {: .post-meta}
 
 When you want to do a lot of reviews in a small amount of time, you want to be using hotkeys instead of clicking. It is way faster to keep your hands on the keyboard, press Enter to show cards, and press `1`, `2`, `3`, or `4` to rate their ease. It also lets you focus more vital brainpower on the cards and less on mouse navigation.
@@ -42,7 +42,8 @@ You can improve on the default hotkeys with the "Right Hand Reviews" add-on. It 
 
 ## Deck Stats
 
-[[Download]](https://ankiweb.net/shared/info/1421528223)
+[[ Download ]](https://ankiweb.net/shared/info/1421528223)
+{: .post-meta}
 
 This add-on informs you how many reviews are remaining for the day, right from the main screen of Anki. A veritably indispensible feature.
 
@@ -50,13 +51,14 @@ This add-on informs you how many reviews are remaining for the day, right from t
 
 ## More Overview Stats
 
-[[Download]](https://ankiweb.net/shared/info/2116130837)
+[[ Download ]](https://ankiweb.net/shared/info/2116130837)
+{: .post-meta}
 
 This add-on shows some more stats for decks, which can be useful sometimes.
 
 ## Review Heatmap
 
-[[Download]](https://ankiweb.net/shared/info/1771074083) (look for the beta version for Anki 2.1)
+[[ Download ]](https://ankiweb.net/shared/info/1771074083) (look for the beta version for Anki 2.1)
 {: .post-meta}
 
 If you've ever wanted to view a review heatmap in Anki, now you can, with the Review Heatmap add-on for Anki.
