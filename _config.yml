@@ -84,6 +84,7 @@ category_descriptions:
   - { name: "osx", description: "" }
   - { name: "presentations", description: "" }
   - { name: "productivity", description: "" }
+  - { name: "programming", description: "" }
   - { name: "reviews", description: "" }
   - { name: "rust", description: "" }
   - { name: "self-improvement", description: "" }
