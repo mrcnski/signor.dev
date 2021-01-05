@@ -88,7 +88,7 @@ By now we've accumulated quite a bit of icons in the menu bar, eh? Let's clean t
 [[ Download ]](https://keepassxc.org/)
 {: .post-meta}
 
-Worth a mention is **KeePassXC**, one of the first programs I always install on new computers. It's a very nice password manager and is actively developed. It doesn't really have much to do with OSX, though, except for the integration with TouchID. After unlocking a database once, it can be unlocked subsequent times by pressing Enter and using TouchID. This is really useful since I set my database to unlock itself after a minute of inactivity for the extra security, which I urge you to adopt as a **Bytedude Best Practice**.
+Worth a mention is **KeePassXC**, one of the first programs I always install on new computers. It's a very nice password manager and is actively developed. It doesn't really have much to do with OSX, though, except for the integration with TouchID. After unlocking a database once, it can be unlocked subsequent times by pressing Enter and using TouchID. This is really useful since I set my database to lock itself after a minute of inactivity for the extra security, which I urge you to adopt as a **Bytedude Best Practice**.
 
 {% include image.html name="must-have-osx-apps/keepassxc.png" alt="KeePassXC" width="718" %}
 
