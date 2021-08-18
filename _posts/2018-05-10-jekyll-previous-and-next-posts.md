@@ -235,19 +235,11 @@ And my **CSS** is really:
 }
 {% endhighlight %}
 
-What the devil is going on here?
-
 Listen. The first thing I did here was replace the inner divs we had before with `p` tags. Then, instead of giving the second `p` a class like with the second div before, I used the `p:last-child` [selector](https://www.w3schools.com/cssref/css_selectors.asp) to apply `text-align: right`.
-
-*Clapping starts.*
 
 There's more. I added a `width` limit to the `p` tags so that neither link can take up the entire half of the line. I had to add `justify-content` with a value of `space-between` so that the flex row, now consisting of limited-width divs, would take up the whole line. I also stuck some slight padding between the two `p` tags so that they never got right next to each other even when the page was small or the links were big.
 
-*Clapping intensifies.*
-
 Hold on! That's all fine and dandy, but what about when the page is extra small? Well, that's why I added `flex-wrap: wrap`: the "next" link goes below the "previous" link, but only when there is absolutely no space left on the line!
-
-*Clapping builds to a climax.*
 
 Am I amazing or what? Such is the power of neuroticism.
 

@@ -74,7 +74,7 @@ Professional software developer with over four years of experience in backend pr
 ## Speaking
 
 - **2019** -- "Managing your life with org-mode and other tools" -- EmacsConf [[Link](https://emacsconf.org/2019/schedule)]
-- **2018** -- "Memory Management in Unsafe Rust" -- One-hour talk to my MaidSafe coworkers [[Link](https://github.com/m-cat/unsafe-rust)]
+- **2018** -- "Memory Management in Unsafe Rust" -- One-hour talk given to my MaidSafe coworkers [[Link](https://github.com/m-cat/unsafe-rust)]
 
 ## Skills
 
@@ -101,5 +101,5 @@ Professional software developer with over four years of experience in backend pr
 
 ---
 
-Resume Last Updated: {{ page.update }}
+Last Updated: {{ page.update }}
 {: .post-meta}

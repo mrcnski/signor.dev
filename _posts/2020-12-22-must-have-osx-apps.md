@@ -40,7 +40,7 @@ What is the next incredible recommendation, you ask? Why, it is **Carbon Copy Cl
 
 ## Rest
 
-[[ Download ]](https://apps.apple.com/us/app/rest/id661067914?mt=12)
+[[ Download ]](http://resttimer.com/en)
 {: .post-meta}
 
 **Rest**! You haven't heard of this one, have you? I use Rest to impose breaks on a schedule. Every 40 minutes my screen goes black for five minutes, during which I rest my eyes and mind, practice some mindfulness, move around a bit and reset my posture, and so on. I'm a programmer, but I don't plan on letting this forsaken profession destroy my health by the time I'm 40. Get some Rest!
