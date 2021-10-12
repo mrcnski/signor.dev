@@ -3,7 +3,7 @@ title: "Jekyll: Previous And Next Posts"
 date: 2018-05-10
 categories: blogging css face-offs jekyll
 toc: true
-description: "This post is about the very first thing I implemented for this blog: links to the previous and next posts. I had initially used David Elbe's method, which for some people might be *good enough*, but has some glaring problems, and I wasn't satisfied with it. Since this and other solutions I found on Google were suboptimal, I came up with my own method and I wanted to share it."
+description: "This post is about the very first thing I implemented for this blog: links to the previous and next posts."
 post-no: 1
 related: [2]
 ---
@@ -73,31 +73,11 @@ Simple, no? But how does this work?
 
 ## Explanation
 
-Let me start by demonstrating why David Elbe's solution is subpar. I don't mean to pick on him, but his page was one of the first hits on Google and it's important that people know why they shouldn't use his method. Feel free to visit his article (linking it again [here](https://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html)) and try out the code.
-
-You may notice the following:
-
-* The links are set to `display: block;` with a `width` of 50%. This ostensibly aligns the links and stops either one from taking up more than half the page, but it's a bad move: all the whitespace between the two snippets of text acts as part of the links:
-
-[^change]: Note that the appearance of this site may have changed since the screenshots in this post were taken.
-
-{% include image.html name="huge-link.png" alt="Oh dear." width="522"
-    caption="Oh dear."
-%}
-
-* The CSS is unnecessarily complicated. Compare it to the final CSS of my solution, shown above. If you ignore `font-size` and `margin` (which are optional), it's eight lines versus three. David's solution is hard to understand, brittle, and difficult to modify without it falling apart.
-
-* Since there is no "previous" link on the first page of a blog, the "next" link appears on the left of the page. (This is easily fixed, as a commenter on David's article has pointed out.)
-
-* It doesn't use hard spaces (also an easy fix).
-
-After futilely trying to modify David's solution to fix the "whitespace-link" problem, I looked deep into myself. The answer came to me in a vision: flexbox.
-
 ### Flexbox
 
 Flexbox is seriously cool. It works by specifying a *flex container* (i.e. a containing div) as well as *flex items* (i.e. contained divs, which participate in the flex layout). The cool thing about it is the amount of configuration options for the layout, making almost any layout possible -- hence why flexbox is short for "flexible box".
 
-For our purposes, the only flexbox code you need is `display: flex;` for the wrapper div (setting it up as a flex container) and `flex: 1 1 0;` for the inner divs. *That's it!*
+For our purposes, the only flexbox code you need is `display: flex;` for the wrapper div (setting it up as a flex container) and `flex: 1 1 0;` for the inner divs. That's it!
 
 {% highlight css linedivs %}
 .post-nav {
@@ -241,7 +221,7 @@ There's more. I added a `width` limit to the `p` tags so that neither link can t
 
 Hold on! That's all fine and dandy, but what about when the page is extra small? Well, that's why I added `flex-wrap: wrap`: the "next" link goes below the "previous" link, but only when there is absolutely no space left on the line!
 
-Am I amazing or what? Such is the power of neuroticism.
+Such is the power of neuroticism.
 
 There are all kinds of crazy things you can do now, like putting another link between the two we already have (a link to the top of the page, for instance) and using the `:nth-child()` selector to style and align it. With Flexbox, this kind of control is not just possible, but straightforward.
 

@@ -2,7 +2,7 @@
 title: "Memory Management In Unsafe Rust"
 date: 2018-08-18
 categories: c emacs org-mode presentations rust
-description: "This is a presentation I gave to my coworkers at MaidSafe. It was meant to be a broad overview of Rust unsafe code and FFI design, and includes the motivations as well as the background concepts necessary to understand the design of the FFI API I implemented for PARSEC. I wanted it to be understandable to beginners but still useful to experts -- I hope I succeeded in that rather lofty goal."
+description: "This is a presentation I gave to my coworkers at MaidSafe."
 ---
 
 View the full presentation [here](/files/unsafe-rust.html).

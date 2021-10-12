@@ -3,7 +3,7 @@ title: "GPG In Emacs"
 date: 2020-04-10
 categories: emacs cryptography
 toc: true
-description: "As Emacs users, our best choice for editing encrypted files is EasyPG. It's not the greatest or the most intuitive tool, and it's based on GnuPG which is itself a nightmare of UX design. However, after some annoying initial setup, it is convenient. This is a guide to that annoying initial setup."
+description: "As Emacs users, our best choice for editing encrypted files is EasyPG."
 post-no: 3
 related: [4]
 ---
@@ -15,15 +15,15 @@ I recently decided to keep a private journal. I wanted my journaling to be effic
 
 I also wanted journal entries to be private, so I thought I'd encrypt them. I didn't want to risk getting hacked and my dark inner secrets spilling out into the world. I also use Dropbox to keep a cloud copy of all my data, and I wanted to stuff my journal in there for convenience. This meant I had extra reason to secure it with encryption.
 
-As Emacs users, our best choice for editing encrypted files is [EasyPG](https://epg.osdn.jp/). It's not the greatest or the most intuitive tool, and it's based on GnuPG which is itself a nightmare of UX design. However, after some annoying initial setup, it is convenient. This is a guide to that annoying initial setup.
+As Emacs users, our best choice for editing encrypted files is [EasyPG](https://epg.osdn.jp/). It's not the greatest or the most intuitive tool, and it's based on GnuPG which is itself a nightmare of UX design. However, after some annoying initial setup, EasyPG is convenient. This is a guide to that annoying initial setup.
 
 ## What is EasyPG?
 
-EasyPG is like cherry ice cream in a cone[^ice-cream], in the sense that it lets you access encrypted data transparently. When you visit a file such as `secret.txt.gpg`, EasyPG -- or `epa` -- yeah, I don't get the acronym, either -- will automatically decrypt it and open it as it it were a regular text file. Spiffy, eh? When you save, bada bing, bada boom: `epa` encrypts it for you automatically!
+EasyPG is like cherry ice cream in a cone[^ice-cream], in the sense that it lets you access encrypted data transparently. When you visit a file such as `secret.txt.gpg`, EasyPG -- or `epa` -- I don't get the acronym, either -- will automatically decrypt it and open it as it it were a regular text file. Spiffy, eh? When you save, bada bing, bada boom: `epa` encrypts it for you automatically!
 
 [^ice-cream]: Or vanilla, if you prefer.
 
-The backbone of EasyPG is GnuPG. Expanding on the dessert analogy, GnuPG is like an oatmeal raisin cookie. Enough said, right?
+The backbone of EasyPG is GnuPG. Expanding on the dessert analogy, GnuPG is like an oatmeal raisin cookie.
 
 ## What's GnuPG?
 
@@ -31,11 +31,9 @@ Read the wiki page.
 
 ## Generating your GPG keys
 
-The first step to using EasyPG is to set up GnuPG, which is its backbone. Now, what you want to do at this stage is decide if it's worth the hassle. It's not like some cool hacker like me wouldn't be able to pwn you, anyway.
+The first step to using EasyPG is to generate your GPG keys. Hold it right there! Make sure you have `gnupg` installed before you take another step. On OSX, you'll want to use [Homebrew](http://brew.sh/), and then type out `brew install gnupg` in eshell or shell or fish or zsh. GnuPG is the backbone of EasyPG.
 
-Okay, what you want to do now is generate your GPG keys. Hold it right there! Make sure you have `gnupg` installed before you take another step. On OSX, you'll want to use [Homebrew](http://brew.sh/), and then type out `brew install gnupg` in eshell or shell or fish or zsh. GnuPG is the backbone of EasyPG.
-
-Make sure you're using a recent `gnupg` version -- I'm on `2.2.17` at the time of this writing. My `epa` setup (see below) will probably not work with `gnupg 2.0`, and it will *definitely* not work with `< 2.0`.
+Make sure you're using a recent `gnupg` version -- I'm on `2.2.17` at the time of this writing. My `epa` setup (see below) will probably not work with `gnupg 2.0`, and it will definitely not work with `< 2.0`.
 {: .note}
 
 So, generating your GPG key. What you wanna do here is type out the following.
@@ -71,7 +69,7 @@ This is an important point: you **mustn't** lose the generated key in `~/.gnupg/
 
 ## Setting up EasyPG
 
-Okay, great, we got past the part with GnuPG. We'll never have to touch this program again. You did create never-expiring keys, right?
+Okay, great, we got past the part with GnuPG. We'll never have to touch this program again. I hope you created never-expiring keys.
 
 Now let's set up EasyPG. EasyPG is a built-in Emacs package. If you're not using Emacs, you just wasted your time reading this post. Thanks for the page hit. Sucker.
 
@@ -93,7 +91,7 @@ Optionally, you may wish to increase the password expiry time to something longe
 (setq password-cache-expiry (* 60 15))
 ```
 
-I'm not actually sure if this does anything, since half of these settings seem to be deprecated. Whatever.
+I'm not actually sure if this does anything, since half of these settings seem to be deprecated.
 
 This variable has no effect if you use GPG2, which automatically runs `gpg-agent` to cache the password. You'll have to set [one of the options](https://www.gnupg.org/documentation/manuals/gnupg/Agent-Options.html) like `default-cache-ttl` in `~/.gnupg/gpg-agent.conf`.
 {: .update}
@@ -107,24 +105,18 @@ This next part might not be needed for you. I think it depends on your Emacs ver
 (setq epa-pinentry-mode 'loopback)
 ```
 
-I have no idea what this is about or how it works. All I can say is that it is absolutely pathetic that EasyPG is broken out of the box. As time goes on, I become less and less a fan of open source software and the largely talent-less developers behind it. All this time and effort, setting up something that should just work, just because I didn't want to shell out the 80 buckaroos for Sublime Text. Wait, Emacs is awesome. Sucker.
+That's pretty much it, I guess. The EasyPG setup is pretty finicky and I honestly just cobbled together something that seems to work fine.
 
-That's pretty much it, I guess. The EasyPG setup is pretty finicky and I honestly just cobbled together something that seems to work fine. Who cares.
-
-## Let's go for a test drive!!!
+## Test Drive
 
 1. Open up Emacs and create a file called `test.txt.gpg`.
-1. Enter some arbitrary text, like `Vim and Sublime are inferior text editors for total suckers.`
+1. Enter some arbitrary text, like `Vim is an inferior text editor`
 1. Save it. A dialogue box pops up.
 1. Go to the line with your email and hit `m`. Navigate to the `[OK]` button and hit enter. Yes, the user experience for this part is abominable.
 1. Kill the buffer. Open the file again.
 1. Enter the password that you used when setting up your GnuPG key.
 1. You can now save, close, and reopen the file multiple times without having to enter your password. You can edit other GPG files completely transparently as well, as long as your password cache doesn't expire.
 
-If something didn't go as expected, make sure you followed this guide down to the button. If you deviated at all, I can't really help you, because I have no idea what I'm doing, and I'm not your personal tech support guy, anyway.
-
-## Conclusion
-
-Ah, another fantastic guide.
+If something didn't go as expected, make sure you followed this guide down to the button. If you deviated at all, I can't really help you, because I have no idea what I'm doing, and I'm not your personal tech support guy.
 
 ## Footnotes

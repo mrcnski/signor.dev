@@ -2,16 +2,14 @@
 title: "Secure GPG In Emacs, Featuring Agent Smith"
 date: 2020-08-30
 categories: emacs cryptography
-description: "One day I was pondering upon my opsec when I realized something. Any Emacs buffers I had opened with epa's transparent decryption would stay open, indefinitely."
+description: "One day I was pondering upon my opsec when I realized something."
 post-no: 4
 related: [3]
 ---
 
 Oh, no. More [GPG in Emacs](/gpg-in-emacs)? I'll try to keep it short.
 
-One day I was pondering upon my opsec ("operational security")[^footnote] when I realized something. Any Emacs buffers I had opened with `epa`'s transparent decryption would stay open, indefinitely.
-
-[^footnote]:  Don't worry, I'll keep the cool hacker's lingo to a minimum.
+One day I was pondering upon my opsec ("operational security") when I realized something. Any Emacs buffers I had opened with `epa`'s transparent decryption would stay open, indefinitely.
 
 {% include image.html name="secure-gpg-in-emacs/keyboard.jpeg" alt="My mechanical keyboard." caption="My mechanical keyboard." width="650" %}
 
@@ -23,7 +21,7 @@ Paranoid? Yes. *Excessively* paranoid? Yes.
 
 Step one is to make sure GPG buffers don't stay open too long. Put the following code somewhere in your init:
 
-```elisp
+{% highlight elisp linedivs %}
 ;; Adapted from https://stackoverflow.com/a/15854362/6085242.
 (defun kill-gpg-buffers ()
   "Kill GPG buffers."
@@ -43,7 +41,7 @@ Step one is to make sure GPG buffers don't stay open too long. Put the following
       (message "%s .gpg buffers have been autosaved and killed" buffers-killed))))
 
 (run-with-idle-timer 60 t 'kill-gpg-buffers)
-```
+{% endhighlight %}
 
 If Emacs doesn't receive input for 60 seconds your GPG buffers get saved and killed. This time frame is configurable and should factor in the sensitivity of your files and what you personally feel comfortable with.
 
@@ -70,6 +68,4 @@ max-cache-ttl 600
 
 ## Conclusion
 
-Told you I'd keep it short. GPG and Emacs' `epa` are software disasters, but we had to take a couple minutes to revisit them here.
-
-## Footnotes
+That's about it. GPG and Emacs' `epa` are software disasters, but we had to take a couple minutes to revisit them here.

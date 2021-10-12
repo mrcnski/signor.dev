@@ -45,7 +45,7 @@ Here are some more useful things to be doing than checking social media:
 
 ## Bonus: Statistics
 
-Cold Turkey also tracks your frequently-used apps and sites! It can be a useful feature to find out exactly how you're wasting time on the computer, so while necessarily necessary to ending Digital Dependence it can be damn useful.
+Cold Turkey also tracks your frequently-used apps and sites! It can be a useful feature to find out exactly how you're wasting time on the computer.
 
 Cold Turkey's statistics are not perfect -- it thought I spent several hours on a site that I only looked at for a couple minutes. In general, though, it's pretty good at providing a data-based overview of your computing habits.
 

@@ -3,7 +3,7 @@ title: "Jekyll: Syntax Highlighting And Line Numbers"
 date: 2018-05-14
 categories: blogging css jekyll
 toc: true
-description: "Welcome back to my series of articles about Jekyll. Today's post is for all the programmers out there who want to include source code on their blogs. The topic? Syntax highlighting that looks nice."
+description: "Syntax highlighting that looks nice."
 post-no: 2
 related: [1]
 ---

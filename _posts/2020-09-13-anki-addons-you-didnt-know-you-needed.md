@@ -5,13 +5,13 @@ categories: anki language-learning
 toc: true
 post-no: 6
 related: [5]
-description: "Did you know there are Anki add-ons you didn't know you needed? You probably didn't (you *are* using Anki, right?), or maybe you did but you didn't know why."
+description: "Did you know there are Anki add-ons you didn't know you needed? You probably didn't, or maybe you did but you didn't know why."
 ---
 
 * Table of contents.
 {:toc}
 
-Did you know there are [Anki](https://apps.ankiweb.net/) add-ons you didn't know you needed? You probably didn't (you *are* using Anki, right?), or maybe you did but you didn't know why.
+Did you know there are [Anki](https://apps.ankiweb.net/) add-ons you didn't know you needed? You probably didn't, or maybe you did but you didn't know why.
 
 I mentioned a couple add-ons in my [previous post about Anki](/getting-the-most-out-of-anki). Now I'm back with a complete list, up-to-date for Anki 2.1. Let's get the show on the road!
 
@@ -33,10 +33,7 @@ By forcing you to do cards more quickly this add-on helps you learn more in less
 [[ Download ]](https://ankiweb.net/shared/info/1212877655)
 {: .post-meta}
 
-When you want to do a lot of reviews in a small amount of time, you want to be using hotkeys instead of clicking. It is way faster to keep your hands on the keyboard, press Enter to show cards, and press `1`, `2`, `3`, or `4` to rate their ease. It also lets you focus more vital brainpower on the cards and less on mouse navigation.
-
-The hotkeys are even faster than touch-screen tapping, so I recommend doing Anki on a computer instead of a smartphone (which you are too addicted to, anyway).
-{: .note}
+When you want to do a lot of reviews in a small amount of time, you want to be using hotkeys instead of clicking. It is faster to keep your hands on the keyboard, press Enter to show cards, and press `1`, `2`, `3`, or `4` to rate their ease. It also lets you focus more vital brainpower on the cards and less on mouse navigation.
 
 You can improve on the default hotkeys with the "Right Hand Reviews" add-on. It lets you use a single hand for both hitting Enter and rating ease, freeing up the left hand to compose poetry in Latin.
 
@@ -69,8 +66,4 @@ It is not entirely clear what the purpose of this add-on is, but it looks really
 
 ## Conclusion
 
-It is nigh upon two years since I composed and published my [original masterpiece about Anki](/getting-the-most-out-of-anki/). It was an instant classic and somehow got *even better* with time, like a fine bottle of Scotch. Since then I've learned a lot and grown tremendously as a person. I beat my video game addiction. I now give all of my focus to reality, important problems, and valuable relationships. I am twice as strong physically (thanks Pavel Tsatsouline!). And, most importantly, I've done **65,688** Anki reviews in that time. Hot damn!
-
 {% include image.html name="anki-addons/building.jpeg" alt="A building." width="600" %}
-
-I continue to endorse everything I wrote in that article (it really is a work of genius) and have included here both of the add-ons I mentioned there. In fact, "Speed Focus Mode" and "Right Hand Reviews" are the only ones you really need, and the rest I just included to pad out this post. Thanks for reading!

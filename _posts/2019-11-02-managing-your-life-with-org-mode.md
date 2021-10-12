@@ -2,7 +2,7 @@
 title: "Managing Your Life With Org-Mode"
 date: 2019-11-02
 categories: emacs org-mode presentations productivity
-description: "Today was EmacsConf 2019. There were a lot of very interesting and mind-expanding talks about cool stuff and the latest developments in Emacs. The sense of community was brilliant and I had a great time, despite the technical problems. Of course, I was one of the speakers."
+description: "Today was EmacsConf 2019."
 ---
 
 **Presentation:** [[ Link ]](/files/managing-your-life-with-org-mode.html)

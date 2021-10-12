@@ -39,7 +39,7 @@ We are made for eating meat. Our stomach ph is low like a carnivore's. Our diges
 
 On a carnivore diet our blood sugar and insulin levels are stable, quite different from those of people on standard diets. The body wants to maintain homeostasis at all times and stable hormone levels point to a healthier, more natural state of affairs than levels which are constantly in flux. After a carbohydrate-heavy meal, our insulin spikes and we experience sleepiness, heaviness, and often bloating.
 
-There is also a growing body of evidence that the state of ketosis itself is healthy in a wide variety of ways, from curing epilepsy to treating obesity, diabetes, hypertension, and more. Many people are finding themselves thriving on the keto diet. Why should this be? We would probably not be prospering under low-carb conditions if we had evolved to mainly be eating plant matter, which largely consists of carbohydrates. The keto subreddit has almost two million subscribers, so it is clearly bringing benefit to many. This isn't a fringe or fad diet, though "healthcare professionals" still pretend it is.
+There is also a growing body of evidence that the state of ketosis itself is healthy in a wide variety of ways, from curing epilepsy to treating obesity, diabetes, hypertension, and more. Many people are finding themselves thriving on the keto diet. Why should this be? We would probably not be prospering under low-carb conditions if we had evolved to mainly be eating plant matter, which largely consists of carbohydrates. The keto subreddit has almost two million subscribers, so it is clearly bringing benefit to many.
 
 ### Nature
 

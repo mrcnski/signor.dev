@@ -3,7 +3,7 @@ title: "Useful Emacs Keybindings"
 date: 2018-07-22
 categories: emacs productivity
 toc: true
-description: "I don't mean to brag, but I'm one of the best Emacs users on the planet. What's my secret? Well, apart from having a genius-level IQ, there is no secret, really. However, it helps that I customized Emacs to make me as productive as possible, and part of doing that has been setting up custom keybindings. In fact, many of my keybindings are so brilliant that you may at first sight not understand them. I do implore you to persevere. This article may just change your life. At the least, you'll have a few more keybindings in your arsenal."
+description: "I don't mean to brag, but I'm one of the best Emacs users on the planet."
 ---
 
 * Table of contents.
