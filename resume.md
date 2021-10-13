@@ -39,7 +39,7 @@ Professional software developer with **6 years of experience** in full stack dev
 
 - Implemented an "OS in the Browser," called Skynet MySky, with cutting-edge browser techniques. [[Link](https://github.com/SkynetLabs/skynet-mysky)]
 - Created and maintained complex SDKs for Browser, Node, Python, and Go. [[Link](https://github.com/SkynetLabs/skynet-js)]
-- Wrote API documentation for Skynet SDKs. [[Link](https://siasky.net/docs/)]
+- Wrote API documentation for Skynet SDKs [[Link](https://siasky.net/docs/)] and articles for developers [[Link](https://medium.com/@marcins)].
 - Implemented `no_std` Skynet Rust library built on Polkadot Substrate. [[Link](https://github.com/SkynetLabs/skynet-substrate)]
 - Contributed to Go backend (blockchain-based Skynet portal daemon). [[Link](https://gitlab.com/SkynetLabs/skyd)]
 
