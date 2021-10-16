@@ -30,7 +30,7 @@ By forcing you to do cards more quickly this add-on helps you learn more in less
 
 ## Right Hand Reviews
 
-[[ Download ]](https://ankiweb.net/shared/info/1212877655)
+[[ Download ]](https://ankiweb.net/shared/info/850294128)
 {: .post-meta}
 
 When you want to do a lot of reviews in a small amount of time, you want to be using hotkeys instead of clicking. It is faster to keep your hands on the keyboard, press Enter to show cards, and press `1`, `2`, `3`, or `4` to rate their ease. It also lets you focus more vital brainpower on the cards and less on mouse navigation.
