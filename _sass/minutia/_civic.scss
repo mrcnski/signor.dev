@@ -1,0 +1,7 @@
+.game-choice, .game-selectable-item {
+    color: $blue;
+
+    &:hover {
+        background-color: $light-purple;
+    }
+}
