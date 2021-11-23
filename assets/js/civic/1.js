@@ -1,29 +1,6 @@
 let leftTaxi = false;
 
 const gameNodes = {
-  // ======
-  // Schema
-  // ======
-  exampleLabel: {
-    // Minimum.
-    text: "This is an example node schema",
-    choices: [
-      {
-        // Minimum.
-        next: "Some node name",
-        // More fields.
-        text: "Choice description",
-        item: "some item name",
-        newItems: ["some item name"],
-      },
-    ],
-    // More fields.
-    tip: "some explanatory tip",
-    gainedItems: ["some item name"],
-  },
-  // ====
-  // Game
-  // ====
   start: {
     text: `<b>It's raining.</b> It's always been raining. You notice the bus slowing down. "Wake up," you say to the stranger next to you. "We're almost in Toyota Town." He doesn't wake up.`,
     tip: "choiceClick",
@@ -101,7 +78,7 @@ const gameNodes = {
     ],
   },
   offBus: {
-    text: `<b>You make your way off the bus</b>, glad to be off. You couldn't stand breathing in the foul bus air. That was probably your fault, but it doesn't matter. You are now in the foul air of Toyota Town. You never thought you'd see this place again, but here you are. You need to get to Toyota Tower.`,
+    text: `<b>You make your way off the bus</b>, glad to be gone. You couldn't stand breathing in the foul bus air. That was probably your fault, but it doesn't matter. You are now in the foul air of Toyota Town. You never thought you'd see this place again, but here you are. You need to get to Toyota Tower.`,
     choices: [
       {
         text: "Stumble into the nearest umarked van",
@@ -156,6 +133,10 @@ const gameNodes = {
       {
         item: "wad of blue slime",
         next: "wobsBribe",
+      },
+      {
+        item: "dancing gerbil",
+        next: "gerbilBribe",
       }
     ],
   },
@@ -175,6 +156,10 @@ const gameNodes = {
       {
         item: "wad of blue slime",
         next: "wobsBribe",
+      },
+      {
+        item: "dancing gerbil",
+        next: "gerbilBribe",
       }
     ],
   },
@@ -211,10 +196,18 @@ const gameNodes = {
       }
     ],
   },
+  gerbilBribe: {
+    text: `<b>You present the dancing gerbil to the driver.</b> "Eh? Is this a bribe, sirs?" You give him a disinterested look -- you're thinking about tacos. The driver's eyes soften, then dull, then soften again as they look upon the adorable furball. The gerbil proceeds to karate kick him and knocks him out cold.`,
+    choices: [
+      {
+        text: "Take a nap, too",
+        next: "flamencoNap",
+      }
+    ],
+  },
   flamencoNap: {
-    text: `You take the opportunity to take a <b>nice, long nap</b>. Not for the first time, you dream of angry flamenco dancers. "I didn't mean to!" you yell as they come straight for you. You wake up to the intimidating edifice of Toyota Tower. You step out of the taxi. "Thanks for getting me here, old man." The driver bows, a feeble "Toyota" escaping his lips.`,
-    choices: [], // TODO
-    gainedItems: ["old balogna sandwich"],
+    text: `You take the opportunity for a <b>nice, long nap</b>. Not for the first time, you dream of angry flamenco dancers. "I didn't mean to!" you yell as they come straight for you. You wake up to the intimidating edifice of Toyota Tower. You step out of the taxi. "Thanks for getting me here, old man." The driver bows, a feeble "Toyota" escaping his lips.<br><br><i>END OF CHAPTER ONE</i>`,
+    choices: [],
   },
 };
 let gameNode = gameNodes["start"];
@@ -226,158 +219,6 @@ const tips = {
     text: "Items in your inventory are highlighted when they are usable.",
   }
 };
-
 const inventory = [
   "pickled quail eggs",
 ];
-// List of new items added in the previous choice. Cleared after every turn.
-let newItems = [];
-
-function handleChoice(choice) {
-  // Clear all registered events.
-  $("*").unbind();
-
-  // Clear all new items.
-  newItems = [];
-
-  // Update inventory.
-
-  // Update game node.
-  gameNode = gameNodes[choice.next];
-  if (gameNode.gainedItems) {
-    inventory.push(...gameNode.gainedItems);
-    newItems.push(...gameNode.gainedItems);
-  }
-  if (gameNode.lostItems) {
-    gameNode.lostItems.map(item => {
-      removeItem(item);
-    });
-  }
-  if (gameNode.code) {
-    gameNode.code();
-  }
-
-  // Display new game state.
-  displayGame();
-}
-
-function displaySituation() {
-  let text = gameNode.text;
-  if (gameNode.tip) {
-    const tip = tips[gameNode.tip];
-    if (!tip.seen) {
-      text += `<br><br><i>Tip: ${tip.text}</i>`;
-      tip.seen = true;
-    }
-  }
-
-  $("#situation-display").html(text);
-}
-
-function displayChoices() {
-  let choices = "";
-
-  // Add HTML.
-
-  const classString = `class="game-choice"`;
-  let i = 0;
-  gameNode.choices.map(choice => {
-    if (shouldDisplayChoice(choice)) {
-      const idString = `id="choice${i}"`;
-      choices += `<li ${classString} ${idString}>${choice.text}</li>`;
-
-      i ++;
-    }
-  });
-
-  $("#choices-display").html(`<ul>${choices}</ul>`);
-
-  // Add click handlers.
-
-  i = 0;
-  gameNode.choices.map(choice => {
-    if (shouldDisplayChoice(choice)) {
-      $(`#choice${i}`).click(function() {
-        handleChoice(choice);
-      });
-
-      i++
-    }
-  });
-}
-
-// Display all the items in the inventory.
-function displayInventory() {
-  let items = "";
-  // Keeps track of choices for selectable items.
-  const itemChoices = [];
-
-  let i = 0;
-  inventory.map(item => {
-    // Add HTML.
-
-    let classes = [];
-
-    const new_item = newItems.includes(item);
-    const selectable_item = gameNode.choices.some((choice) => {
-      if (choice.item === item) {
-        itemChoices.push([choice, i]);
-        return true;
-      }
-      return false;
-    });
-
-    if (new_item) {
-      item = `<b>${item}</b>`;
-    }
-    if (selectable_item) {
-      classes.push("game-selectable-item");
-    }
-
-    const classString = `class="${classes.join(" ")}"`;
-    const idString = `id="item${i}"`;
-    items += `<li ${classString} ${idString}>${item}</li>`;
-
-    i ++;
-  });
-
-  newItems = [];
-
-  $("#inventory-display").html(`<ul>${items}</ul>`);
-
-  // Add click handlers.
-
-  itemChoices.map(([choice, i]) => {
-    $(`#item${i}`).click(function() {
-      // Remove item from inventory.
-      removeItem(choice.item);
-      // Run choice handler.
-      handleChoice(choice);
-    });
-  });
-}
-
-function displayGame() {
-  displaySituation();
-  displayChoices();
-  displayInventory();
-}
-
-displayGame();
-
-function removeItem(item) {
-  const index = inventory.indexOf(item);
-  if (index > -1) {
-    inventory.splice(index, 1);
-  }
-}
-
-function shouldDisplayChoice(choice) {
-  if (!choice.text) {
-    return false;
-  }
-  if (choice.if && !choice.if()) {
-    return false;
-  }
-  return true;
-}
