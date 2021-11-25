@@ -65,7 +65,7 @@ function handleChoice(choice) {
     newItems.push(...gameNode.gainedItems);
   }
   if (gameNode.lostItems) {
-    gameNode.lostItems.map(item => {
+    gameNode.lostItems.map((item) => {
       removeItem(item);
     });
   }
@@ -115,12 +115,15 @@ function displayChoices() {
 
   // Add all the displayable choices to the #choices-display div.
   let i = 0;
-  gameNode.choices.map(choice => {
+  gameNode.choices.map((choice) => {
     if (shouldDisplayChoice(choice)) {
-      const $choice = $("<li>").addClass("game-choice").attr("id",  `choice${i}`).text(choice.text);
+      const $choice = $("<li>")
+        .addClass("game-choice")
+        .attr("id", `choice${i}`)
+        .text(choice.text);
       $choices.append($choice);
 
-      i ++;
+      i++;
     }
   });
 
@@ -129,13 +132,13 @@ function displayChoices() {
   // Add click handlers.
 
   i = 0;
-  gameNode.choices.map(choice => {
+  gameNode.choices.map((choice) => {
     if (shouldDisplayChoice(choice)) {
-      $(`#choice${i}`).click(function() {
+      $(`#choice${i}`).click(function () {
         handleChoice(choice);
       });
 
-      i++
+      i++;
     }
   });
 }
@@ -153,7 +156,7 @@ function displayInventory() {
   const $items = $("<ul>");
 
   let i = 0;
-  inventory.map(item => {
+  inventory.map((item) => {
     let classes = [];
 
     const is_new_item = newItems.includes(item);
@@ -167,7 +170,7 @@ function displayInventory() {
 
     const $item = $("<li>");
     if (is_new_item) {
-      $item.css("font-weight","Bold");
+      $item.css("font-weight", "Bold");
     }
     if (is_selectable_item) {
       $item.addClass("game-selectable-item");
@@ -176,7 +179,7 @@ function displayInventory() {
     $item.attr("id", `item${i}`).text(item);
     $items.append($item);
 
-    i ++;
+    i++;
   });
 
   $("#inventory-display").empty().append($items);
@@ -184,7 +187,7 @@ function displayInventory() {
   // Add click handlers.
 
   itemChoices.map(([choice, i]) => {
-    $(`#item${i}`).click(function() {
+    $(`#item${i}`).click(function () {
       // Remove item from inventory.
       removeItem(choice.item);
       // Run choice handler.

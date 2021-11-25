@@ -17,7 +17,7 @@ const gameNodes = {
       {
         text: "Let him be",
         next: "letStrangerBe",
-      }
+      },
     ],
   },
   keepWaking: {
@@ -49,7 +49,7 @@ const gameNodes = {
       {
         text: "Leave the bus",
         next: "offBus",
-      }
+      },
     ],
     lostItems: ["pickled quail eggs"],
   },
@@ -86,7 +86,7 @@ const gameNodes = {
       },
       {
         text: "Hail taxi",
-        next: "hailTaxi"
+        next: "hailTaxi",
       },
     ],
   },
@@ -137,7 +137,7 @@ const gameNodes = {
       {
         item: "dancing gerbil",
         next: "gerbilBribe",
-      }
+      },
     ],
   },
   enterTaxiBelligerently: {
@@ -160,7 +160,7 @@ const gameNodes = {
       {
         item: "dancing gerbil",
         next: "gerbilBribe",
-      }
+      },
     ],
   },
   leaveTaxi: {
@@ -176,7 +176,7 @@ const gameNodes = {
       },
     ],
     gainedItems: ["wad of blue slime"],
-    code: () => leftTaxi = true,
+    code: () => (leftTaxi = true),
   },
   pqeBribe: {
     text: `<b>You open the pickled quail eggs</b>, temptingly wafting them in the musty taxicab air. "Eh? Is this a bribe, sirs?" You raise an eyebrow, while lowering the other one. "You know what it is." The driver thinks for a long time, then falls asleep.`,
@@ -193,7 +193,7 @@ const gameNodes = {
       {
         text: "Take a nap, too",
         next: "flamencoNap",
-      }
+      },
     ],
   },
   gerbilBribe: {
@@ -202,7 +202,7 @@ const gameNodes = {
       {
         text: "Take a nap, too",
         next: "flamencoNap",
-      }
+      },
     ],
   },
   flamencoNap: {
@@ -217,8 +217,6 @@ const tips = {
   },
   itemHighlight: {
     text: "Items in your inventory are highlighted when they are usable.",
-  }
+  },
 };
-const inventory = [
-  "pickled quail eggs",
-];
+const inventory = ["pickled quail eggs"];
