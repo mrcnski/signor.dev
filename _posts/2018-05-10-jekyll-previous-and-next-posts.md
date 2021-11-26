@@ -17,7 +17,7 @@ This post is about the very first thing I implemented for this blog: links to th
 
 ## The Goal
 
-At the bottom of each of my posts you'll find links to the previous and next posts. This is what they look like:[^change]
+At the bottom of each of my posts you'll find links to the previous and next posts. This is what they look like:
 
 {% include image.html name="next-and-prev.png" alt="Next and previous posts." width="521" %}
 

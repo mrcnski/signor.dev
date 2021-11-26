@@ -85,7 +85,7 @@ const gameNodes = {
         next: "nearestVan",
       },
       {
-        text: "Hail taxi",
+        text: "Hail Taxi",
         next: "hailTaxi",
       },
     ],
