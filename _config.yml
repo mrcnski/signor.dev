@@ -67,6 +67,7 @@ defaults:
 
 category_descriptions:
   - { name: "anki", description: "" }
+  - { name: "announcements", description: "" }
   - { name: "blogging", description: "" }
   - { name: "books", description: "" }
   - { name: "c", description: "" }
@@ -85,6 +86,7 @@ category_descriptions:
   - { name: "presentations", description: "" }
   - { name: "productivity", description: "" }
   - { name: "programming", description: "" }
+  - { name: "projects", description: "" }
   - { name: "reviews", description: "" }
   - { name: "rust", description: "" }
   - { name: "self-improvement", description: "" }
