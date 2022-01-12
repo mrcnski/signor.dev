@@ -1,10 +1,10 @@
 ---
 layout: resume
 title: Resume
-update: "Oct 2021"
+update: "Jan 2022"
 ---
 
-# Marcin Swieczkowski
+# Marcin Swieczkowski - Sr Software Developer
 
 - USA (remote) **\|** +1 (404) 955-4324 **\|** [marcin@bytedude.com](mailto:marcin@bytedude.com) |
 
@@ -12,7 +12,7 @@ update: "Oct 2021"
 
 ## Summary
 
-Professional software developer with **6 years of experience** in full stack development and 4 years of experience working remotely. Provides robust, well-tested and maintainable solutions.
+**Senior Software Developer** with **6 years of experience** in full stack development and 4 years of experience working remotely. Provides robust, well-tested and maintainable solutions.
 
 ## Skills
 
@@ -65,36 +65,6 @@ Professional software developer with **6 years of experience** in full stack dev
 - Developed and maintained a dependency-completeness checker for updates, many critical, being deployed to our Electronic Health Record suite in hospitals.
 - Took responsibility for the dependency checker and wrote documentation for our developers, sometimes guiding them personally.
 - Developed a C# application that calculated sets of common dependencies and created pre-built bundles, saving build time and company resources.
-
-## Personal Projects
-
-### cargo-deps
-{: .resume-meta}
-
-[![cargo-deps](https://img.shields.io/github/stars/m-cat/cargo-deps.svg)](https://github.com/m-cat/cargo-deps) [![Rust](https://img.shields.io/badge/language-rust-orange.svg)](https://www.rust-lang.org/) [![LoC](https://tokei.rs/b1/github/m-cat/cargo-deps)](https://github.com/m-cat/cargo-deps)
-
-[[Link](https://github.com/m-cat/cargo-deps)]
-
-- Command line program for building dependency graphs of Rust projects.
-
-### OVER
-{: .resume-meta}
-
-[![over](https://img.shields.io/github/stars/m-cat/over.svg)](https://github.com/m-cat/over) [![Rust](https://img.shields.io/badge/language-rust-orange.svg)](https://www.rust-lang.org/) [![LoC](https://tokei.rs/b1/github/m-cat/over)](https://github.com/m-cat/over)
-
-[[Link](https://github.com/m-cat/over)]
-
-- Designed and developed a data format similar to JSON with features such as variables, includes, and type safety.
-- Developed fuzz tests to detect invalid inputs and crashes.
-
-### org-recur
-{: .resume-meta}
-
-[![org-recur](https://img.shields.io/github/stars/m-cat/org-recur.svg)](https://github.com/m-cat/org-recur) [![Elisp](https://img.shields.io/badge/language-elisp-green.svg)](https://www.gnu.org/software/emacs/) [![LoC](https://tokei.rs/b1/github/m-cat/org-recur)](https://github.com/m-cat/org-recur)
-
-[[Link](https://github.com/m-cat/org-recur)]
-
-- Simple recurring tasks in Emacs org-mode.
 
 ## Speaking
 
