@@ -9,11 +9,9 @@ description: AS an owner of an Ergodox EZ and a Planck EZ, I am basically an exp
 * Table of contents.
 {:toc}
 
-AS an owner of an Ergodox EZ and a Planck EZ, I am basically an expert on mechanical keyboards as well as ergonomics. As such, I bethought it jurisprudent of me to review the latest addition to my mechanical arsenal: the **System76 Launch**.
+I was excited to buy this keyboard for two reasons. The first? The unique layout, with accessible thumb modifier keys and a split spacebar.
 
 {% include image.html name="system76-launch/launch.jpeg" alt="Keyboard" width="504" caption="My new mechanical acquisition." %}
-
-I was excited to buy this keyboard for two reasons. The first? The unique layout, with accessible thumb modifier keys and a split spacebar.
 
 And the second? That would be the availability of Box Jade keyswitches as a stock option, the sound of which I fell in love with the first time I heard them.
 
@@ -21,21 +19,23 @@ So how does this keyboard hold up in practical use? Let's walk and talk.
 
 ## The Layout
 
-### The Optimal Layout
+### The Optimal Emacs Layout
 
-As the world's best Emacs user, I have long ago come up with the best possible layout for keyboards:
+I believe I have found what is possibly the best keyboard layout for Emacs:
 
 1. Use QWERTY and a regular staggered key layout.
-1. Bind `CAPS` to `super`, as described in [this seminal article](https://www.bytedude.com/useful-emacs-shortcuts/#being-super).
+1. Bind `CAPS` to `super`, as described in [this article](https://www.bytedude.com/useful-emacs-shortcuts/#being-super).
 1. Use the modifier keys on the side of the spacebar by curling your thumbs in.
 
 With these tips you will be:
 
-1. More productive than anyone else except me,
+1. More productive
 1. Have near-instant compatibility with almost all keyboards with minimal configuration
 1. Avoid issues like "Emacs pinky" and RSI since you are not using your pinkies for `ctrl`.
 
-Simple, yet I've never seen anyone else describe such a setup, so I take full credit.
+Simple, yet I've never seen anyone else describe such a setup!
+
+(If you're on a Mac, I've figured out how to apply more Emacs shortcuts to almost all text inputs on the OS. I won't write about that now, but it gave my productivity yet another big boost.)
 
 ### The Launch Layout
 
