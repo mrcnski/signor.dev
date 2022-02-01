@@ -18,7 +18,7 @@ update: "Jan 2022"
 
 ### Languages
 
-- Rust **\|** Javascript+Typescript **\|** Go **\|** Python **\|** Java **\|** C **\|** HTML+CSS
+- Rust **\|** Javascript + Typescript (browser + Node) **\|** Go **\|** Python **\|** Java **\|** C **\|** HTML + CSS
 
 ### Tools
 
