@@ -8,4 +8,4 @@ This page is secret! Get outta here! Just kidding, this is a test page. Basicall
 
 <div style="margin-top: 30px; margin-bottom: 30px;">
 
-{% include comments.html %}
+<!-- {% include comments.html %} -->
