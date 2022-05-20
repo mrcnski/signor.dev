@@ -58,7 +58,7 @@
         font-size: $large-font-size;
 
         color: $background-color;
-        background-color: $blue;
+        background-color: $light-blue;
 
         padding: 0px 7px 1px 7px;
         border: 1px solid $text-color;
@@ -396,12 +396,8 @@ img + em {
 
 .category-link {
     font-size: $smaller-font-size;
-    color: $dark-gray !important;
-    background-color: $light-purple;
-
-    padding: 0px 7px 1px 7px;
-    border: 1px solid $text-color;
-    border-radius: 5px;
+    color: $dark-purple !important;
+    padding: 0px 1px 1px 1px;
 
     // Prevent line breaks at hyphens.
     white-space: nowrap;
