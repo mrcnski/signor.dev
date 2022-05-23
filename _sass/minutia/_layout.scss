@@ -538,13 +538,13 @@ input:checked ~ .spoiler {
     }
 }
 
-/* Snark */
+/* Rant */
 
-.snark-off {
+.rant-off {
     display: none;
 }
 
-.snark-on {
+.rant-on {
     font-style: italic;
     border: 1px solid $red;
     border-radius: 5px;
