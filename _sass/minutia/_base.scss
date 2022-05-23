@@ -44,6 +44,7 @@ textarea {
 input, textarea, button {
     font: $base-font-weight #{$small-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
+    margin-bottom: $spacing-unit / 2;
     background-color: $background-color;
 
     padding-left: $spacing-unit / 8;

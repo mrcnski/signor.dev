@@ -395,7 +395,7 @@ img + em {
 }
 
 .category-link {
-    font-size: $smaller-font-size;
+    font-size: $small-font-size;
     color: $dark-purple !important;
     padding: 0px 1px 1px 1px;
 
@@ -536,4 +536,16 @@ input:checked ~ .spoiler {
     ~ ul#markdown-toc {
         display: inline-block;
     }
+}
+
+/* Snark */
+
+.snark-off {
+    display: none;
+}
+
+.snark-on {
+    font-style: italic;
+    border: 1px solid $red;
+    border-radius: 5px;
 }

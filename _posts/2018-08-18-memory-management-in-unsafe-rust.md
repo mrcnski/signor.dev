@@ -7,7 +7,7 @@ description: "This is a presentation I gave to my coworkers at MaidSafe."
 
 View the full presentation [here](/files/unsafe-rust.html).
 
-This is a presentation I gave to my coworkers at [MaidSafe](https://maidsafe.net). It was meant to be a broad overview of Rust unsafe code and FFI design, and includes the motivations as well as the background concepts necessary to understand the design of the FFI API I implemented for [parsec](https://github.com/maidsafe/parsec). I wanted it to be understandable to beginners but still useful to experts -- I hope I succeeded in that rather lofty goal :)
+This is a presentation I gave to my coworkers at [MaidSafe](https://maidsafe.net). It was meant to be a broad overview of Rust unsafe code and FFI design, and includes the motivations as well as the background concepts necessary to understand the design of the FFI API I implemented for [parsec](https://web.archive.org/web/2021*/https://github.com/maidsafe/parsec). I wanted it to be understandable to beginners but still useful to experts -- I hope I succeeded in that rather lofty goal :)
 
 You can view the source file for the presentation [here](https://github.com/m-cat/unsafe-rust). It's a plaintext org-mode file.
 
@@ -27,4 +27,4 @@ The downsides are:
 
 If you care more about the content of the presentation (or you have a lot of content), then the pros far outweigh the cons.
 
-Anyway, enjoy :)
+Anyway, enjoy. :)

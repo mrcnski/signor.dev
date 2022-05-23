@@ -3,7 +3,7 @@ title: "Review of System76 Launch"
 date: 2021-12-19
 toc: true
 categories: reviews productivity
-description: AS an owner of an Ergodox EZ and a Planck EZ, I am basically an expert on mechanical keyboards as well as ergonomics.
+description: As an owner of an Ergodox EZ and a Planck EZ, I am basically an expert on mechanical keyboards as well as ergonomics.
 ---
 
 * Table of contents.
