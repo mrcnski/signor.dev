@@ -11,7 +11,7 @@ A couple weeks ago I decided to set up a fresh Rust config from scratch. It was 
 
 ## Getting the Pre-Requisites
 
-The dependencies *should* be installed by our Emacs package [Rustic](https://github.com/brotzeit/rustic):
+The dependencies _should_ be installed by our Emacs package [Rustic](https://github.com/brotzeit/rustic):
 
 > Simply put `(use-package rustic)` in your config and most stuff gets configured automatically.
 
@@ -49,7 +49,7 @@ function toggleRant() {
 }
 </script>
 
-It turns out that *rust-analysis* is not the same as *rust-analyzer*, and you need the second one. And neither `rustup` nor our Rust package actually install it, nor is it available with `cargo install`. In fact, you have to [manually install it](https://rust-analyzer.github.io/manual.html#installation). <span class="rant-off">The Rustic instructions don't mention this, of course, so I had to spend an hour Googling it.</span>
+It turns out that _rust-analysis_ is not the same as _rust-analyzer_, and you need the second one. And neither `rustup` nor our Rust package actually install it, nor is it available with `cargo install`. In fact, you have to [manually install it](https://rust-analyzer.github.io/manual.html#installation). <span class="rant-off">The Rustic instructions don't mention this, of course, so I had to spend an hour Googling it.</span>
 
 [An issue has been filed](https://github.com/brotzeit/rustic/issues/403) about this<span class="rant-off"> (and summarily ignored)</span>.
 
@@ -81,13 +81,16 @@ I use `eglot`, because the alternative, `lsp-mode`, was breaking for some of my 
 rustic-lsp-client 'eglot
 ```
 
+[Here](https://github.com/joaotavora/eglot/issues/180#issuecomment-445576688) is a post from the maintainer of `eglot` explaining why his package is better than `lsp-mode`. I agree with it. <span class="rant-off">Personally, my experience with `lsp-mode` was awful, but YMMV.</span>
+{: .update}
+
 Next, I disabled the automatic code checking, which would run as I typed. This was causing a lot of lag and stutters, all of which was seriously interfering with my programming. <span class="rant-off">This should be an easy thing to turn off, but there's no option for it.</span> The best we can do is increase the delay; the code checking still runs on save.
 
 ```elisp
 eglot-send-changes-idle-time (* 60 60)
 ```
 
-Finally, I needed to disable the doc popups in the minibuffer as they were <span class="rant-off">*extremely*</span> distracting. <span class="rant-off">Again, it took lots of googling to get this right because there was no obvious way to do this.</span>
+Finally, I needed to disable the doc popups in the minibuffer as they were <span class="rant-off">_extremely_</span> distracting. <span class="rant-off">Again, it took lots of googling to get this right because there was no obvious way to do this.</span>
 
 ```elisp
 (add-hook 'eglot-managed-mode-hook (lambda () (eldoc-mode -1)))
