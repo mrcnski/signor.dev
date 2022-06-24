@@ -20,7 +20,7 @@ url: "https://bytedude.com" # the base hostname & protocol for your site, e.g. h
 short_url: "bytedude.com"
 github_username: "m-cat"
 category_dir: category
-copyright_year: 2021
+copyright_year: 2022
 
 repository: "m-cat/bytedude.com"
 
