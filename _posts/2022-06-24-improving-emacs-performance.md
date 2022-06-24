@@ -27,7 +27,6 @@ collected from the process.
 (add-hook 'focus-out-hook 'garbage-collect)
 (run-with-idle-timer 5 t 'garbage-collect)
 {% endhighlight %}
-- Use `:defer`, though it's not always needed - see [here](https://github.com/jwiegley/use-package#notes-about-lazy-loading).
 - I disabled my fancy modeline and `show-parens` and my experience is smoother. Try disabling one minor mode at a time and see how things feel with each change.
 - Also, use `M-x profiler-start` and `profiler-report` to profile runtime.
 - There's also `esup` and the [`benchmark-init`](https://github.com/dholm/benchmark-init-el) package for profiling startup, but I don't much care about that.
