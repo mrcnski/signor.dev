@@ -57,7 +57,7 @@ It turns out that _rust-analysis_ is not the same as _rust-analyzer_, and you ne
 
 Now to the Emacs config. I use [`Rustic`](https://github.com/brotzeit/rustic), which purports to be an upgrade to `rust-mode`<span class="rant-off"> and claims to set up dependencies automatically (although it doesn't, which is why we needed the above section)</span>.
 
-```elisp
+{% highlight elisp linedivs %}
 ;; Enhanced Rust mode with automatic LSP support.
 (use-package rustic
   :config
@@ -71,30 +71,30 @@ Now to the Emacs config. I use [`Rustic`](https://github.com/brotzeit/rustic), w
   ;; Disable the annoying doc popups in the minibuffer.
   (add-hook 'eglot-managed-mode-hook (lambda () (eldoc-mode -1)))
   )
-```
+{% endhighlight %}
 
 It doesn't look like much, but it took me hours to get that right.
 
 I use `eglot`, because the alternative, `lsp-mode`, was breaking for some of my <span class="rant-off">(simple)</span> Rust projects<span class="rant-off">, and I couldn't figure out why after a couple of hours of looking into it</span>. `eglot` seemed stable, at least.
 
-```elisp
+{% highlight elisp linedivs %}
 rustic-lsp-client 'eglot
-```
+{% endhighlight %}
 
 [Here](https://github.com/joaotavora/eglot/issues/180#issuecomment-445576688) is a post from the maintainer of `eglot` explaining why his package is better than `lsp-mode`. I agree with it. <span class="rant-off">Personally, my experience with `lsp-mode` was awful, but YMMV.</span>
 {: .update}
 
 Next, I disabled the automatic code checking, which would run as I typed. This was causing a lot of lag and stutters, all of which was seriously interfering with my programming. <span class="rant-off">This should be an easy thing to turn off, but there's no option for it.</span> The best we can do is increase the delay; the code checking still runs on save.
 
-```elisp
+{% highlight elisp linedivs %}
 eglot-send-changes-idle-time (* 60 60)
-```
+{% endhighlight %}
 
 Finally, I needed to disable the doc popups in the minibuffer as they were <span class="rant-off">_extremely_</span> distracting. <span class="rant-off">Again, it took lots of googling to get this right because there was no obvious way to do this.</span>
 
-```elisp
+{% highlight elisp linedivs %}
 (add-hook 'eglot-managed-mode-hook (lambda () (eldoc-mode -1)))
-```
+{% endhighlight %}
 
 ## Conclusion
 
