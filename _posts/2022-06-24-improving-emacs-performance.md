@@ -1,7 +1,7 @@
 ---
 title: "Improving Emacs Performance"
 date: 2022-06-24
-categories: emacs
+categories: emacs productivity
 description: Making the best editor even better.
 ---
 
