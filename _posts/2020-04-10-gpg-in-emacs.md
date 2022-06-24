@@ -75,21 +75,21 @@ Now let's set up EasyPG. EasyPG is a built-in Emacs package. If you're not using
 
 Let's set up EasyPG. Here is the config I put in my Emacs init.
 
-```elisp
+{% highlight elisp linedivs %}
 ;; Don't bring up key recipient dialogue.
 (require 'epa-file)
 (setq epa-file-select-keys nil)
 (setq epa-file-encrypt-to '("<YOUR EMAIL HERE>"))
-```
+{% endhighlight %}
 
 This first snippet makes it so you don't have to provide your email address every time, I think. And something about a "key recipient dialogue"? I have no clue.
 
 Optionally, you may wish to increase the password expiry time to something longer and a bit more convenient, like 15 minutes.
 
-```elisp
+{% highlight elisp linedivs %}
 ;; Increase the password cache expiry time.
 (setq password-cache-expiry (* 60 15))
-```
+{% endhighlight %}
 
 I'm not actually sure if this does anything, since half of these settings seem to be deprecated.
 
@@ -98,12 +98,12 @@ This variable has no effect if you use GPG2, which automatically runs `gpg-agent
 
 This next part might not be needed for you. I think it depends on your Emacs version. If you get an error like `inappropriate ioctl for device`, please include this fix (from [here](https://colinxy.github.io/software-installation/2016/09/24/emacs25-easypg-issue.html)):
 
-```elisp
+{% highlight elisp linedivs %}
 ;; Fix EasyPG error.
 ;; From https://colinxy.github.io/software-installation/2016/09/24/emacs25-easypg-issue.html.
 (defvar epa-pinentry-mode)
 (setq epa-pinentry-mode 'loopback)
-```
+{% endhighlight %}
 
 That's pretty much it, I guess. The EasyPG setup is pretty finicky and I honestly just cobbled together something that seems to work fine.
 

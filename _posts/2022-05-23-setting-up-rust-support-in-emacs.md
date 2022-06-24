@@ -19,7 +19,7 @@ The dependencies _should_ be installed by our Emacs package [Rustic](https://git
 
 So let's start by installing the components we need.
 
-```
+```bash
 rustup component add rust-src rustfmt clippy rls rust-analysis
 ```
 
@@ -77,7 +77,7 @@ It doesn't look like much, but it took me hours to get that right.
 
 I use `eglot`, because the alternative, `lsp-mode`, was breaking for some of my <span class="rant-off">(simple)</span> Rust projects<span class="rant-off">, and I couldn't figure out why after a couple of hours of looking into it</span>. `eglot` seemed stable, at least.
 
-{% highlight elisp linedivs %}
+{% highlight elisp %}
 rustic-lsp-client 'eglot
 {% endhighlight %}
 
@@ -86,13 +86,13 @@ rustic-lsp-client 'eglot
 
 Next, I disabled the automatic code checking, which would run as I typed. This was causing a lot of lag and stutters, all of which was seriously interfering with my programming. <span class="rant-off">This should be an easy thing to turn off, but there's no option for it.</span> The best we can do is increase the delay; the code checking still runs on save.
 
-{% highlight elisp linedivs %}
+{% highlight elisp %}
 eglot-send-changes-idle-time (* 60 60)
 {% endhighlight %}
 
 Finally, I needed to disable the doc popups in the minibuffer as they were <span class="rant-off">_extremely_</span> distracting. <span class="rant-off">Again, it took lots of googling to get this right because there was no obvious way to do this.</span>
 
-{% highlight elisp linedivs %}
+{% highlight elisp %}
 (add-hook 'eglot-managed-mode-hook (lambda () (eldoc-mode -1)))
 {% endhighlight %}
 

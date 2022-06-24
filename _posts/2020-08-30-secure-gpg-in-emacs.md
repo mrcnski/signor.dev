@@ -53,18 +53,18 @@ Everyone has their own mental model for `gpg-agent`. I like to picture Agent Smi
 
 If you're using GPG2, you're using `gpg-agent`. There's nothing you can do about it: GPG2 launches it automatically. You can kill it with a cron job, but I did something a bit different. I snuck this line into the big code block above:
 
-```elisp
+{% highlight elisp %}
 (shell-command "gpgconf --kill gpg-agent")
-```
+{% endhighlight %}
 
 This makes sure that the cache is cleared when Emacs is idle, but not while you're actively working in it.
 
 You may also want to set some of the relevant [cache expiry options](https://www.gnupg.org/documentation/manuals/gnupg/Agent-Options.html) in `~/.gnupg/gpg-agent.conf`. You can set them to a few minutes, or zero to disable caching altogether. For example:
 
-```conf
+{% highlight conf linedivs %}
 default-cache-ttl 120
 max-cache-ttl 600
-```
+{% endhighlight %}
 
 ## Conclusion
 
