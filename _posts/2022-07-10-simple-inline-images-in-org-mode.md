@@ -36,7 +36,7 @@ To add an image, just use this format in your org file:
 
 The path between the brackets is relative to your org file.
 
-Run `M-x org-redisplay-inline-images` and you should see this:
+Run `M-x org-redisplay-inline-images` (or just reload the file) and you should see this:
 
 {% include image.html name="inline-images/no-width.png" width="400" alt="What the?!" caption="What the?!" %}
 
