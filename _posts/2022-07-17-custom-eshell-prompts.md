@@ -34,20 +34,21 @@ Here's my config, which you can use as a jumping-off point.
           (if (string= git-branch-unparsed "")
               ""
             ;; Remove the trailing newline.
-            (substring git-branch-unparsed 0 -1)
-            ))
+            (substring git-branch-unparsed 0 -1)))
          )
     (concat
+     ;; Timestamp.
      (with-face
       (format-time-string "[%a, %b %d | %H:%M:%S]\n" (current-time))
-      :inherit font-lock-builtin-face
-      )
+      :inherit font-lock-builtin-face)
+     ;; Directory.
      (with-face (concat (eshell/pwd) " ") :inherit font-lock-constant-face)
+     ;; Git branch.
      (unless (string= git-branch "")
-       (with-face (concat "[" git-branch "]") :inherit font-lock-string-face)
-       )
+       (with-face (concat "[" git-branch "]") :inherit font-lock-string-face))
      "\n"
-     ;; Need to keep " $" for the next/previous prompt regexp to work.
+     ;; Prompt.
+     ;; NOTE: Need to keep " $" for the next/previous prompt regexp to work.
      (with-face " $" :inherit font-lock-preprocessor-face)
      " "
      )))
