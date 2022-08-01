@@ -6,27 +6,27 @@ update: "Jan 2022"
 
 # Marcin Swieczkowski - Sr Software Developer
 
-- USA (remote) **\|** +1 (404) 955-4324 **\|** [marcin@bytedude.com](mailto:marcin@bytedude.com) |
+- USA (remote) **/** +1 (917) 636-1232 **/** [marcin@bytedude.com](mailto:marcin@bytedude.com) |
 
-- [github.com/m-cat](https://github.com/m-cat) **\|** [gitlab.com/m-cat](https://gitlab.com/m-cat) **\|** [bytedude.com](https://bytedude.com)
+- [github.com/m-cat](https://github.com/m-cat) **/** [gitlab.com/m-cat](https://gitlab.com/m-cat) **/** [bytedude.com](https://bytedude.com)
 
 ## Summary
 
-**Senior Software Developer** with **6 years of experience** in full stack development and 4 years of experience working remotely. Provides robust, well-tested and maintainable solutions.
+**Senior Software Developer** with **7 years of experience** in frontend/backend development and 5 years of experience working remotely. Provides robust, well-tested and maintainable solutions.
 
 ## Skills
 
 ### Languages
 
-- Rust **\|** Javascript + Typescript (browser + Node) **\|** Go **\|** Python **\|** Java **\|** C **\|** HTML + CSS
+- Rust **/** Javascript + Typescript (browser + Node) **/** Go **/** Python **/** Java **/** C **/** HTML + CSS
 
 ### Tools
 
-- shell **\|** git **\|** Webpack **\|** Markdown **\|** Emacs **\|** GitHub Actions
+- shell **/** git **/** Webpack **/** Markdown **/** Emacs **/** GitHub Actions
 
 ### Misc
 
-- TDD **\|** CI **\|** browser iframes **\|** async programming **\|** documentation **\|** language design **\|** parsing
+- TDD **/** CI **/** browser iframes **/** async programming **/** documentation **/** language design **/** parsing
 
 ## Experience
 
@@ -37,6 +37,7 @@ update: "Jan 2022"
 
 **Jan 2020 - Present** -- Core Developer
 
+- Worked on a novel cryptocurrency from scratch in Rust. [[Link](https://gitlab.com/SkynetLabs/skynet-token/)]
 - Implemented an "OS in the Browser," called Skynet MySky, with cutting-edge browser techniques. [[Link](https://github.com/SkynetLabs/skynet-mysky)]
 - Created and maintained complex SDKs for Browser, Node, Python, and Go. [[Link](https://github.com/SkynetLabs/skynet-js)]
 - Wrote API documentation for Skynet SDKs [[Link](https://siasky.net/docs/)] and articles for developers [[Link](https://medium.com/@marcins)].
