@@ -1,7 +1,7 @@
 ---
 layout: resume
 title: Resume
-update: "Jan 2022"
+update: "Aug 2022"
 ---
 
 # Marcin Swieczkowski - Sr Software Developer
