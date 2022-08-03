@@ -35,7 +35,7 @@ update: "Aug 2022"
 
 *Remote*
 
-**Jan 2020 - Present** -- Core Developer
+**Jan 2020 - Aug 2022** -- Core Developer
 
 - Worked on a novel cryptocurrency from scratch in Rust. [[Link](https://gitlab.com/SkynetLabs/skynet-token/)]
 - Implemented an "OS in the Browser," called Skynet MySky, with cutting-edge browser techniques. [[Link](https://github.com/SkynetLabs/skynet-mysky)]
