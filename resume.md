@@ -49,7 +49,7 @@ well-tested and maintainable solutions.
   decentralized filesystem, accounts, permissions, and encrypted files. Employed
   cutting-edge browser techniques.
   [[Link](https://github.com/SkynetLabs/skynet-mysky)]
-- Created and maintained complex SDKs for Browser, Node, Python, and Go.
+- Created and maintained complex SDKs for Browser JS, NodeJS, Python, and Go.
   [[Link](https://github.com/SkynetLabs/skynet-js)]
 - Wrote API documentation for Skynet SDKs [[Link](https://siasky.net/docs/)] and
   articles for developers [[Link](https://medium.com/@marcins)].
