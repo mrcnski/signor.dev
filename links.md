@@ -3,7 +3,7 @@ layout: page
 title: Interesting Links
 ---
 
-- [Oblique Strategies](http://stoney.sb.org/eno/oblique.html): Stimulate your
+- [Oblique Strategies](https://stoney.sb.org/eno/oblique.html): Stimulate your
   problem-solving and creativity.
 - [My Favorite Repos](https://github.com/stars/m-cat/lists/favorites): The
   things I use everyday that make me so productive.
