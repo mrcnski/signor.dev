@@ -8,7 +8,7 @@ title: Interesting Links
 - [My Favorite Repos](https://github.com/stars/m-cat/lists/favorites): The
   things I use everyday that make me so productive.
 - [Álvaro Ramírez](https://xenodium.com/): Blog about Emacs and OSX
-- [Blog Surf](https://blogsurf.io/): A directory of personal blogs.
+- [Stucky Tech](https://stucky.tech/creations/): Dave Stucky's mind dumps on various topics.
 
 ## Why?
 
