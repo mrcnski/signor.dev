@@ -17,9 +17,11 @@ It turns out that you don't need any fancy packages to accomplish this, just two
 First, add these lines to your config file:
 
 {% highlight elisp linedivs %}
-;; Inline images.
-org-startup-with-inline-images t
-org-image-actual-width nil
+(setq
+ ;; Inline images.
+ org-startup-with-inline-images t
+ org-image-actual-width nil
+ )
 {% endhighlight %}
 
 The first line will load existing inline images when you open an org file. (When you add inline images later, you'll still have to run `M-x org-redisplay-inline-images` or reload the file.)
