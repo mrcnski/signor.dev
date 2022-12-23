@@ -3,15 +3,6 @@ layout: page
 title: Projects
 ---
 
-## Monkey Facts
-{: .resume-meta}
-
-![web](https://img.shields.io/badge/language-web-purple.svg)
-
-- [[Link](https://monkeyfacts.io)] [[GitHub](https://github.com/m-cat/monkeyfacts.io)]
-
-A "Today I Learned" website that is updated daily.
-
 ## cargo-deps
 {: .resume-meta}
 
@@ -47,12 +38,3 @@ Simple recurring tasks in Emacs org-mode.
 - [[GitHub](https://github.com/m-cat/nimbus-theme)]
 
 Custom Emacs theme, in continuous development for four years.
-
-## Mister Civic
-{: .resume-meta}
-
-![Javascript](https://img.shields.io/badge/language-javascript-purple.svg)
-
-- [[Link](/mister-civic/1/)]
-
-Text adventure game written from scratch.
