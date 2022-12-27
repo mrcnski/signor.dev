@@ -1,5 +1,5 @@
-# bytedude.com
+# mrcn.ski
 
-Hello! 
+Hello!
 
-This is the source for my blog at [bytedude.com](bytedude.com). Feel free to look around and admire the code.
+This is the source for my blog at [mrcn.ski](mrcn.ski). Feel free to look around and admire the code.

@@ -9,7 +9,7 @@ View the full presentation [here](/files/unsafe-rust.html).
 
 This is a presentation I gave to my coworkers at [MaidSafe](https://maidsafe.net). It was meant to be a broad overview of Rust unsafe code and FFI design, and includes the motivations as well as the background concepts necessary to understand the design of the FFI API I implemented for [parsec](https://web.archive.org/web/2021*/https://github.com/maidsafe/parsec). I wanted it to be understandable to beginners but still useful to experts -- I hope I succeeded in that rather lofty goal :)
 
-You can view the source file for the presentation [here](https://github.com/m-cat/unsafe-rust). It's a plaintext org-mode file.
+You can view the source file for the presentation [here](https://github.com/mrcnski/unsafe-rust). It's a plaintext org-mode file.
 
 It was my first time creating a presentation within Emacs itself. My original intention was to create the outline for the presentation in org-mode and then make the slides in Google Slides, images and formatting and all, but that turned out to be a tedious process for the amount of content in this presentation. It was much easier to do it all in org-mode.
 

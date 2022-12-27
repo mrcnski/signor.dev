@@ -31,7 +31,7 @@ I also frequently use Alfred when programming. Paired with Dash, it lets you sea
 
 Up next is **Magnet**, a simple window manager that requires no configuration, has never given me issues, and does exactly what I need it to. I like the default keybindings and I use it all the time to make applications take up the whole screen, or to snap an app to the left or right half of the screen.
 
-There are probably more featureful window managers but I have no need for them, and so Magnet wins my full **Bytedude Windows Manager Recommendation**.
+There are probably more featureful window managers but I have no need for them, and so Magnet wins my full **Mrcnski Windows Manager Recommendation**.
 
 {% include image.html name="must-have-osx-apps/magnet.png" alt="Magnet" width="233" %}
 
@@ -60,7 +60,7 @@ It's not the most user-friendly app, but after a one-time set-up of my schedule 
 
 **Swiftbar** is a massive upgrade on the classic but unmaintained Bitbar. Bitbar is an application that lets you include the output of shell scripts in your menu bar. For example, the Spotify plugin displays the currently-playing song on Spotify, and even allows you to pause, play, and skip songs without opening Spotify itself.
 
-Bitbar was so buggy that I just stopped using it completely until I found out about Swiftbar. All Bitbar [plugins](https://github.com/matryer/bitbar-plugins) are also compatible with Swiftbar -- personally I use the [World Time](https://github.com/matryer/bitbar-plugins/blob/master/Time/worldclock.1s.sh) and [Spotify](https://github.com/matryer/bitbar-plugins/blob/master/Music/spotify.10s.sh) plugins (the latter of which I made significant contributions to, and which therefore gets my **The Bytedude Best Bitbar Plugin Award**).
+Bitbar was so buggy that I just stopped using it completely until I found out about Swiftbar. All Bitbar [plugins](https://github.com/matryer/bitbar-plugins) are also compatible with Swiftbar -- personally I use the [World Time](https://github.com/matryer/bitbar-plugins/blob/master/Time/worldclock.1s.sh) and [Spotify](https://github.com/matryer/bitbar-plugins/blob/master/Music/spotify.10s.sh) plugins (the latter of which I made significant contributions to, and which therefore gets my **The Mrcnski Best Bitbar Plugin Award**).
 
 {% include image.html name="must-have-osx-apps/swiftbar.png" alt="Swiftbar" %}
 
@@ -89,14 +89,14 @@ Here's another life-changing one: **SensibleSideButtons**. This lets you use mou
 [[ Download ]](https://github.com/Mortennn/Dozer)
 {: .post-meta}
 
-By now we've accumulated quite a bit of icons in the menu bar, eh? Let's clean those up with **Dozer**. This is truly one heck of an app, in that it lets you hide less-frequently-used icons, and show them when you need them with a click. I've tried a couple of these "menu bar cleanup" apps and this is my favorite, so make Uncle Bytedude happy and get it yourself!
+By now we've accumulated quite a bit of icons in the menu bar, eh? Let's clean those up with **Dozer**. This is truly one heck of an app, in that it lets you hide less-frequently-used icons, and show them when you need them with a click. I've tried a couple of these "menu bar cleanup" apps and this is my favorite, so make Uncle Mrcnski happy and get it yourself!
 
 ## KeePassXC
 
 [[ Download ]](https://keepassxc.org/)
 {: .post-meta}
 
-Worth a mention is **KeePassXC**, one of the first programs I always install on new computers. It's a very nice password manager and is actively developed. It doesn't really have much to do with OSX, though, except for the integration with TouchID. After unlocking a database once, it can be unlocked subsequent times by pressing Enter and using TouchID. This is really useful since I set my database to lock itself after a minute of inactivity for the extra security, which I urge you to adopt as a **Bytedude Best Practice**.
+Worth a mention is **KeePassXC**, one of the first programs I always install on new computers. It's a very nice password manager and is actively developed. It doesn't really have much to do with OSX, though, except for the integration with TouchID. After unlocking a database once, it can be unlocked subsequent times by pressing Enter and using TouchID. This is really useful since I set my database to lock itself after a minute of inactivity for the extra security, which I urge you to adopt as a **Mrcnski Best Practice**.
 
 {% include image.html name="must-have-osx-apps/keepassxc.png" alt="KeePassXC" width="718" %}
 

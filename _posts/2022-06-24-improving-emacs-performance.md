@@ -5,13 +5,13 @@ categories: emacs productivity
 description: Making the best editor even better.
 ---
 
-My [Emacs config](https://github.com/m-cat/init.el) has grown considerably over
+My [Emacs config](https://github.com/mrcnski/init.el) has grown considerably over
 the years. I love finding new packages to improve my workflow, and
 MELPA/`use-package` together make packages really easy to install.
 
 But this is bad news if you want a fast and productive editing experience. A few
 weeks ago, some dastardly sluggishness when editing Rust code forced me to
-finally sit down and address the problem. Here are some Bytedude Tips I've
+finally sit down and address the problem. Here are some Mrcnski Tips I've
 collected from the process.
 
 ## Tips

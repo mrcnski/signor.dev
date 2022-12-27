@@ -6,11 +6,11 @@ update: "Aug 2022"
 
 # Marcin Swieczkowski - Sr Software Developer
 
-- USA (remote) **/** +1 (917) 636-1232 **/** [marcin@bytedude.com](mailto:marcin@bytedude.com) |
+- USA (remote) **/** +1 (917) 636-1232 **/** [marcin@realemail.net](mailto:marcin@realemail.net) |
 
-- [github.com/m-cat](https://github.com/m-cat) **/**
-  [gitlab.com/m-cat](https://gitlab.com/m-cat) **/**
-  [bytedude.com](https://bytedude.com)
+- [github.com/mrcnski](https://github.com/mrcnski) **/**
+  [gitlab.com/mrcnski](https://gitlab.com/mrcnski) **/**
+  [mrcn.ski](https://mrcn.ski)
 
 ## Summary
 
@@ -69,12 +69,12 @@ well-tested and maintainable solutions.
   design and develop backend APIs.
 - Designed and developed C FFIs for our Rust projects, including a testing
   system designed to detect memory leaks.
-  [[Link](https://github.com/m-cat/safe_client_libs-wiki/blob/master/FFI-overview.md)]
+  [[Link](https://github.com/mrcnski/safe_client_libs-wiki/blob/master/FFI-overview.md)]
 - Wrote an integrated testing suite for one of our largest projects, including
   CI-specific tests to ensure binary compatibility of data in the network.
-  [[Link](https://github.com/m-cat/safe_client_libs-wiki/blob/master/Binary-compatibility-tests.md)]
+  [[Link](https://github.com/mrcnski/safe_client_libs-wiki/blob/master/Binary-compatibility-tests.md)]
 - Led effort to write thorough documentation for the same project.
-  [[Link](https://github.com/m-cat/safe_client_libs-wiki)]
+  [[Link](https://github.com/mrcnski/safe_client_libs-wiki)]
 
 ### Epic Systems Corporation
 {: .resume-meta}
@@ -95,7 +95,7 @@ well-tested and maintainable solutions.
 - **2019** -- "Managing your life with org-mode and other tools" -- EmacsConf
   [[Link](https://emacsconf.org/2019/schedule)]
 - **2018** -- "Memory Management in Unsafe Rust" -- One-hour talk given to my
-  MaidSafe coworkers [[Link](https://github.com/m-cat/unsafe-rust)]
+  MaidSafe coworkers [[Link](https://github.com/mrcnski/unsafe-rust)]
 
 ## Education
 

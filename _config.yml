@@ -10,19 +10,19 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Bytedude
+title: mrcn.ski
 author: Marcin S
-email: marcin@bytedude.com
+email: marcin@realemail.net
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to my blog, where I write about programming and my other various interests. Technology is my passion as well as my way of serving the world.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://bytedude.com" # the base hostname & protocol for your site, e.g. https://example.com
-short_url: "bytedude.com"
-github_username: "m-cat"
+url: "https://mrcn.ski" # the base hostname & protocol for your site, e.g. https://example.com
+short_url: "mrcn.ski"
+github_username: "mrcnski"
 category_dir: category
 copyright_year: 2022
 
-repository: "m-cat/bytedude.com"
+repository: "mrcnski/mrcn.ski"
 
 # Outputting
 permalink: /:title/

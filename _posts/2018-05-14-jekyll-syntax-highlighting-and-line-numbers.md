@@ -183,7 +183,7 @@ The `.highlight .kt` syntax is a selector that means "pick any `.kt` class that 
 
 Of course, you probably want to download a theme rather than make your own. You can find ready-made themes [on GitHub](https://github.com/jwarby/jekyll-pygments-themes). They are compatible with Rouge, despite being made for Pygments (a Python-based syntax highlighter).
 
-The theme used on this site was made by yours truly -- download it [here](https://github.com/m-cat/nimbus-pygments). It's based on my Emacs theme [Nimbus](https://github.com/m-cat/nimbus-theme).
+The theme used on this site was made by yours truly -- download it [here](https://github.com/mrcnski/nimbus-pygments). It's based on my Emacs theme [Nimbus](https://github.com/mrcnski/nimbus-theme).
 {: .note }
 
 ### Language-specific highlighting
@@ -303,11 +303,11 @@ Since the Rouge `linenos` parameter was broken and I had ruled out line anchors,
 
 I looked at Rouge's source code to see if there was any way to do something like line anchors, but without the anchors. Internally, Rouge uses something called a *formatter* to, uh, *format* the code as it goes through syntax highlighting. Turns out, Rouge does have a formatter that, instead of generating anchors before each line, wraps each line in its own div. All I had to do was to enable this formatter from the `HTMLLegacy` formatter used by Jekyll by default.
 
-Okay, I won't bore you with more details. All you need is to install [this plugin](https://github.com/m-cat/highlight-linedivs). Don't worry, it's not a virus. It's safe to install, I swear on my honor. Really!
+Okay, I won't bore you with more details. All you need is to install [this plugin](https://github.com/mrcnski/highlight-linedivs). Don't worry, it's not a virus. It's safe to install, I swear on my honor. Really!
 
 ### The final code
 
-First, make sure you have the [highlight-linedivs](https://github.com/m-cat/highlight-linedivs) plugin installed. It's important.
+First, make sure you have the [highlight-linedivs](https://github.com/mrcnski/highlight-linedivs) plugin installed. It's important.
 
 Now, any time you want source code to have line numbers, you just need to include the `linedivs` option:
 

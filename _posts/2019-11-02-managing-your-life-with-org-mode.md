@@ -9,7 +9,7 @@ description: "Today was EmacsConf 2019."
 
 **Recording:** [[ Link ]](https://media.emacsconf.org/2019/09.html)
 
-**Repository:** [[ Link ]](https://github.com/m-cat/managing-your-life-with-org-mode)
+**Repository:** [[ Link ]](https://github.com/mrcnski/managing-your-life-with-org-mode)
 
 Today was [EmacsConf 2019](https://emacsconf.org/2019). There were a lot of very interesting and mind-expanding talks about cool stuff and the latest developments in Emacs. The sense of community was brilliant and I had a great time, despite the technical problems.
 

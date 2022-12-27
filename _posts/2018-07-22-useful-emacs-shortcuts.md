@@ -274,7 +274,7 @@ If you can find a suitable keyboard/OS and configure the Alt and Control keys to
 
 ## Conclusion
 
-Well, now you know pretty much all of my secrets. Although, I guess I never had secrets, since my `init.el` file has been [on GitHub](https://github.com/m-cat/init.el) for over a year now.
+Well, now you know pretty much all of my secrets. Although, I guess I never had secrets, since my `init.el` file has been [on GitHub](https://github.com/mrcnski/init.el) for over a year now.
 
 What are *your* favorite keybindings? Leave them in the comments below!
 
