@@ -24,9 +24,13 @@ First, add these lines to your config file:
  )
 {% endhighlight %}
 
-The first line will load existing inline images when you open an org file. (When you add inline images later, you'll still have to run `M-x org-redisplay-inline-images` or reload the file.)
+The **first line** will load existing inline images when you open an org file.
+(When you add inline images later, you'll still have to run `M-x
+org-redisplay-inline-images` or reload the file.)
 
-The second line allows you to specify your own width for images, so that they don't take up the whole screen.
+The **second line** allows you to specify your own width for images, so that
+they don't take up the whole screen. I set it to `nil` so that I could customize
+the width per image (see below).
 
 ## Adding Images
 
