@@ -35,8 +35,6 @@ With these tips you will be:
 
 Simple, yet I've never seen anyone else describe such a setup!
 
-(If you're on a Mac, I've figured out how to apply more Emacs shortcuts to almost all text inputs on the OS. I won't write about that now, but it gave my productivity yet another big boost.)
-
 ### The Launch Layout
 
 Up until I saw the **Launch**, I was just using the keyboard on my Apple Macbook Pro 16-inch or the Apple Magic Keyboard. (I had given up on my experiments with the Ergodox and Planck a long time ago.)

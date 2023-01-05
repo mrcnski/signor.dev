@@ -88,7 +88,7 @@ For our purposes, the only flexbox code you need is `display: flex;` for the wra
 }
 {% endhighlight %}
 
-Holy cow! Wait a second, what on Earth does `flex: 1 1 0` mean? Well, these values correspond to `flex-grow`, `flex-shrink`, and `flex-basis` respectively.
+Wait a second, what on Earth does `flex: 1 1 0` mean? Well, these values correspond to `flex-grow`, `flex-shrink`, and `flex-basis` respectively.
 
 Allow me to explain. (You can also visit [this great page](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for more info).
 
