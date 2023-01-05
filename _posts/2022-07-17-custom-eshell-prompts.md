@@ -20,7 +20,7 @@ prompt! (Using the example under "A fancy prompt" as a starting point.)
 
 ## My Config
 
-Here's my config, which you can use as a jumping-off point.
+Here's what my config ended up looking like [note: see below for an updated version]:
 
 {% highlight elisp linedivs %}
 (defun with-face (str &rest face-plist)

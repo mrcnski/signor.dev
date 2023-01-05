@@ -54,7 +54,7 @@ code.highlight {
 
 /* Block code, no highlight */
 pre {
-    border-radius: 5px;
+    border-radius: $border-radius;
     margin: $spacing-unit * 0.75 $spacing-unit / 2;
     padding: 8px 12px;
     overflow-x: auto;

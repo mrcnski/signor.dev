@@ -20,7 +20,7 @@ url: "https://mrcn.ski" # the base hostname & protocol for your site, e.g. https
 short_url: "mrcn.ski"
 github_username: "mrcnski"
 category_dir: category
-copyright_year: 2022
+copyright_year: 2023
 
 repository: "mrcnski/mrcn.ski"
 

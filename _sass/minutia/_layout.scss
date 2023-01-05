@@ -58,7 +58,7 @@
         font-size: $large-font-size;
 
         color: $background-color;
-        background-color: $light-blue;
+        background-color: $blue;
 
         padding: 0px 7px 1px 7px;
         border: 1px solid $text-color;
@@ -125,6 +125,7 @@ img.center {
 // Image borders
 img.border {
     border: 1px solid $gray;
+    border-radius: $border-radius;
 }
 
 // Add image captions
@@ -392,10 +393,10 @@ img + em {
 
 .categories {
     text-align: left;
+    font-size: $large-font-size;
 }
 
 .category-link {
-    font-size: $small-font-size;
     color: $dark-purple !important;
     padding: 0px 1px 1px 1px;
 
@@ -410,7 +411,6 @@ img + em {
 
 .category-count {
     color: $gray;
-    font-size: $small-font-size;
 }
 
 /* About */
