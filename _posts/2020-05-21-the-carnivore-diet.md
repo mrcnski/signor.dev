@@ -5,6 +5,15 @@ categories: nutrition self-improvement
 description: "A diet has been growing in popularity that seems to reflect the bizarre and extreme nature of our times. It is the carnivore diet -- eating only unprocessed animal products, mostly meat."
 ---
 
+It is now March 2023, almost three years since I first wrote this article. I've
+learned a lot in that time -- or perhaps I should say, unlearned. In particular,
+I no longer think that the hunter-gatherer ancestry theory holds any water, so a
+lot of the logic contained here is spurious. And my experiences in life, and
+with this diet specifically, have led me to conclude that radical diets are
+almost always a bad idea. The issues I was trying to fix were not physical, but
+spiritual.
+ {: .update }
+
 A particular diet has appeared that seems to reflect the extreme nature of our times. It is the carnivore diet -- eating only unprocessed animal products, mostly meat.
 
 {% include image.html name="the-carnivore-diet/steak-1.jpeg" alt="Restaurant steak" width="504" %}
