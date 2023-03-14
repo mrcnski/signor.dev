@@ -2,11 +2,11 @@
 title: "Plan Your Day"
 date: 2023-03-14
 categories: self-improvement
-description:
+description: Keeping a daily todo-list is really quite sufficient for having a productive life. But recently I've added a *daily planner* to my routine to supplement my task list.
 ---
 
 For a number of years now I've been organizing my life with a daily todo list on
-my computer. This has worked really well for a long time, and has brought some
+my computer. This has worked quite well for a long time, and has brought some
 very needed order to my life.
 
 As an Emacs user, I have a list of daily tasks in org-mode which I can view and
@@ -21,7 +21,7 @@ supplement my task list. Moreover, I use a *paper planner* instead of a digital
 one. I have found this to bring even more structure to my days. But why would
 someone do such a thing? How is this different from a todo list? And why paper?
 
-{% include image.html name="plan-your-day/mountain-fog.jpeg" width="400" %}
+{% include image.html name="plan-your-day/mountain-fog.jpeg" width="504" %}
 
 ## The Problem
 
@@ -39,7 +39,7 @@ order they should be done. This forces you to think about order -- e.g. do I go
 to the gym first, or do chores first? -- and therefore structure. Keep 3 dots in
 between each item. Then, go and add lower-priority items in between.
 
-{% include image.html name="plan-your-day/bullet-paper.jpeg" width="400" alt="Bullet paper." caption="Bullet paper." %}
+{% include image.html name="plan-your-day/bullet-paper.jpeg" width="504" alt="Bullet paper." caption="Bullet paper." %}
 
 You can do this to the level of detail that suits you. Just a single-pass of
 writing high-priority items works great, and is what I do. If you forget
@@ -130,7 +130,7 @@ That's pretty much it. It's a simple technique, but it:
 2. gives you a plan of attack that you can easily execute on.
 3. is flexible and modifiable.
 
-{% include image.html name="plan-your-day/seaside.jpeg" width="400" %}
+{% include image.html name="plan-your-day/seaside.jpeg" width="504" %}
 
 I use paper because I bought some fancy, high-quality pens and notebooks and
 need some reason to use them. Also, writing with such tools is quite enjoyable
