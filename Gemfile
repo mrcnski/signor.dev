@@ -8,9 +8,11 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "4.0.0"
-gem "rb-fsevent"
+gem "jekyll", "3.9.0"
+gem "kramdown-parser-gfm"
 gem "html-proofer"
+gem "rb-fsevent"
+gem "webrick"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
