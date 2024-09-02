@@ -37,6 +37,22 @@ well-tested and maintainable solutions.
 
 ## Experience
 
+### Parity
+{: .resume-meta}
+
+*Remote*
+
+**Oct 2022 - Jan 2024** -- Rust Core Developer
+
+- Took ownership of the *PVF* module (block validation function). Implemented
+  determinism measures and logging key metrics (e.g. CPU time and memory).
+- Led project to secure and harden validator nodes when running hostile PVFs.
+- Helped implement, test, and document *asynchronous backing*. This enabled
+  multiple candidate blocks to be *backed* (proposed) in a pipeline.
+- Led an effort to mentor new contributors.
+- [[Link](https://github.com/paritytech/polkadot-sdk/commits?author=mrcnski)] -
+  each commit is a squashed PR.
+
 ### Skynet Labs
 {: .resume-meta}
 
@@ -56,8 +72,6 @@ well-tested and maintainable solutions.
   [[Link](https://medium.com/@marcins)].
 - Implemented `no_std` Skynet Rust library built on Polkadot Substrate.
   [[Link](https://github.com/SkynetLabs/skynet-substrate)]
-- Contributed to Go backend (blockchain-based Skynet portal daemon).
-  [[Link](https://gitlab.com/SkynetLabs/skyd)]
 
 ### MaidSafe
 {: .resume-meta}
