@@ -1,7 +1,7 @@
 ---
 layout: resume
 title: Resume
-update: "Aug 2022"
+last-updated: "Sep 2024"
 ---
 
 # Marcin Swieczkowski - Sr Software Developer
@@ -15,25 +15,25 @@ update: "Aug 2022"
 
 ## Summary
 
-**Senior Software Developer** with **7 years of experience** in frontend/backend
-development and 5 years of experience working remotely. Provides robust,
+**Senior Software Developer** with **8 years of experience** in frontend/backend
+development and 6 years of experience working remotely. Provides robust,
 well-tested and maintainable solutions.
 
 ## Skills
 
 ### Languages
 
-- Rust **/** Javascript + Typescript (browser + Node) **/** Go **/** Python
+- Rust **/** Javascript **/** Typescript **/** Node **/** Go **/** Python
   **/** Java **/** C **/** HTML + CSS
 
 ### Tools
 
-- shell **/** git **/** Webpack **/** Markdown **/** Emacs **/** GitHub Actions
+- Linux **/** shell **/** git **/** Emacs **/** GitHub Actions
 
-### Misc
+### Areas of Interest
 
-- TDD **/** CI **/** browser iframes **/** async programming **/** documentation
-  **/** language design **/** parsing
+- architecture **/** security **/** async programming **/** updates
+  **/** web design **/** documentation
 
 ## Experience
 
@@ -52,8 +52,8 @@ well-tested and maintainable solutions.
   [[Link](https://github.com/SkynetLabs/skynet-mysky)]
 - Created and maintained complex SDKs for Browser JS, NodeJS, Python, and Go.
   [[Link](https://github.com/SkynetLabs/skynet-js)]
-- Wrote API documentation for Skynet SDKs [[Link](https://siasky.net/docs/)] and
-  articles for developers [[Link](https://medium.com/@marcins)].
+- Wrote API documentation for Skynet SDKs and articles for developers
+  [[Link](https://medium.com/@marcins)].
 - Implemented `no_std` Skynet Rust library built on Polkadot Substrate.
   [[Link](https://github.com/SkynetLabs/skynet-substrate)]
 - Contributed to Go backend (blockchain-based Skynet portal daemon).
@@ -70,12 +70,9 @@ well-tested and maintainable solutions.
   design and develop backend APIs.
 - Designed and developed C FFIs for our Rust projects, including a testing
   system designed to detect memory leaks.
-  [[Link](https://github.com/mrcnski/safe_client_libs-wiki/blob/master/FFI-overview.md)]
 - Wrote an integrated testing suite for one of our largest projects, including
   CI-specific tests to ensure binary compatibility of data in the network.
-  [[Link](https://github.com/mrcnski/safe_client_libs-wiki/blob/master/Binary-compatibility-tests.md)]
 - Led effort to write thorough documentation for the same project.
-  [[Link](https://github.com/mrcnski/safe_client_libs-wiki)]
 
 ### Epic Systems Corporation
 {: .resume-meta}
@@ -109,5 +106,5 @@ well-tested and maintainable solutions.
 
 ---
 
-Last Updated: {{ page.update }}
+Last Updated: {{ page.last-updated }}
 {: .post-meta}
