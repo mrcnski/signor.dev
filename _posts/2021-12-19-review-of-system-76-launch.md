@@ -24,7 +24,7 @@ So how does this keyboard hold up in practical use? Let's walk and talk.
 I believe I have found what is possibly the best keyboard layout for Emacs:
 
 1. Use QWERTY and a regular staggered key layout.
-1. Bind `CAPS` to `super`, as described in [this article](https://www.mrcn.ski/useful-emacs-shortcuts/#being-super).
+1. Bind `CAPS` to `super`, as described in [this article](https://www.signor.dev/useful-emacs-shortcuts/#being-super).
 1. Use the modifier keys on the side of the spacebar by curling your thumbs in.
 
 With these tips you will be:

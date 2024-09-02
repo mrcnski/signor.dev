@@ -1,1 +1,1 @@
-Sitemap: https://www.mrcn.ski/sitemap.xml
+Sitemap: https://www.signor.dev/sitemap.xml

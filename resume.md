@@ -10,7 +10,8 @@ update: "Aug 2022"
 
 - [github.com/mrcnski](https://github.com/mrcnski) **/**
   [gitlab.com/mrcnski](https://gitlab.com/mrcnski) **/**
-  [mrcn.ski](https://mrcn.ski)
+  [linkedin.com/in/mrcnski](https://linkedin.com/in/mrcnski) **/**
+  [signor.dev](https://signor.dev)
 
 ## Summary
 
