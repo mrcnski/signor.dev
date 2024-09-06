@@ -15,25 +15,25 @@ layout: default
 
 <canvas id="canvas" width="8000" height="490"></canvas>
 
-**Week 1:** I was born the seventh in the first week, While judgement and righteousness still endured. (Enoch 93:3)
+**Week 1:** I was born the seventh in the first week, While judgement and righteousness still endured. [(Enoch 93:3)](https://parallel.thebookofenoch.info/#93)
 
-**Week 2:** And after me there shall arise in the second week great wickedness, And deceit shall have sprung up; And in it there shall be the first end. And in it a man shall be saved; And after it is ended unrighteousness shall grow up, And a law shall be made for the sinners. (Enoch 93:4)
+**Week 2:** And after me there shall arise in the second week great wickedness, And deceit shall have sprung up; And in it there shall be the first end. And in it a man shall be saved; And after it is ended unrighteousness shall grow up, And a law shall be made for the sinners. [(Enoch 93:4)](https://parallel.thebookofenoch.info/#93)
 
-**Week 3:** And after that in the third week at its close A man shall be elected as the plant of righteous judgement, And his posterity shall become the plant of righteousness for evermore. (Enoch 93:4)
+**Week 3:** And after that in the third week at its close A man shall be elected as the plant of righteous judgement, And his posterity shall become the plant of righteousness for evermore. [(Enoch 93:4)](https://parallel.thebookofenoch.info/#93)
 
-**Week 4:** And after that in the fourth week, at its close, Visions of the holy and righteous shall be seen, And a law for all generations and an enclosure shall be made for them. (Enoch 93:6)
+**Week 4:** And after that in the fourth week, at its close, Visions of the holy and righteous shall be seen, And a law for all generations and an enclosure shall be made for them. [(Enoch 93:6)](https://parallel.thebookofenoch.info/#93)
 
-**Week 5:** And after that in the fifth week, at its close, The house of glory and dominion shall be built for ever. (Enoch 93:7)
+**Week 5:** And after that in the fifth week, at its close, The house of glory and dominion shall be built for ever. [(Enoch 93:7)](https://parallel.thebookofenoch.info/#93)
 
-**Week 6:** And after that in the sixth week all who live in it shall be blinded, And the hearts of all of them shall godlessly forsake wisdom. And in it a man shall ascend; And at its close the house of dominion shall be burnt with fire, And the whole race of the chosen root shall be dispersed. (Enoch 93:8)
+**Week 6:** And after that in the sixth week all who live in it shall be blinded, And the hearts of all of them shall godlessly forsake wisdom. And in it a man shall ascend; And at its close the house of dominion shall be burnt with fire, And the whole race of the chosen root shall be dispersed. [(Enoch 93:8)](https://parallel.thebookofenoch.info/#93)
 
-**Week 7:** And after that in the seventh week shall an apostate generation arise, And many shall be its deeds, And all its deeds shall be apostate. And at its close shall be elected The elect righteous of the eternal plant of righteousness, To receive sevenfold instruction concerning all His creation. (Enoch 93:9-10)
+**Week 7:** And after that in the seventh week shall an apostate generation arise, And many shall be its deeds, And all its deeds shall be apostate. And at its close shall be elected The elect righteous of the eternal plant of righteousness, To receive sevenfold instruction concerning all His creation. [(Enoch 93:9-10)](https://parallel.thebookofenoch.info/#93)
 
-**Week 8:** And after that there shall be another, the eighth week, that of righteousness, And a sword shall be given to it that a righteous judgement may be executed on the oppressors, And sinners shall be delivered into the hands of the righteous. And at its close they shall acquire houses through their righteousness, And a house shall be built for the Great King in glory for evermore, And all mankind shall look to the path of uprightness. (Enoch 91:12-14)
+**Week 8:** And after that there shall be another, the eighth week, that of righteousness, And a sword shall be given to it that a righteous judgement may be executed on the oppressors, And sinners shall be delivered into the hands of the righteous. And at its close they shall acquire houses through their righteousness, And a house shall be built for the Great King in glory for evermore, And all mankind shall look to the path of uprightness. [(Enoch 91:12-14)](https://parallel.thebookofenoch.info/#91)
 
-**Week 9:** And after that, in the ninth week, the righteous judgement shall be revealed to the whole world, And all the works of the godless shall vanish from all the earth, And the world shall be written down for destruction. (Enoch 91:14)
+**Week 9:** And after that, in the ninth week, the righteous judgement shall be revealed to the whole world, And all the works of the godless shall vanish from all the earth, And the world shall be written down for destruction. [(Enoch 91:14)](https://parallel.thebookofenoch.info/#91)
 
-**Week 10:** And after this, in the tenth week in the seventh part, There shall be the great eternal judgement, In which He will execute vengeance amongst the angels. And the first heaven shall depart and pass away, And a new heaven shall appear, And all the powers of the heavens shall give sevenfold light. (Enoch 91:15-16)
+**Week 10:** And after this, in the tenth week in the seventh part, There shall be the great eternal judgement, In which He will execute vengeance amongst the angels. And the first heaven shall depart and pass away, And a new heaven shall appear, And all the powers of the heavens shall give sevenfold light. [(Enoch 91:15-16)](https://parallel.thebookofenoch.info/#91)
 
 
 ## Notes
@@ -44,7 +44,7 @@ layout: default
 
 ## Personal Conclusions...
 
-1. The Septuagint timeline doesn't appear to correspond to the Prophecy of Weeks, unless the "weeks" do not all last the same amount of time. The Masoretic timeline mostly matches the Prophecy of Weeks with 700-year weeks, except for the Flood not occurring in Week 2. Possibly there is a corruption or translation error: "after it is ended" could be referring to the Flood occurring after that week, Week 2, is over.
+1. The Septuagint timeline doesn't appear to correspond to the Prophecy of Weeks, unless the "weeks" do not all last the same amount of time. The Masoretic timeline mostly matches the Prophecy of Weeks with 700-year weeks, except for the Flood not occurring in Week 2. Possibly there is a corruption or translation error: "after it is ended" could be referring to the Flood occurring after that week, Week 2, is over. [Edit: it seems that week 2 is not about the Flood, but about the death of Adam and Enoch's translation around the same time.]
 1. I don't believe that both of these timelines can be true simultaneously. The Mandela effect has no basis in scripture. Occam's razor tells us that the Septuagint was simply corrupted, not that there are multiple alternate realities. Furthermore, the Masoretic text can be shown to be a remarkably faithful transmission of scripture by comparing it to the Dead Sea Scrolls.
 1. In performing this research, I noticed further issues with the Septuagint timeline. If Abraham's fathers were having children at ages well past 100 -- Nachor is said to have sired Terach at 179! -- then why was Abraham freaking out so much about not having an heir by 100?
 
@@ -177,7 +177,7 @@ layout: default
    ["Ya'aqov in Egypt¹", 130],
    // "Now the duration of the Israelites' stay in Egypt was 430 years."- Exodus 12:40
    ["Exodus²", 430],
-   ["crucifixion³", 1325],
+   ["crucifixion³", 1332],
    ["temple destroyed", 40],
    ["540 AD", 470],
    ["1500 AD", 960],
