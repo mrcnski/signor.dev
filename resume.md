@@ -1,7 +1,7 @@
 ---
 layout: resume
 title: Resume
-last-updated: "Sep 2024"
+last-updated: "Dec 2024"
 ---
 
 # Marcin Swieczkowski - Sr Software Developer
@@ -24,11 +24,11 @@ well-tested and maintainable solutions.
 ### Languages
 
 - Rust **/** Javascript **/** Typescript **/** Node **/** Go **/** Python
-  **/** Java **/** C **/** HTML + CSS
+  **/** Java **/** C **/** C\# **/** HTML + CSS
 
 ### Tools
 
-- Linux **/** shell **/** git **/** Emacs **/** GitHub Actions
+- Unix **/** shell **/** git **/** Emacs **/** GitHub Actions
 
 ## Experience
 
@@ -98,7 +98,7 @@ well-tested and maintainable solutions.
 ### Boston University
 {: .resume-meta}
 
-**May 2014** -- BA in Computer Science
+**May 2014** -- BA in Computer Science (3.78 GPA)
 
 ---
 
