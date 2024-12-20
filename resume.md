@@ -6,7 +6,7 @@ last-updated: "Dec 2024"
 
 # Marcin Swieczkowski - Sr Software Developer
 
-- USA (remote) **/** +1 (917) 636-1232 **/** [marcin@realemail.net](mailto:marcin@realemail.net) |
+- USA (remote) **/** +1 (516) 329-8753 **/** [marcin@realemail.net](mailto:marcin@realemail.net) |
 
 - [github.com/mrcnski](https://github.com/mrcnski) **/**
   [gitlab.com/mrcnski](https://gitlab.com/mrcnski) **/**
@@ -15,27 +15,14 @@ last-updated: "Dec 2024"
 
 ## Summary
 
-**Senior Software Developer** with **8 years of experience** in frontend/backend
-development and 6 years of experience working remotely. Provides robust,
-well-tested and maintainable solutions.
-
-## Skills
-
-### Languages
-
-- Rust **/** Javascript **/** Typescript **/** Node **/** Go **/** Python
-  **/** Java **/** C **/** C\# **/** HTML + CSS
-
-### Tools
-
-- Unix **/** shell **/** git **/** Emacs **/** GitHub Actions
+**Senior Software Developer** with **8 years of experience** in frontend/backend development. 6 years of experience working remotely on open source projects. Provides robust, well-tested and maintainable solutions. Experienced in working individually as well as in a team setting.
 
 ## Experience
 
 ### Parity
 {: .resume-meta}
 
-**Oct 2022 - Jan 2024** -- Rust Core Developer
+**Oct 2022 - Jan 2024** -- Rust Core Developer -- *Backend*
 
 - Took ownership of the *PVF* module (block validation function). Implemented
   determinism measures and logging key metrics (e.g. CPU time and memory).
@@ -49,28 +36,30 @@ well-tested and maintainable solutions.
 ### Skynet Labs
 {: .resume-meta}
 
-**Jan 2020 - Aug 2022** -- Core Developer
+**Jan 2020 - Aug 2022** -- Core Developer -- *Full Stack*
 
-- Worked on a novel cryptocurrency from scratch in Rust, including block mining
+- Worked on a novel cryptocurrency from scratch in Rust, with block mining
   and block validation. [[Link](https://gitlab.com/SkynetLabs/skynet-token/)]
 - Implemented an "OS in the Browser," called Skynet MySky, featuring a
   decentralized filesystem, accounts, permissions, and encrypted files.
   [[Link](https://github.com/SkynetLabs/skynet-mysky)]
-- Created/maintained complex SDKs for Browser JS, NodeJS, Python, and Go.
+- Developed complex SDKs for Typescript, Node.js, Python, and Golang.
   [[Link](https://github.com/SkynetLabs/skynet-js)]
 - Wrote API documentation for Skynet SDKs and articles for developers.
   [[Link](https://medium.com/@marcins)]
 - Implemented `no_std` Skynet Rust library built on Polkadot Substrate.
   [[Link](https://github.com/SkynetLabs/skynet-substrate)]
 
+<br>
+
 ### MaidSafe
 {: .resume-meta}
 
-**Jul 2017 - Jan 2020** -- Rust Software Developer
+**Jul 2017 - Jan 2020** -- Rust Software Developer -- *Backend*
 
 - Worked in a team setting on a complex, open source decentralized network to
   design and develop backend APIs.
-- Designed and developed C FFIs for our Rust projects, including a testing
+- Designed and developed C-language FFIs for our Rust projects, including a testing
   system designed to detect memory leaks.
 - Wrote an integrated testing suite for one of our largest projects, including
   CI-specific tests to ensure binary compatibility of data in the network.
@@ -79,7 +68,7 @@ well-tested and maintainable solutions.
 ### Epic Systems Corporation
 {: .resume-meta}
 
-**Sep 2014 - Sep 2016** -- Release Software Developer
+**Sep 2014 - Sep 2016** -- Release Software Developer -- *Full Stack*
 
 - Developed and maintained a dependency-completeness checker for updates, many
   critical, being deployed to our Electronic Health Record suite in hospitals.
@@ -98,7 +87,15 @@ well-tested and maintainable solutions.
 ### Boston University
 {: .resume-meta}
 
-**May 2014** -- BA in Computer Science (3.78 GPA)
+**May 2014** -- Degree in Computer Science (3.78 GPA)
+
+## Skills
+
+- Rust, Javascript, Typescript, Node.js, Golang, Python, Java, C, C\#, HTML, CSS
+
+- Unix, command line, git, Emacs, CI/CD, GitHub Actions
+
+- backend, full stack, API design, documentation, project management, Agile
 
 ---
 
