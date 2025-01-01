@@ -6,7 +6,7 @@ last-updated: "Dec 2024"
 
 # Marcin Swieczkowski - Sr Software Developer
 
-- USA (remote) **/** +1 (516) 329-8753 **/** [marcin@realemail.net](mailto:marcin@realemail.net) |
+- Kansas City, MO **/** +1 (516) 329-8753 **/** [marcin@realemail.net](mailto:marcin@realemail.net) |
 
 - [github.com/mrcnski](https://github.com/mrcnski) **/**
   [gitlab.com/mrcnski](https://gitlab.com/mrcnski) **/**
@@ -15,7 +15,7 @@ last-updated: "Dec 2024"
 
 ## Summary
 
-**Senior Software Developer** with **8 years of experience** in frontend/backend development. 6 years of experience working remotely on open source projects. Provides robust, well-tested and maintainable solutions. Experienced in working individually as well as in a team setting.
+**Senior Software Developer** with **8 years of experience** in frontend/backend development, and 6 years of experience working remotely on open source projects. Provides robust, well-tested and maintainable solutions. Experienced in working individually as well as in a team setting.
 
 ## Experience
 
@@ -30,8 +30,7 @@ last-updated: "Dec 2024"
 - Helped implement, test, and document *asynchronous backing*. This enabled
   multiple candidate blocks to be *backed* (proposed) in a pipeline.
 - Led an effort to mentor new contributors.
-- [[Link](https://github.com/paritytech/polkadot-sdk/commits?author=mrcnski)] -
-  each commit is a squashed PR.
+- [[My PRs](https://github.com/paritytech/polkadot-sdk/commits?author=mrcnski)] (each commit is a squashed PR.) [[Full work review](/work-reviews#parity)]
 
 ### Skynet Labs
 {: .resume-meta}
@@ -43,14 +42,13 @@ last-updated: "Dec 2024"
 - Implemented an "OS in the Browser," called Skynet MySky, featuring a
   decentralized filesystem, accounts, permissions, and encrypted files.
   [[Link](https://github.com/SkynetLabs/skynet-mysky)]
-- Developed complex SDKs for Typescript, Node.js, Python, and Golang.
+- Developed complex SDKs for Typescript, Node.js, Python, and Go.
   [[Link](https://github.com/SkynetLabs/skynet-js)]
 - Wrote API documentation for Skynet SDKs and articles for developers.
   [[Link](https://medium.com/@marcins)]
 - Implemented `no_std` Skynet Rust library built on Polkadot Substrate.
   [[Link](https://github.com/SkynetLabs/skynet-substrate)]
-
-<br>
+- [[Full work review](/work-reviews#skynet-labs)]
 
 ### MaidSafe
 {: .resume-meta}
@@ -91,7 +89,7 @@ last-updated: "Dec 2024"
 
 ## Skills
 
-- Rust, Javascript, Typescript, Node.js, Golang, Python, Java, C, C\#, HTML, CSS
+- Rust, Typescript, Node.js, Golang, Python, Java, C, C\#, HTML, CSS
 
 - Unix, command line, git, Emacs, CI/CD, GitHub Actions
 

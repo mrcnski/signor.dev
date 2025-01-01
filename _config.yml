@@ -69,6 +69,7 @@ category_descriptions:
   - { name: "anki", description: "" }
   - { name: "announcements", description: "" }
   - { name: "blogging", description: "" }
+  - { name: "blockchain", description: "" }
   - { name: "books", description: "" }
   - { name: "c", description: "" }
   - { name: "cryptography", description: "" }
