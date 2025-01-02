@@ -12,6 +12,8 @@ This overview is from my perspective, as an ex core engineer. It's been almost a
 
 Polkadot is a proof-of-stake chain which acts as a relay chain for other chains. This means that validator nodes, who hold stake in the network, are able to provide security for Polkadot as well as any connected chains at the same time. This makes it easier for new chains to launch operation, and they also benefit from Polkadot's shared security.
 
+{% include image.html name="overview-of-polkadot/resort.jpeg" alt="Resort" caption="Sunrise at a Parity retreat." width="500" %}
+
 ## Validators
 
 Proof of stake means that there is no mining (unnecessary computations to solve a "math puzzle") as there is in PoW. In PoS, blocks cost little to produce. Instead, security comes from validators, who have significant economic stake in the network. Their stake incentivizes them to keep the network running well and honestly, and there are also penalties if they try to mess with the network to benefit themselves. Time is broken up into sessions, and each session a random set of Validators is chosen to be responsible for selecting blocks. (To select the validators we use a cryptographic "nominated PoS" algorithm called BABE).
@@ -21,6 +23,8 @@ Block "finalization" is actually done in multiple phases. This is for the purpos
 ## Asynchronous Backing
 
 In asynchronous backing, a backed block can be assumed to be valid before it's actually finalized, and collators/backers can build on top of the block as it's pending. This works because, most of the time, blocks are really valid. Async backing replaces the existing backing strategy, which waited for a block to be finalized before building on it (like a waterfall model) -- async backing results in faster blocks on average. I worked mostly on the statement-distribution subsystem, which determines how statements about block candidates are communicated from backers to other validators. The aim was to distribute statements in a way that was sound and robust, but also performant.
+
+{% include image.html name="overview-of-polkadot/work-and-snow.jpeg" alt="Work and Snow" width="500" %}
 
 ## PVF (Polkadot Validation Function)
 
@@ -33,3 +37,5 @@ I also worked on a new technology called Coretime. The idea behind this is to tr
 ## Conclusion
 
 There is of course much more to Polkadot, and more to come in the future, but I hope that this short overview was helpful!
+
+{% include image.html name="overview-of-polkadot/seaside.jpeg" alt="Seaside" caption="Working on async backing by the sea." width="500" %}
