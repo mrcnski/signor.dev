@@ -33,11 +33,13 @@ last-updated: "Jan 2025"
 **Oct 2022 - Jan 2024** -- Rust Core Developer -- *Backend*
 
 - Owned the Rust system responsible for compiling and executing third-party code
-  (*PVF*). Implemented deterministic execution and logged key metrics.
+  (*PVF*). Implemented deterministic execution and protected millions of dollars
+  in assets (*stake*).
 - Led large-scale project to secure backend (*node*) from arbitrary code execution, using e.g. low-level OS facilities like syscalls.
 - Worked with cofounder to implement, test, and document the parallelization of
-  the protocol (*asynchronous backing*).
-- Led an effort to mentor new contributors.
+  the protocol (*asynchronous backing*), resulting in up to 2x efficiency
+  increase.
+- Led an effort to mentor new devs and facilitate third-party contributions.
 - [[My PRs](https://github.com/paritytech/polkadot-sdk/commits?author=mrcnski)] - Each commit is a squashed PR.
 
 ### Skynet Labs
