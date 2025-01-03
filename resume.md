@@ -1,13 +1,12 @@
 ---
 layout: resume
 title: Resume
-last-updated: "Dec 2024"
+last-updated: "Jan 2025"
 ---
 
 # Marcin Swieczkowski - Sr Software Developer
 
-- Kansas City, MO **/** +1 (516) 329-8753 **/** [marcin@realemail.net](mailto:marcin@realemail.net) |
-
+- Kansas City, MO **/** +1 (516) 329-8753 **/** [marcin@realemail.net](mailto:marcin@realemail.net)
 - [github.com/mrcnski](https://github.com/mrcnski) **/**
   [gitlab.com/mrcnski](https://gitlab.com/mrcnski) **/**
   [linkedin.com/in/mrcnski](https://linkedin.com/in/mrcnski) **/**
@@ -15,40 +14,49 @@ last-updated: "Dec 2024"
 
 ## Summary
 
-**Senior Software Developer** with **8 years of experience** in frontend/backend development, and 6 years of experience working remotely on open source projects. Provides robust, well-tested and maintainable solutions. Experienced in working individually as well as in a team setting.
+**Senior Software Developer** with **9 years of experience** in frontend/backend development, and 7 years of experience working remotely on open source projects. Provides robust, well-tested and maintainable solutions. Experienced in working individually as well as in a team setting.
 
 ## Experience
+
+### Freelancing
+{: .resume-meta}
+
+**Jan 2024 - Present** -- Web Developer -- *Frontend*
+
+- Designed multi-lingual websites for clients, using Typescript and a modern
+  framework.
+- Implemented low-code solutions for easy configuration by clients.
 
 ### Parity
 {: .resume-meta}
 
 **Oct 2022 - Jan 2024** -- Rust Core Developer -- *Backend*
 
-- Took ownership of the *PVF* module (block validation function). Implemented
-  determinism measures and logging key metrics (e.g. CPU time and memory).
-- Led project to secure and harden validator nodes when running hostile PVFs.
-- Helped implement, test, and document *asynchronous backing*. This enabled
-  multiple candidate blocks to be *backed* (proposed) in a pipeline.
+- Owned the Rust system responsible for compiling and executing third-party code
+  (*PVF*). Implemented deterministic execution and logged key metrics.
+- Led large-scale project to secure backend (*node*) from arbitrary code execution, using e.g. low-level OS facilities like syscalls.
+- Worked with cofounder to implement, test, and document the parallelization of
+  the protocol (*asynchronous backing*).
 - Led an effort to mentor new contributors.
-- [[My PRs](https://github.com/paritytech/polkadot-sdk/commits?author=mrcnski)] (each commit is a squashed PR.) [[Full work review](/work-reviews#parity)]
+- [[My PRs](https://github.com/paritytech/polkadot-sdk/commits?author=mrcnski)] - Each commit is a squashed PR.
 
 ### Skynet Labs
 {: .resume-meta}
 
 **Jan 2020 - Aug 2022** -- Core Developer -- *Full Stack*
 
-- Worked on a novel cryptocurrency from scratch in Rust, with block mining
-  and block validation. [[Link](https://gitlab.com/SkynetLabs/skynet-token/)]
-- Implemented an "OS in the Browser," called Skynet MySky, featuring a
-  decentralized filesystem, accounts, permissions, and encrypted files.
+- Led project that developed a blockchain from scratch in Rust.
+  [[Link](https://gitlab.com/SkynetLabs/skynet-token/)]
+- In a team, designed and implemented a decentralized filesystem and a federated
+  access service (*MySky*) in Typescript. Featured accounts, permissions,
+  and encrypted files.
   [[Link](https://github.com/SkynetLabs/skynet-mysky)]
-- Developed complex SDKs for Typescript, Node.js, Python, and Go.
+- Implemented decentralized database (*SkyDB*) with caching and concurrency
+  control.
+- Developed libraries and APIs in Typescript, Node.js, Python, and Go.
   [[Link](https://github.com/SkynetLabs/skynet-js)]
-- Wrote API documentation for Skynet SDKs and articles for developers.
+- Documented backend and client APIs and wrote articles for developers.
   [[Link](https://medium.com/@marcins)]
-- Implemented `no_std` Skynet Rust library built on Polkadot Substrate.
-  [[Link](https://github.com/SkynetLabs/skynet-substrate)]
-- [[Full work review](/work-reviews#skynet-labs)]
 
 ### MaidSafe
 {: .resume-meta}
@@ -68,17 +76,24 @@ last-updated: "Dec 2024"
 
 **Sep 2014 - Sep 2016** -- Release Software Developer -- *Full Stack*
 
-- Developed and maintained a dependency-completeness checker for updates, many
-  critical, being deployed to our Electronic Health Record suite in hospitals.
-- Developed a C# application that calculated sets of common dependencies and
-  created pre-built bundles, saving build time and company resources.
+- Developed and maintained a dependency check for updates, many critical, being
+  deployed to our Electronic Health Record suite in hospitals.
+- Developed a C# application that created pre-built bundles of common
+  dependencies, saving build time (on the order of hours) and company resources.
 
-## Speaking
+## Oher
+
+### Volunteering
+
+- **2024** -- Volunteeered with homeless -- Micah Ministry KC, HALO, Hillcrest
+  Transitional Housing
+
+### Speaking
 
 - **2019** -- "Managing your life with org-mode and other tools" -- EmacsConf
   [[Link](https://emacsconf.org/2019/schedule)]
-- **2018** -- "Memory Management in Unsafe Rust" -- One-hour talk given to my
-  MaidSafe coworkers [[Link](https://github.com/mrcnski/unsafe-rust)]
+- **2018** -- "Memory Management in Unsafe Rust" -- One-hour talk given in
+  MaidSafe.
 
 ## Education
 
@@ -89,13 +104,10 @@ last-updated: "Dec 2024"
 
 ## Skills
 
-- Rust, Typescript, Node.js, Golang, Python, Java, C, C\#, HTML, CSS
+- Rust, Javascript, Typescript, Node.js, Golang, Python, Java, C, C\#, SQL,
+  HTML, CSS
 
-- Unix, command line, git, Emacs, CI/CD, GitHub Actions
+- Unix, command line, git, Emacs, CI/CD, GitHub Actions, Docker
 
-- backend, full stack, API design, documentation, project management, Agile
-
----
-
-Last Updated: {{ page.last-updated }}
-{: .post-meta}
+- backend, frontend, full stack, API design, documentation, project management,
+  Agile

@@ -436,6 +436,8 @@ img + em {
         // so `!important` was added there.
         color: $link;
     }
+
+    font-size: $small-font-size;
 }
 
 .resume-meta {
