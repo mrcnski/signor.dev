@@ -14,7 +14,7 @@ last-updated: "Jan 2025"
 
 ## Summary
 
-**Senior Software Developer** with **9 years of experience** in frontend/backend development, and 7 years of experience working remotely on open source projects. Provides robust, well-tested and maintainable solutions. Experienced in working individually as well as in a team setting.
+**Senior Software Developer** with **9 years of experience** in frontend/backend development, and 7 years of experience working remotely on open source projects. Provides **rock-solid** and maintainable software. Skilled at finding the most pragmatic solutions for business needs.
 
 ## Experience
 
@@ -27,7 +27,7 @@ last-updated: "Jan 2025"
   framework.
 - Implemented low-code solutions for easy configuration by clients.
 
-### Parity
+### Parity (Polkadot)
 {: .resume-meta}
 
 **Oct 2022 - Jan 2024** -- Rust Core Developer -- *Backend*
@@ -35,7 +35,8 @@ last-updated: "Jan 2025"
 - Owned the Rust system responsible for compiling and executing third-party code
   (*PVF*). Implemented deterministic execution and protected millions of dollars
   in assets (*stake*).
-- Led large-scale project to secure backend (*node*) from arbitrary code execution, using e.g. low-level OS facilities like syscalls.
+- Led large-scale project to secure backend (*node*) from arbitrary code
+  execution, using e.g. low-level OS facilities like syscalls.
 - Worked with cofounder to implement, test, and document the parallelization of
   the protocol (*asynchronous backing*), resulting in up to 2x efficiency
   increase.
@@ -47,15 +48,15 @@ last-updated: "Jan 2025"
 
 **Jan 2020 - Aug 2022** -- Core Developer -- *Full Stack*
 
-- Led project that developed a blockchain from scratch in Rust.
-  [[Link](https://gitlab.com/SkynetLabs/skynet-token/)]
+- Led the creation of a novel blockchain in Rust, compiled to WASM for the
+  browser. [[Link](https://gitlab.com/SkynetLabs/skynet-token/)]
 - In a team, designed and implemented a decentralized filesystem and a federated
   access service (*MySky*) in Typescript. Featured accounts, permissions,
   and encrypted files.
   [[Link](https://github.com/SkynetLabs/skynet-mysky)]
 - Implemented decentralized database (*SkyDB*) with caching and concurrency
   control.
-- Developed libraries and APIs in Typescript, Node.js, Python, and Go.
+- Developed REST APIs and libraries in Typescript, Node.js, Python, and Go.
   [[Link](https://github.com/SkynetLabs/skynet-js)]
 - Documented backend and client APIs and wrote articles for developers.
   [[Link](https://medium.com/@marcins)]
@@ -94,8 +95,8 @@ last-updated: "Jan 2025"
 
 - **2019** -- "Managing your life with org-mode and other tools" -- EmacsConf
   [[Link](https://emacsconf.org/2019/schedule)]
-- **2018** -- "Memory Management in Unsafe Rust" -- One-hour talk given in
-  MaidSafe.
+- **2018** -- "Memory Management in Unsafe Rust" -- One-hour advanced Rust talk.
+  [[Link](https://github.com/mrcnski/unsafe-rust)]
 
 ## Education
 
@@ -109,7 +110,7 @@ last-updated: "Jan 2025"
 - Rust, Javascript, Typescript, Node.js, Golang, Python, Java, C, C\#, SQL,
   HTML, CSS
 
-- Unix, command line, git, Emacs, CI/CD, GitHub Actions, Docker
+- Unix, Linux, command line, git, Emacs, CI/CD, GitHub Actions, Docker
 
-- backend, frontend, full stack, API design, documentation, project management,
+- backend, frontend, full stack, API design, REST APIs, project management,
   Agile
