@@ -1,6 +1,4 @@
 ---
-title: "Overview of Polkadot"
-date: 2024-12-31
 categories: blockchain
 description: Overview of the Polkadot blockchain, from my perspective as an ex core engineer.
 ---
