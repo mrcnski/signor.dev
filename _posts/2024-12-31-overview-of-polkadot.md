@@ -20,9 +20,7 @@ Block "finalization" is actually done in multiple phases. This is for the purpos
 
 ## Asynchronous Backing
 
-In asynchronous backing, a backed block can be assumed to be valid before it's actually finalized, and collators/backers can build on top of the block as it's pending. This works because, most of the time, blocks are really valid. Async backing replaces the existing backing strategy, which waited for a block to be finalized before building on it (like a waterfall model) -- async backing results in faster blocks on average. I worked mostly on the statement-distribution subsystem, which determines how statements about block candidates are communicated from backers to other validators. The aim was to distribute statements in a way that was sound and robust, but also performant.
-
-{% include image.html name="overview-of-polkadot/work-and-snow.jpeg" alt="Work and Snow" width="500" %}
+In asynchronous backing, a backed block can be assumed to be valid before it's actually finalized, and collators/backers can build on top of the block as it's pending. This works because, most of the time, blocks are really valid. Async backing replaces the existing backing strategy, which waited for a block to be finalized before building on it (like a waterfall model). Async backing results in faster blocks on average. I worked mostly on the `statement-distribution` subsystem, which determines how statements about block candidates are communicated from backers to other validators. The aim was to distribute statements in a way that was sound and robust, but also performant.
 
 ## PVF (Polkadot Validation Function)
 
@@ -30,7 +28,7 @@ At my time at Parity I mostly worked on the code surrounding PVFs. PVF stands fo
 
 ## Coretime
 
-I also worked on a new technology called Coretime. The idea behind this is to treat Polkadot's validators as a computational resource, similar to CPU cores. Dedicated parachains could, after winning an auction for it, lease a core for a set period of time. Alternatively, chains that don't need to continuously produce blocks can request cores on-demand, paying the current core price determined by supply and demand. In this way, Polkadot is able to provide both stability as well as flexibility, depending on the needs of a given chain. Cores are an abstraction, and the safe number of cores is determined by measuring how much work Polkadot is able to do in parallel.
+I also worked on a new technology called Coretime. The idea behind this is to treat Polkadot's validators as a computational resource, similar to CPU cores. Dedicated parachains could buy exclusive access to a core for a set period of time. Alternatively, chains that don't need to continuously produce blocks can request cores on-demand, paying the current core price determined by supply and demand. In this way, Polkadot is able to provide both stability as well as flexibility, depending on the needs of a given chain. Cores are an abstraction, and the safe number of cores is determined by measuring how much work Polkadot is able to do in parallel.
 
 ## Conclusion
 
