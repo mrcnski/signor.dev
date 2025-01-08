@@ -18,10 +18,10 @@ last-updated: "Jan 2025"
 
 ## Experience
 
-### Freelancing
+### Personal Sabbatical
 {: .resume-meta}
 
-**Jan 2024 - Present** -- Web Developer -- *Frontend*
+**Jan 2024 - Present** -- Freelance Web Developer -- *Frontend*
 
 - Designed multi-lingual websites for clients, using Typescript and a modern
   framework.
@@ -38,8 +38,8 @@ last-updated: "Jan 2025"
 - Led large-scale project to secure backend (*node*) from arbitrary code
   execution, using e.g. low-level OS facilities like syscalls.
 - Worked with cofounder to implement, test, and document the parallelization of
-  the protocol (*asynchronous backing*), resulting in up to 2x efficiency
-  increase.
+  the protocol (*asynchronous backing*), resulting in up to 2x increase in
+  throughput.
 - Led an effort to mentor new devs and facilitate third-party contributions.
 - [[My PRs](https://github.com/paritytech/polkadot-sdk/commits?author=mrcnski)] - Each commit is a squashed PR.
 
