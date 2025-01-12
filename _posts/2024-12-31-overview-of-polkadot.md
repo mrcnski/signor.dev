@@ -14,7 +14,7 @@ Polkadot is a proof-of-stake chain which acts as a relay chain for other chains.
 
 ## Validators
 
-Proof of stake means that there is no mining (unnecessary computations to solve a "math puzzle") as there is in PoW. In PoS, blocks cost little to produce. Instead, security comes from validators, who have significant economic stake in the network. Their stake incentivizes them to keep the network running well and honestly, and there are also penalties if they try to mess with the network to benefit themselves. Time is broken up into sessions, and each session a random set of Validators is chosen to be responsible for selecting blocks. (To select the validators we use a cryptographic "nominated PoS" algorithm called BABE).
+Proof of stake means that there is no mining (unnecessary computations to solve a "math puzzle") as there is in PoW. In PoS, blocks cost little to produce. Instead, security comes from validators, who have significant economic stake in the network. Their stake incentivizes them to keep the network running well and honestly, and there are also penalties if they try to mess with the network to benefit themselves. Time is broken up into sessions, and each session a random set of Validators is chosen to be responsible for selecting blocks. (To select the validators Polkadot uses a cryptographic "nominated PoS" algorithm called BABE).
 
 Block "finalization" is actually done in multiple phases. This is for the purposes of scalability, as only a small set of nodes does the initial checking of potentially-suspect candidate blocks. The first phase is called backing, when a small set of validators "backs" or vouches for a block. Then a larger set of validators engages in approval voting. For both phases, a certain proportion of validators has to vote in favor of the block for it to move forward in the process. Dissenting validators are economically punished after a dispute process.
 
@@ -34,4 +34,4 @@ I also worked on a new technology called Coretime. The idea behind this is to tr
 
 There is of course much more to Polkadot, and more to come in the future, but I hope that this short overview was helpful!
 
-{% include image.html name="overview-of-polkadot/seaside.jpeg" alt="Seaside" caption="Working on async backing by the sea." width="500" %}
+{% include image.html name="overview-of-polkadot/seaside.jpeg" alt="Seaside" caption="Working by the sea." width="500" %}
