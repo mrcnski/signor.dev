@@ -37,6 +37,9 @@
 .highlight .p {
   color: #bdbdb3;
 } /* Punctuation */
+.highlight .cd {
+  color: #757575;
+} /* Comment.Multiline */
 .highlight .cm {
   color: #757575;
 } /* Comment.Multiline */

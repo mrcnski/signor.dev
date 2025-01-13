@@ -57,6 +57,50 @@ To my pleasant surprise, I found a Linux utility that promised to do both! **Lan
 
 This was the most straight-forward measure to implement, and it felt very much like the right way to sandbox a process. After all, this facility was designed exactly for that purpose. The biggest change we needed to make was to rework the node file structure to give each PVF worker [its own sandboxed directory](https://github.com/paritytech/polkadot-sdk/pull/1373) to work in. Then we gave PVF workers full access to perform their filesystem operations within this directory only, being confident that they couldn't escape it.
 
+Here is the code, stripped down a bit. `enable_for_worker` is what a worker binary would call directly. This function grants filesystem access rights to the worker directory, with the kind of access depending on the kind of worker. Access to any other file or directory is denied by default. `try_restrict` is where we actually construct the ruleset and then restrict the current process.
+
+{% highlight rust linedivs %}
+/// Try to enable landlock for the given kind of worker.
+pub fn enable_for_worker(worker_info: &WorkerInfo) -> Result<()> {
+    let exceptions: Vec<(PathBuf, BitFlags<AccessFs>)> = match worker_info.kind {
+        WorkerKind::Prepare => {
+            vec![(worker_info.worker_dir_path.to_owned(), AccessFs::WriteFile.into())]
+        },
+        WorkerKind::Execute => {
+            vec![(worker_info.worker_dir_path.to_owned(), AccessFs::ReadFile.into())]
+        },
+    };
+
+    try_restrict(exceptions)
+}
+
+fn try_restrict<I, P, A>(fs_exceptions: I) -> Result<()>
+where
+    I: IntoIterator<Item = (P, A)>,
+    P: AsRef<Path>,
+    A: Into<BitFlags<AccessFs>>,
+{
+    let mut ruleset =
+        Ruleset::default().handle_access(AccessFs::from_all(LANDLOCK_ABI))?.create()?;
+    for (fs_path, access_bits) in fs_exceptions {
+        let paths = &[fs_path.as_ref().to_owned()];
+        let mut rules = path_beneath_rules(paths, access_bits).peekable();
+        if rules.peek().is_none() {
+            // `path_beneath_rules` silently ignores missing paths, so check for it manually.
+            return Err(Error::InvalidExceptionPath(fs_path.as_ref().to_owned()))
+        }
+        ruleset = ruleset.add_rules(rules)?;
+    }
+
+    let status = ruleset.restrict_self()?;
+    if !matches!(status.ruleset, RulesetStatus::FullyEnforced) {
+        return Err(Error::NotFullyEnabled(status.ruleset))
+    }
+
+    Ok(())
+}
+{% endhighlight %}
+
 ## Other Efforts
 
 Okay, nothing is perfect. Landlock was still a relatively new Linux feature, and we knew from telemetry that many nodes on the network did not yet support it. We needed some additional measures. Luckily, we found some that added security on their own and could also be safely stacked with Landlock.
@@ -74,6 +118,48 @@ Work progressed on `seccomp` this whole time. After binary separation, we remove
 Unfortunately, the number of syscalls detected with static analysis was quite high, and some of them were rather concerning from a security standpoint. And while we now had the capability to detect new syscalls introduced by wasmtime, we did not have complete confidence in our script. If it missed any syscall that then was triggered in production, consensus would break.
 
 Considering all the other measures we already had in place, we decided to use `seccomp` but in a very small scope: preventing **network IO**. We only filtered a few specific syscalls: the creation of sockets, and the `iouring` entrypoint. The small scope of this filter meant that very little could go wrong, especially with the static analysis script as a reasonable, if imperfect check.
+
+{% highlight rust linedivs %}
+/// The action to take on caught syscalls.
+#[cfg(not(test))]
+const CAUGHT_ACTION: SeccompAction = SeccompAction::KillProcess;
+/// Don't kill the process when testing.
+#[cfg(test)]
+const CAUGHT_ACTION: SeccompAction = SeccompAction::Errno(libc::EACCES as u32);
+
+/// Applies a `seccomp` filter to disable networking for the PVF threads.
+fn try_restrict() -> Result<()> {
+    let mut blacklisted_rules = BTreeMap::default();
+
+    // Restrict the creation of sockets.
+    blacklisted_rules.insert(libc::SYS_socketpair, vec![]);
+    blacklisted_rules.insert(libc::SYS_socket, vec![]);
+
+    // Prevent connecting to sockets for extra safety.
+    blacklisted_rules.insert(libc::SYS_connect, vec![]);
+
+    // Restrict io_uring.
+    blacklisted_rules.insert(libc::SYS_io_uring_setup, vec![]);
+    blacklisted_rules.insert(libc::SYS_io_uring_enter, vec![]);
+    blacklisted_rules.insert(libc::SYS_io_uring_register, vec![]);
+
+    let filter = SeccompFilter::new(
+        blacklisted_rules,
+        // Mismatch action: what to do if not in rule list.
+        SeccompAction::Allow,
+        // Match action: what to do if in rule list.
+        CAUGHT_ACTION,
+        TargetArch::x86_64,
+    )?;
+
+    let bpf_prog: BpfProgram = filter.try_into()?;
+
+    // Applies filter (runs seccomp) to the calling thread.
+    seccompiler::apply_filter(&bpf_prog)?;
+
+    Ok(())
+}
+{% endhighlight %}
 
 ## Secure Validator Mode
 
