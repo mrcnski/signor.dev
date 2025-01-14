@@ -60,6 +60,12 @@ This was the most straight-forward measure to implement, and it felt very much l
 Here is the code, stripped down a bit. `enable_for_worker` is what a worker binary would call directly. This function grants filesystem access rights to the worker directory, with the kind of access depending on the kind of worker. Access to any other file or directory is denied by default. `try_restrict` is where we actually construct the ruleset and then restrict the current process.
 
 {% highlight rust linedivs %}
+/// Landlock ABI version. We use ABI V1 because:
+///
+/// 1. It is supported by our reference kernel version.
+/// 2. Later versions do not (yet) provide additional security that would benefit us.
+pub const LANDLOCK_ABI: ABI = ABI::V1;
+
 /// Try to enable landlock for the given kind of worker.
 pub fn enable_for_worker(worker_info: &WorkerInfo) -> Result<()> {
     let exceptions: Vec<(PathBuf, BitFlags<AccessFs>)> = match worker_info.kind {

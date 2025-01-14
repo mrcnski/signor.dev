@@ -46,7 +46,7 @@ $nimbus-fringe:         #262626;
 .highlight .o { color: $nimbus-fg } /* Operator */
 .highlight .x { color: $nimbus-purple } /* Other */
 .highlight .p { color: $nimbus-fg } /* Punctuation */
-.highlight .cd { color: $nimbus-gray } /* Comment.Multiline */
+.highlight .cd { color: $nimbus-brown } /* Doc comments */
 .highlight .cm { color: $nimbus-gray } /* Comment.Multiline */
 .highlight .cp { color: $nimbus-yellow } /* Comment.Preproc */
 .highlight .c1 { color: $nimbus-gray } /* Comment.Single */
@@ -78,7 +78,7 @@ $nimbus-fringe:         #262626;
 .highlight .nf { color: $nimbus-dark-green } /* Name.Function */
 .highlight .ni { color: $nimbus-orange } /* Name.Entity */
 .highlight .nl { color: $nimbus-yellow } /* Name.Label */
-.highlight .nn { color: $nimbus-fg } /* Name.Namespace */
+.highlight .nn { color: $nimbus-red } /* Name.Namespace */
 .highlight .no { color: $nimbus-purple } /* Name.Constant */
 .highlight .nt { color: $nimbus-blue } /* Name.Tag */
 .highlight .nv { color: $nimbus-blue } /* Name.Variable */
