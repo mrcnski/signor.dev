@@ -6,6 +6,7 @@ toc: true
 post-no: 5
 related: [6]
 description: "Anki is the most popular spaced repetition software (or SRS)."
+image: getting-the-most-out-of-anki/future.png
 ---
 
 * Table of contents.
@@ -18,6 +19,8 @@ Spaced repetition (or SR) is a highly effective method of remembering informatio
 > This was a revolution in learning, as it meant material could be learnt and retained with the absolute minimum amount of effort necessary.
 
 [Anki](https://apps.ankiweb.net/) is the most popular spaced repetition software (or SRS). At its heart, Anki is just a program for making and displaying flashcards, but the flashcards are shown to you on a schedule -- ideally, close to the same day as you would have forgotten the card, and no sooner. This means you can remember more information in less time than with traditional study methods.
+
+{% include image.html name="getting-the-most-out-of-anki/future.png" width="400" alt="Anki." %}
 
 There are many SRS programs but I use and recommend Anki because it's simple, available for all platforms, syncs easily, and has a lot of additional functionality available through [plug-ins](https://ankiweb.net/shared/addons/). It also has many shared decks (pre-made sets of flashcards) available[^shared].
 

@@ -3,6 +3,7 @@ title: "Setting up Rust Support in Emacs (And Introducing Rant-o-Vision)"
 date: 2022-05-23
 categories: emacs rust
 description: I've been getting back into Rust programming for work, and things have changed in the past two years.
+image: setting-up-rust-support-in-emacs/code.png
 ---
 
 I've been getting back into Rust programming for work, and things have changed over the past two years. [racer](https://github.com/racer-rust/racer#disclaimer), which I was using for code completion and jump-to-definition, is no longer actively maintained, while LSP and Rustic have appeared on the scene.

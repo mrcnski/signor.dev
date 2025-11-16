@@ -3,6 +3,7 @@ title: "Improving Emacs Performance"
 date: 2022-06-24
 categories: emacs productivity
 description: Making the best editor even better.
+image: improving-emacs-performance/code.png
 ---
 
 My [Emacs config](https://github.com/mrcnski/init.el) has grown considerably over

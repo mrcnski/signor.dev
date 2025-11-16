@@ -6,6 +6,7 @@ toc: true
 description: "As Emacs users, our best choice for editing encrypted files is EasyPG."
 post-no: 3
 related: [4]
+image: gpg-in-emacs/caution.png
 ---
 
 * Table of contents.
