@@ -7,5 +7,7 @@ layout: page
 {% endcomment %}
 
 {% for page in site.categories[page.category] %}
+{% unless page.hide %}
 {% include post-info.html %}
+{% endunless %}
 {% endfor %}

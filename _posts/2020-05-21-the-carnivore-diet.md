@@ -4,6 +4,7 @@ date: 2020-05-21
 categories: nutrition self-improvement
 description: "A diet has been growing in popularity that seems to reflect the bizarre and extreme nature of our times. It is the carnivore diet -- eating only unprocessed animal products, mostly meat."
 image: the-carnivore-diet/steak-1.jpeg
+hide: true
 ---
 
 It is now March 2023, almost three years since I first wrote this article. I've

@@ -9,7 +9,9 @@ layout: default
 
     <div class="card-grid">
       {% for page in site.posts %}
+      {% unless page.hide %}
       {% include post-info.html description=1 %}
+      {% endunless %}
       {% endfor %}
     </div>
 

@@ -13,6 +13,7 @@ layout: default
 
     {% assign year = "" %}
     {% for page in site.posts %}
+    {% unless page.hide %}
 
     {% assign new_year = page.date | date: "%Y" %}
     {% if new_year != year %}
@@ -21,6 +22,7 @@ layout: default
     {% endif %}
 
     {% include post-info.html %}
+    {% endunless %}
     {% endfor %}
 
   </div>
