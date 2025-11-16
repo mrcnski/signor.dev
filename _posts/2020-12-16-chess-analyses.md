@@ -3,6 +3,7 @@ title: "Chess Analyses"
 date: 2020-12-16
 categories: css
 description: "Not many people know this, but I used to be quite the Chess prodigy."
+image: chess-analyses/annotation.png
 ---
 
 Not many people know this, but I used to be quite the Chess prodigy. I was the proud captain and leader of the university Chess club and a high-ranking player in my own right with a lifetime Elo rating of 1600. Many years ago I composed the following game annotations, which I trust you will find most instructive.

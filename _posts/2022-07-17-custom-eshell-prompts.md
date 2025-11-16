@@ -3,6 +3,7 @@ title: "Emacs: Custom Eshell Prompts"
 date: 2022-07-17
 categories: emacs productivity
 description: So the other day I was curious if I could add the current timestamp to my eshell prompt.
+image: eshell-prompt/after.png
 ---
 
 The other day I was curious if I could add the current timestamp to my eshell

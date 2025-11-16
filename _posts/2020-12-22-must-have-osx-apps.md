@@ -4,6 +4,7 @@ date: 2020-12-22
 categories: osx
 toc: true
 description: "Did you know there are OSX apps you didn't know you needed? You probably didn't, or maybe you did but you didn't know why."
+image: must-have-osx-apps/ccc.png
 ---
 
 * Table of contents.

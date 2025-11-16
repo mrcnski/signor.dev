@@ -1,19 +1,21 @@
-<div class="post-info">
-
-  <h3 class="post-header"><a class="post-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></h3>
-
-  <p class="post-meta post-meta-home">
-    {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" %}
-    {{ page.date | date: date_format }}
-    •
-    {% include filed.html %}
-    <!-- • -->
-    <!-- <a href="{{ page.url | relative_url }}#commento"></a> -->
-  </p>
-
-  {% if page.description and include.description == 1 %}
-  <span class="post-description">{{ page.description }}</span>
-  <span class="read-more"><a href="{{ page.url | relative_url }}">[&nbsp;Read&nbsp;more&nbsp;]</a></span>
+<div class="card">
+  {% if page.image %}
+  <img src="/assets/img/{{ page.image }}" alt="{{ page.title | escape }}" class="card-image">
   {% endif %}
 
+  <div class="card-content">
+    <h3 class="card-title"><a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></h3>
+
+    <p class="card-meta">
+      {% assign date_format = site.minutia.date_format | default: "%b %-d, %Y" %}
+      {{ page.date | date: date_format }}
+      •
+      {% include filed.html %}
+    </p>
+
+    {% if page.description and include.description == 1 %}
+    <div class="card-description">{{ page.description }}</div>
+    <span class="card-read-more"><a href="{{ page.url | relative_url }}">[&nbsp;Read&nbsp;more&nbsp;]</a></span>
+    {% endif %}
+  </div>
 </div>

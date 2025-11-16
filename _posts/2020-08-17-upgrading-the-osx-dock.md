@@ -3,6 +3,7 @@ title: "Upgrading The OSX Dock"
 date: 2020-08-19
 categories: osx productivity
 description: "Today we'll be revamping the dock on OSX. I bet you didn't think it needs upgrading, huh? Well it does. Trust me, it does."
+image: osx-dock/dock-photo.jpeg
 ---
 
 Today we'll be revamping the dock on OSX. I bet you didn't think it needs upgrading, huh? Well it does. Trust me, it does.

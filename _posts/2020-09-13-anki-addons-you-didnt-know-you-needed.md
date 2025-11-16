@@ -6,6 +6,7 @@ toc: true
 post-no: 6
 related: [5]
 description: "Did you know there are Anki add-ons you didn't know you needed? You probably didn't, or maybe you did but you didn't know why."
+image: anki-addons/addons.png
 ---
 
 * Table of contents.

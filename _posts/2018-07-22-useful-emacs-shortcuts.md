@@ -4,6 +4,7 @@ date: 2018-07-22
 categories: emacs productivity
 toc: true
 description: "I don't mean to brag, but I'm one of the best Emacs users on the planet."
+image: osx-modifier-keys.png
 ---
 
 * Table of contents.

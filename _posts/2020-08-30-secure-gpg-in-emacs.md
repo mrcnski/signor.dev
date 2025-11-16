@@ -5,6 +5,7 @@ categories: emacs cryptography
 description: "One day I was pondering upon my opsec when I realized something."
 post-no: 4
 related: [3]
+image: secure-gpg-in-emacs/keyboard.jpeg
 ---
 
 Oh, no. More [GPG in Emacs](/gpg-in-emacs)? I'll try to keep it short.

@@ -3,6 +3,7 @@ title: "Simple Inline Images In Org-Mode"
 date: 2022-07-10
 categories: emacs org-mode
 description: Recently I wanted to display some inline images in org-mode. I couldn't find a simple explanation for how to do it online, so I'm writing my own.
+image: inline-images/width.png
 ---
 
 Recently I wanted to display some inline images in `org-mode`. I couldn't find a simple explanation for how to do it online, so I'm writing my own. I'll keep it short.

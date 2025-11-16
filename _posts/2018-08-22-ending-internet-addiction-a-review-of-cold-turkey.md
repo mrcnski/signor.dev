@@ -3,6 +3,7 @@ title: "Ending Internet Addiction: A Review Of Cold Turkey"
 date: 2018-08-22
 categories: productivity self-improvement
 description: "I want to talk about a change that I recently made in my computing environment which has significantly improved my productivity and happiness. It's a little program called Cold Turkey and it's reined in my Internet addiction."
+image: cold-turkey-schedule.png
 ---
 
 I want to talk about a change that I recently made in my computing environment which has significantly improved my productivity and happiness. It's a little program called [Cold Turkey](https://getcoldturkey.com/) and it's reined in my Internet addiction.

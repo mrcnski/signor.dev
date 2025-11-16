@@ -7,9 +7,11 @@ layout: default
 
     {{ content }}
 
-    {% for page in site.posts %}
-    {% include post-info.html description=1 %}
-    {% endfor %}
+    <div class="card-grid">
+      {% for page in site.posts %}
+      {% include post-info.html description=1 %}
+      {% endfor %}
+    </div>
 
   </div>
 </article>

@@ -32,7 +32,7 @@
 
 .site-header {
     border-bottom: 1px solid $header-border;
-    background-color: $header-background;
+    background-color: $background-color;
 }
 
 .wrapper-header {
@@ -76,7 +76,7 @@
 
 .site-footer {
     border-top: 1px solid $header-border;
-    background-color: $header-background;
+    background-color: $background-color;
     padding-top: $spacing-unit / 2;
     padding-bottom: $spacing-unit / 2;
 }
@@ -247,7 +247,7 @@ img + em {
 
 .default-content {
     padding-top: $spacing-unit;
-    padding-bottom: $spacing-unit / 2;
+    padding-bottom: $spacing-unit;
 
     flex: 1;
 
@@ -269,6 +269,86 @@ img + em {
 
 .page-header {
     margin-bottom: $spacing-unit / 2;
+}
+
+/* Card Grid */
+
+.card-grid {
+    column-count: 2;
+    column-gap: $spacing-unit * 1.5;
+
+    @include media-query($on-palm) {
+        column-count: 1;
+        column-gap: 0;
+    }
+}
+
+.card {
+    background: $background-color;
+    border: 1px solid $header-border;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    break-inside: avoid;
+    margin-bottom: $spacing-unit * 1.5;
+
+    @include media-query($on-palm) {
+        margin-bottom: $spacing-unit;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid $header-border;
+}
+
+.card-content {
+    padding: $spacing-unit * 3/4;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    margin-bottom: $spacing-unit / 8;
+    font-size: $large-font-size;
+    font-weight: $bold-font-weight;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $link;
+        }
+    }
+}
+
+.card-meta {
+    color: $dark-gray;
+    font-size: $small-font-size;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.card-description {
+    flex-grow: 1;
+    margin-bottom: $spacing-unit / 2;
+    font-size: $base-font-size;
+    line-height: 1.5;
+}
+
+.card-read-more {
+    font-size: $small-font-size;
+    align-self: flex-start;
 }
 
 /* Posts */
