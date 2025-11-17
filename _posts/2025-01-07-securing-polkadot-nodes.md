@@ -3,6 +3,8 @@ categories: blockchain
 description: In my last post I gave a general overview of Polkadot. Here I do a more detailed retrospective on how exactly I secured Polkadot validator nodes -- and why they needed to be secured in the first place.
 toc: true
 image: securing-polkadot-nodes/diagram.jpg
+post-no: 8
+related: [7]
 ---
 
 * Table of contents.

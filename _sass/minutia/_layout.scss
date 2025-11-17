@@ -416,8 +416,11 @@ img + em {
 .post-filed {
     display: flex;
 
-    p {
+    p.post-meta {
         flex: 1 1 auto;
+        color: $gray;
+        font-size: $small-font-size;
+        padding-left: 0;
 
         &:last-child {
             padding-left: $spacing-unit / 2;

@@ -2,6 +2,8 @@
 categories: blockchain
 description: Overview of the Polkadot blockchain, from my perspective as an ex core engineer.
 image: overview-of-polkadot/seaside.jpeg
+post-no: 7
+related: [8]
 ---
 
 This overview is from my perspective, as an ex core engineer. It's been almost a year since I left Polkadot -- please email me if any information is outdated or otherwise incorrect!
