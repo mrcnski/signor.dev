@@ -249,6 +249,7 @@ img + em {
 
 .default-content {
     padding-top: $spacing-unit;
+    padding-bottom: $spacing-unit;
 
     flex: 1;
 
@@ -276,7 +277,7 @@ img + em {
 
 .card-grid {
     column-count: 2;
-    column-gap: $spacing-unit * 1.5;
+    column-gap: $spacing-unit * 1.25;
 
     @include media-query($on-palm) {
         column-count: 1;
@@ -293,10 +294,14 @@ img + em {
     display: flex;
     flex-direction: column;
     break-inside: avoid;
-    margin-bottom: $spacing-unit * 1.5;
+    margin-bottom: $spacing-unit * 1.25;
 
     @include media-query($on-palm) {
         margin-bottom: $spacing-unit;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 
     &:hover {
