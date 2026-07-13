@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-label="A split editor window: dark Nimbus theme on the left, light Catppuccin Latte on the right, with a cat silhouette perched on top">
+  <defs>
+    <pattern id="griddots-cat" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#23233A"/>
+    </pattern>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="800" height="440" rx="16" fill="#14141F"/>
+  <rect x="0" y="0" width="800" height="440" rx="16" fill="url(#griddots-cat)"/>
+
+  <!-- cat silhouette perched on the window frame -->
+  <g transform="translate(646,78)" fill="#7287FD">
+    <path d="M-14 -46 l-9 -16 12 6 z"/>
+    <path d="M14 -46 l9 -16 -12 6 z"/>
+    <circle cx="0" cy="-40" r="15"/>
+    <ellipse cx="0" cy="-10" rx="17" ry="23"/>
+    <path d="M14 8 q26 2 24 -26" stroke="#7287FD" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- editor window -->
+  <rect x="70" y="78" width="660" height="312" rx="12" fill="#1B1B2A" stroke="#2E2E48" stroke-width="2"/>
+  <!-- title bar -->
+  <path d="M70 90 q0 -12 12 -12 h636 q12 0 12 12 v24 h-660 z" fill="#232338"/>
+  <circle cx="94" cy="96" r="6" fill="#E06C75"/>
+  <circle cx="116" cy="96" r="6" fill="#E5C07B"/>
+  <circle cx="138" cy="96" r="6" fill="#98C379"/>
+  <text x="400" y="101" text-anchor="middle" font-family="Menlo, monospace" font-size="13" fill="#6C7086">themes.el</text>
+
+  <!-- right pane: Catppuccin Latte -->
+  <path d="M400 114 h318 q12 0 12 12 v232 h-330 z" fill="#EFF1F5"/>
+
+  <!-- divider -->
+  <line x1="400" y1="114" x2="400" y2="390" stroke="#2E2E48" stroke-width="2"/>
+
+  <!-- left pane code (dark) -->
+  <g font-family="Menlo, monospace" font-size="15">
+    <text x="100" y="160" fill="#6C7086">;; the one true dark theme</text>
+    <text x="100" y="192" fill="#CDD6F4">(<tspan fill="#8FB8E8">load-theme</tspan> <tspan fill="#98C379">'nimbus</tspan> t)</text>
+  </g>
+  <!-- moon in dark pane -->
+  <path d="M336 300 a17 17 0 1 0 9 32 a14 14 0 0 1 -9 -32 z" transform="translate(-8,0)" fill="#8FB8E8" opacity="0.9"/>
+
+  <!-- right pane code (Latte) -->
+  <g font-family="Menlo, monospace" font-size="15">
+    <text x="430" y="160" fill="#9CA0B0">;; when the sun comes out</text>
+    <text x="430" y="192" fill="#4C4F69">(<tspan fill="#1E66F5">setq</tspan> catppuccin-flavor <tspan fill="#40A02B">'latte</tspan>)</text>
+    <text x="430" y="224" fill="#4C4F69">(<tspan fill="#1E66F5">load-theme</tspan> <tspan fill="#40A02B">'catppuccin</tspan> t)</text>
+  </g>
+
+  <!-- sun in light pane -->
+  <g transform="translate(668,320)">
+    <circle cx="0" cy="0" r="12" fill="#DF8E1D"/>
+    <g stroke="#DF8E1D" stroke-width="3" stroke-linecap="round">
+      <line x1="0" y1="-19" x2="0" y2="-26"/>
+      <line x1="19" y1="0" x2="26" y2="0"/>
+      <line x1="-19" y1="0" x2="-26" y2="0"/>
+      <line x1="14" y1="-14" x2="19" y2="-19"/>
+      <line x1="-14" y1="-14" x2="-19" y2="-19"/>
+      <line x1="14" y1="14" x2="19" y2="19"/>
+      <line x1="-14" y1="14" x2="-19" y2="19"/>
+    </g>
+  </g>
+
+  <!-- Latte palette swatches in light pane -->
+  <g transform="translate(430,290)">
+    <circle cx="0" cy="0" r="8" fill="#DC8A78"/>
+    <circle cx="28" cy="0" r="8" fill="#EA76CB"/>
+    <circle cx="56" cy="0" r="8" fill="#8839EF"/>
+    <circle cx="84" cy="0" r="8" fill="#FE640B"/>
+    <circle cx="112" cy="0" r="8" fill="#DF8E1D"/>
+    <circle cx="140" cy="0" r="8" fill="#40A02B"/>
+    <circle cx="168" cy="0" r="8" fill="#1E66F5"/>
+    <circle cx="196" cy="0" r="8" fill="#7287FD"/>
+  </g>
+
+  <!-- modelines -->
+  <path d="M70 366 h330 v24 h-318 q-12 0 -12 -12 z" fill="#232338"/>
+  <path d="M400 366 h330 v12 q0 12 -12 12 h-318 z" fill="#DCE0E8"/>
+  <text x="86" y="383" font-family="Menlo, monospace" font-size="12" fill="#6C7086">-UUU:----  themes.el   (Elisp)</text>
+  <text x="416" y="383" font-family="Menlo, monospace" font-size="12" fill="#6C6F85">-UUU:----  themes.el   (Elisp)</text>
+</svg>
