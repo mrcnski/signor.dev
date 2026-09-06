@@ -17,7 +17,7 @@ revolutionary project [Promptu](https://github.com/mrcnski/promptu).
 
 `Commit, add tests, commit, don't push`.  With Promptu, just five key presses.
 
-{% include image.html noborder=true name="introducing-promptu/screenshot.png" alt="Promptu screenshot." width="400" %}
+{% include image.html name="introducing-promptu/screenshot.png" alt="Promptu screenshot." width="400" %}
 
 I know, you can hardly believe it.  Or maybe you're thinking about some cake in
 the fridge.  Stay with me, because it gets better.
