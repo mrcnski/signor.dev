@@ -88,6 +88,7 @@ category_descriptions:
   - { name: "productivity", description: "" }
   - { name: "programming", description: "" }
   - { name: "projects", description: "" }
+  - { name: "psychology", description: "" }
   - { name: "reviews", description: "" }
   - { name: "rust", description: "" }
   - { name: "self-improvement", description: "" }

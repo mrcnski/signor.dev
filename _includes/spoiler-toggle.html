@@ -1,0 +1,9 @@
+<center><button onclick="toggleSpoilers();">{{ include.text | default: "Toggle Spoilers" }}</button></center>
+<script>
+function toggleSpoilers() {
+    for (const elem of document.querySelectorAll(".spoiler-off, .spoiler-on")) {
+        elem.classList.toggle("spoiler-off");
+        elem.classList.toggle("spoiler-on");
+    }
+}
+</script>

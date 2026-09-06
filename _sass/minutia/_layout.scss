@@ -641,3 +641,19 @@ input:checked ~ .spoiler {
     border: 1px solid $red;
     border-radius: 5px;
 }
+
+/* Spoilers (see `_includes/spoiler-toggle.html`) */
+
+.spoiler-off {
+    display: none;
+}
+
+.spoiler-on {
+    font-style: italic;
+    background-color: $light-red;
+    border-radius: $border-radius;
+    padding: 0 0.2em;
+    // Keep the rounded background on every line when the span wraps.
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
